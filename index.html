@@ -57,9 +57,93 @@
         .offer-header {
             background: linear-gradient(90deg, #2a1e40 0%, #3d2b5c 100%);
         }
+
+        /* Card pop effect */
+        .card-pop {
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+            border: 1px solid rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
+        }
+        .card-pop:hover {
+            box-shadow: 0 20px 50px -10px rgba(126, 110, 170, 0.22), 0 8px 20px -8px rgba(0,0,0,0.08);
+            transform: translateY(-4px);
+        }
+
+        /* Left guide */
+        .scroll-guide {
+            position: fixed;
+            left: 24px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 90;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+        }
+        .scroll-guide .guide-line {
+            width: 2px;
+            height: 28px;
+            background: rgba(221,167,165,0.2);
+        }
+        .scroll-guide .guide-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(221,167,165,0.25);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+        .scroll-guide .guide-dot.active {
+            background: #DDA7A5;
+            border-color: #DDA7A5;
+            box-shadow: 0 0 0 4px rgba(221,167,165,0.2);
+        }
+        .scroll-guide .guide-label {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            white-space: nowrap;
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: rgba(31,26,36,0.3);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+        .scroll-guide .guide-dot.active .guide-label,
+        .scroll-guide .guide-dot:hover .guide-label {
+            opacity: 1;
+            color: #DDA7A5;
+        }
+
+        @media (max-width: 1024px) {
+            .scroll-guide { display: none; }
+        }
     </style>
 </head>
 <body class="bg-white text-brand-dark antialiased overflow-x-hidden min-h-screen">
+
+    <!-- LEFT SCROLL GUIDE -->
+    <nav class="scroll-guide" id="scrollGuide">
+        <a href="#" class="guide-dot active" data-section="hero"><span class="guide-label">Home</span></a>
+        <div class="guide-line"></div>
+        <a href="#problems" class="guide-dot" data-section="problems"><span class="guide-label">The Problem</span></a>
+        <div class="guide-line"></div>
+        <a href="#services" class="guide-dot" data-section="services"><span class="guide-label">Sessions</span></a>
+        <div class="guide-line"></div>
+        <a href="#timeline" class="guide-dot" data-section="timeline"><span class="guide-label">How It Works</span></a>
+        <div class="guide-line"></div>
+        <a href="#proof" class="guide-dot" data-section="proof"><span class="guide-label">Results</span></a>
+        <div class="guide-line"></div>
+        <a href="#book" class="guide-dot" data-section="book"><span class="guide-label">Book Now</span></a>
+    </nav>
+
     <!-- OFFER ALERT HEADER -->
     <div class="offer-header sticky top-0 z-[100] w-full text-white py-2.5 px-4 shadow-lg">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-center">
@@ -79,8 +163,16 @@
     <!-- SPLIT NAVBAR -->
     <header class="absolute top-10 w-full z-50 flex flex-col md:flex-row items-center h-auto md:h-24">
         <div class="w-full md:w-1/2 flex items-center justify-between md:justify-start px-6 md:px-12 py-4 md:py-0 bg-white/80 backdrop-blur-lg h-full border-b border-gray-100 md:border-none">
-            <a href="#">
-                <img src="images/logo.png" alt="Stretch Me Tuluv" class="h-12 md:h-14 w-auto">
+            <a href="#" class="flex items-center gap-2.5">
+                <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="20" cy="16" rx="7" ry="15" fill="#DDA7A5" opacity="0.9"/>
+                    <ellipse cx="20" cy="16" rx="6.5" ry="14" fill="#e4b8b6" transform="rotate(-22, 20, 22)"/>
+                    <ellipse cx="20" cy="16" rx="5.5" ry="12" fill="#ebc9c8" transform="rotate(-44, 20, 22)"/>
+                    <ellipse cx="20" cy="16" rx="6.5" ry="14" fill="#e4b8b6" transform="rotate(22, 20, 22)"/>
+                    <ellipse cx="20" cy="16" rx="5.5" ry="12" fill="#ebc9c8" transform="rotate(44, 20, 22)"/>
+                    <ellipse cx="20" cy="18" rx="3.5" ry="9" fill="#f0d5d4"/>
+                </svg>
+                <span class="text-lg md:text-xl font-display font-black text-brand-dark tracking-tighter uppercase">Stretch Me Tuluv</span>
             </a>
             <nav class="hidden lg:flex gap-8 ml-12 text-[11px] font-bold uppercase tracking-widest text-brand-dark">
                 <a href="#services" class="hover:text-brand-rose transition-colors">Sessions</a>
@@ -97,7 +189,7 @@
         </div>
     </header>
     <!-- STEP 1: HERO -->
-    <section class="relative flex flex-col md:flex-row min-h-screen bg-gradient-to-b from-brand-roseLight/30 to-white">
+    <section id="hero" class="relative flex flex-col md:flex-row min-h-screen bg-gradient-to-b from-brand-roseLight/30 to-white">
         <div class="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-16 lg:px-24 pt-48 pb-16 md:pt-48 md:pb-20 order-2 md:order-1 relative z-10">
             <h1 class="text-5xl lg:text-7xl font-display font-black text-brand-dark uppercase tracking-tighter leading-[1.05] mb-6">
                 FEEL BETTER IN<br>ONE SESSION.
@@ -149,7 +241,7 @@
         </div>
     </section>
     <!-- STEP 2: ADDRESS THE PROBLEMS -->
-    <section class="py-24 bg-gradient-to-br from-white via-brand-roseLight/20 to-white relative overflow-hidden z-10">
+    <section id="problems" class="py-24 bg-gradient-to-br from-white via-brand-roseLight/20 to-white relative overflow-hidden z-10">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <div class="mb-16">
                 <h3 class="text-3xl md:text-5xl font-display font-black text-brand-dark tracking-tight mb-4 uppercase">
@@ -158,7 +250,7 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-16 max-w-5xl mx-auto">
                 <!-- The Current State -->
-                <div class="bg-white p-10 rounded-3xl shadow-pop border border-gray-100 relative overflow-hidden group">
+                <div class="bg-white p-10 rounded-3xl card-pop relative overflow-hidden group border-l-4 border-l-brand-rose">
                     <div class="w-14 h-14 bg-red-50 text-red-400 rounded-2xl flex items-center justify-center mb-8 mx-auto border border-red-100">
                         <i data-lucide="frown" class="w-7 h-7"></i>
                     </div>
@@ -182,7 +274,7 @@
                     </ul>
                 </div>
                 <!-- Education Card -->
-                <div class="bg-brand-roseLight/40 p-10 rounded-3xl shadow-pop border border-brand-rose/20 flex flex-col justify-center text-left backdrop-blur-sm">
+                <div class="bg-brand-roseLight p-10 rounded-3xl card-pop border-l-4 border-l-brand-purple flex flex-col justify-center text-left">
                     <h4 class="text-3xl font-display font-black text-brand-dark mb-6">What Is Assisted Stretching?</h4>
                     <p class="text-lg text-brand-dark/80 leading-relaxed font-medium mb-6">
                         Assisted stretching is different from massage. A professional therapist moves your body through guided stretches while you relax.
@@ -207,7 +299,7 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Card 1 -->
-                <div class="group bg-white border border-gray-100 p-10 rounded-3xl shadow-pop hover:shadow-pop-hover hover:-translate-y-2 transition-all duration-300 cursor-pointer flex flex-col text-left" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
+                <div class="group bg-white p-10 rounded-3xl card-pop cursor-pointer flex flex-col text-left border-l-4 border-l-brand-rose/40 hover:border-l-brand-rose" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
                     <div class="flex justify-between items-start mb-6">
                         <div class="w-14 h-14 bg-brand-roseLight border border-brand-rose/10 flex items-center justify-center group-hover:bg-brand-rose transition-colors rounded-xl">
                             <i data-lucide="maximize" class="w-6 h-6 text-brand-rose group-hover:text-white transition-colors"></i>
@@ -223,7 +315,7 @@
                     </a>
                 </div>
                 <!-- Card 2 -->
-                <div class="group bg-white border border-gray-100 p-10 rounded-3xl shadow-pop hover:shadow-pop-hover hover:-translate-y-2 transition-all duration-300 cursor-pointer flex flex-col text-left" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
+                <div class="group bg-white p-10 rounded-3xl card-pop cursor-pointer flex flex-col text-left border-l-4 border-l-brand-rose/40 hover:border-l-brand-rose" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
                     <div class="flex justify-between items-start mb-6">
                         <div class="w-14 h-14 bg-brand-roseLight border border-brand-rose/10 flex items-center justify-center group-hover:bg-brand-rose transition-colors rounded-xl">
                             <i data-lucide="monitor" class="w-6 h-6 text-brand-rose group-hover:text-white transition-colors"></i>
@@ -297,25 +389,25 @@
         <div class="w-32 h-1.5 bg-brand-rose rounded-full opacity-40 shadow-sm"></div>
     </div>
     <!-- STEP 5: PROOF -->
-    <section class="pt-12 pb-24 bg-gradient-to-b from-[#f8f6fc] to-[#f0eafc] text-center border-y border-brand-purple/10">
+    <section id="proof" class="pt-12 pb-24 bg-gradient-to-b from-[#f8f6fc] to-[#f0eafc] text-center border-y border-brand-purple/10">
         <div class="max-w-7xl mx-auto px-6">
             <h3 class="text-3xl md:text-5xl font-display font-black text-brand-dark tracking-tight mb-16 uppercase">Real Results</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-10 rounded-3xl shadow-pop text-left">
+                <div class="bg-white p-10 rounded-3xl card-pop text-left border-t-4 border-t-brand-rose/30">
                     <div class="flex gap-1 text-brand-rose mb-6">
                         <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
                     </div>
                     <p class="text-brand-dark/80 font-medium leading-relaxed mb-6">"Sitting at a desk 10 hours a day wrecked my back. One 60-minute session loosened everything up immediately."</p>
                     <p class="font-display font-bold text-sm text-brand-rose uppercase">Sarah M. • Marketing Director</p>
                 </div>
-                <div class="bg-white p-10 rounded-3xl shadow-pop text-left">
+                <div class="bg-white p-10 rounded-3xl card-pop text-left border-t-4 border-t-brand-rose/30">
                     <div class="flex gap-1 text-brand-rose mb-6">
                         <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
                     </div>
                     <p class="text-brand-dark/80 font-medium leading-relaxed mb-6">"My workout recovery is 2x faster. Having them come to my home is the ultimate luxury."</p>
                     <p class="font-display font-bold text-sm text-brand-rose uppercase">Marcus T. • Software Engineer</p>
                 </div>
-                <div class="bg-white p-10 rounded-3xl shadow-pop text-left">
+                <div class="bg-white p-10 rounded-3xl card-pop text-left border-t-4 border-t-brand-rose/30">
                     <div class="flex gap-1 text-brand-rose mb-6">
                         <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
                     </div>
@@ -415,11 +507,19 @@
     </section>
     <!-- FOOTER -->
     <footer class="bg-brand-dark text-white pt-16 pb-8">
-        <div class="max-w-7xl mx-auto px-6 text-center uppercase tracking-widest">
-            <a href="#" class="inline-block mb-8">
-                <img src="images/footer_logo.png" alt="Stretch Me Tuluv" class="h-14 w-auto mx-auto">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <a href="#" class="inline-flex items-center justify-center gap-2.5 mb-6">
+                <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="20" cy="16" rx="7" ry="15" fill="#DDA7A5" opacity="0.9"/>
+                    <ellipse cx="20" cy="16" rx="6.5" ry="14" fill="#e4b8b6" transform="rotate(-22, 20, 22)"/>
+                    <ellipse cx="20" cy="16" rx="5.5" ry="12" fill="#ebc9c8" transform="rotate(-44, 20, 22)"/>
+                    <ellipse cx="20" cy="16" rx="6.5" ry="14" fill="#e4b8b6" transform="rotate(22, 20, 22)"/>
+                    <ellipse cx="20" cy="16" rx="5.5" ry="12" fill="#ebc9c8" transform="rotate(44, 20, 22)"/>
+                    <ellipse cx="20" cy="18" rx="3.5" ry="9" fill="#f0d5d4"/>
+                </svg>
+                <span class="text-lg font-display font-black uppercase tracking-tighter">Stretch Me Tuluv</span>
             </a>
-            <p class="text-[10px] text-white/30">&copy; 2026 Stretch Me Tuluv. Professional Assisted Stretching At Home.</p>
+            <p class="text-[10px] text-white/30 uppercase tracking-widest">&copy; 2026 Stretch Me Tuluv. Professional Assisted Stretching At Home.</p>
         </div>
     </footer>
     <script>
@@ -439,6 +539,24 @@
             });
         }
         setInterval(updateTimers, 1000);
+
+        // Scroll Guide
+        const sections = ['hero', 'problems', 'services', 'timeline', 'proof', 'book'];
+        const dots = document.querySelectorAll('.guide-dot');
+
+        function updateGuide() {
+            const scrollY = window.scrollY + window.innerHeight / 3;
+            let current = 'hero';
+            sections.forEach(id => {
+                const el = document.getElementById(id);
+                if (el && el.offsetTop <= scrollY) current = id;
+            });
+            dots.forEach(dot => {
+                dot.classList.toggle('active', dot.dataset.section === current);
+            });
+        }
+        window.addEventListener('scroll', updateGuide, { passive: true });
+        updateGuide();
     </script>
 </body>
 </html>
