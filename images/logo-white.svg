@@ -1,15 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" fill="none">
   <!-- Lotus Flower -->
-  <g transform="translate(0, 5)">
-    <ellipse cx="30" cy="28" rx="10" ry="22" fill="#DDA7A5" transform="rotate(0, 30, 40)"/>
-    <ellipse cx="30" cy="28" rx="9" ry="20" fill="#e4b8b6" transform="rotate(-25, 30, 40)"/>
-    <ellipse cx="30" cy="28" rx="8" ry="18" fill="#ebc9c8" transform="rotate(-50, 30, 40)"/>
-    <ellipse cx="30" cy="28" rx="9" ry="20" fill="#e4b8b6" transform="rotate(25, 30, 40)"/>
-    <ellipse cx="30" cy="28" rx="8" ry="18" fill="#ebc9c8" transform="rotate(50, 30, 40)"/>
-    <ellipse cx="30" cy="30" rx="5" ry="14" fill="#f0d5d4"/>
+  <g transform="translate(200, 45)">
+    <ellipse cx="-18" cy="-5" rx="14" ry="32" fill="#ebc9c8" transform="rotate(-35, -18, -5)"/>
+    <ellipse cx="18" cy="-5" rx="14" ry="32" fill="#ebc9c8" transform="rotate(35, 18, -5)"/>
+    <ellipse cx="-10" cy="-8" rx="13" ry="34" fill="#e4b8b6" transform="rotate(-18, -10, -8)"/>
+    <ellipse cx="10" cy="-8" rx="13" ry="34" fill="#e4b8b6" transform="rotate(18, 10, -8)"/>
+    <ellipse cx="0" cy="-10" rx="12" ry="36" fill="#DDA7A5"/>
+    <ellipse cx="0" cy="-5" rx="6" ry="20" fill="#f0d5d4" opacity="0.7"/>
   </g>
-  <!-- Brand Text -->
-  <text x="65" y="38" font-family="Montserrat, sans-serif" font-weight="900" font-size="24" fill="#ffffff" letter-spacing="-1">Stretch Me Tuluv</text>
-  <!-- Tagline -->
-  <text x="65" y="56" font-family="Inter, sans-serif" font-weight="600" font-size="8" fill="#ffffff" opacity="0.5" letter-spacing="3">MOBILITY  |  RECOVERY  |  WELLNESS</text>
+  <text x="200" y="120" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="900" font-size="42" fill="#ffffff" letter-spacing="-2">Stretch Me Tuluv</text>
+  <line x1="100" y1="140" x2="300" y2="140" stroke="#DDA7A5" stroke-width="1" opacity="0.4"/>
+  <text x="200" y="162" text-anchor="middle" font-family="Inter, Montserrat, sans-serif" font-weight="600" font-size="12" fill="#ffffff" letter-spacing="6" opacity="0.4">MOBILITY  |  RECOVERY  |  WELLNESS</text>
 </svg>
