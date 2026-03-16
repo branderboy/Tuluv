@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  <!-- Lotus Flower -->
+  <g transform="translate(0, 5)">
+    <!-- Center petal -->
+    <ellipse cx="30" cy="28" rx="10" ry="22" fill="#DDA7A5" transform="rotate(0, 30, 40)"/>
+    <!-- Left petals -->
+    <ellipse cx="30" cy="28" rx="9" ry="20" fill="#e4b8b6" transform="rotate(-25, 30, 40)"/>
+    <ellipse cx="30" cy="28" rx="8" ry="18" fill="#ebc9c8" transform="rotate(-50, 30, 40)"/>
+    <!-- Right petals -->
+    <ellipse cx="30" cy="28" rx="9" ry="20" fill="#e4b8b6" transform="rotate(25, 30, 40)"/>
+    <ellipse cx="30" cy="28" rx="8" ry="18" fill="#ebc9c8" transform="rotate(50, 30, 40)"/>
+    <!-- Inner highlight -->
+    <ellipse cx="30" cy="30" rx="5" ry="14" fill="#f0d5d4"/>
+  </g>
+  <!-- Brand Text -->
+  <text x="65" y="38" font-family="Montserrat, sans-serif" font-weight="900" font-size="24" fill="#1f1a24" letter-spacing="-1">Stretch Me Tuluv</text>
+  <!-- Tagline -->
+  <text x="65" y="56" font-family="Inter, sans-serif" font-weight="600" font-size="8" fill="#1f1a24" opacity="0.4" letter-spacing="3">MOBILITY  |  RECOVERY  |  WELLNESS</text>
+</svg>
