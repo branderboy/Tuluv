@@ -163,7 +163,7 @@
                 </a>
             </div>
         </div>
-        <div class="w-full md:w-1/2 relative min-h-[50vh] md:min-h-screen order-1 md:order-2 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1616279967983-ec413476e824?q=80&w=1600&auto=format&fit=crop'); background-color: #d4c5b9;">
+        <div class="w-full md:w-1/2 relative min-h-[50vh] md:min-h-screen order-1 md:order-2 bg-cover bg-center" style="background-image: url('images/hero.png'); background-color: #d4c5b9;">
             <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-transparent hidden md:block"></div>
 
             <div class="absolute bottom-6 left-6 right-6 md:left-12 md:right-12 bg-white/95 backdrop-blur-xl rounded-2xl flex flex-col sm:flex-row justify-between items-center p-6 md:p-8 shadow-pop border border-white/50">
@@ -197,48 +197,82 @@
             <div class="w-px h-10 bg-brand-rose/40"></div>
         </div>
     </section>
-    <!-- STEP 2: ADDRESS THE PROBLEMS -->
-    <section id="problems" class="py-24 bg-gradient-to-br from-white via-brand-roseLight/20 to-white relative overflow-hidden z-10">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <div class="mb-16">
-                <h3 class="text-3xl md:text-5xl font-display font-black text-brand-dark tracking-tight mb-4 uppercase">
-                    If this sounds familiar, it's time to stretch.
-                </h3>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-16 max-w-5xl mx-auto">
-                <!-- The Current State -->
-                <div class="bg-white p-10 rounded-3xl card-pop relative overflow-hidden group border-l-4 border-l-brand-rose">
-                    <div class="w-14 h-14 bg-red-50 text-red-400 rounded-2xl flex items-center justify-center mb-8 mx-auto border border-red-100">
-                        <i data-lucide="frown" class="w-7 h-7"></i>
-                    </div>
-                    <ul class="space-y-6 text-left">
+    <!-- STEP 2: ADDRESS THE PROBLEMS — Side-by-side narrative layout -->
+    <section id="problems" class="py-24 bg-gradient-to-b from-[#f0f8ff] to-white relative overflow-hidden z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+                <!-- Left: Pain points -->
+                <div class="w-full md:w-1/2">
+                    <p class="text-brand-rose font-bold text-xs uppercase tracking-[0.2em] mb-3">Sound Familiar?</p>
+                    <h3 class="text-3xl md:text-5xl font-display font-black text-brand-dark tracking-tight mb-8 leading-tight">
+                        If this sounds familiar, it's time to stretch.
+                    </h3>
+                    <ul class="space-y-5">
                         <li class="flex items-start gap-4 text-brand-dark/80 font-medium">
-                            <i data-lucide="x-circle" class="w-6 h-6 text-brand-rose shrink-0"></i>
+                            <i data-lucide="x-circle" class="w-6 h-6 text-brand-rose shrink-0 mt-0.5"></i>
                             <span class="leading-relaxed font-bold">Tight hips from sitting at a desk all day.</span>
                         </li>
                         <li class="flex items-start gap-4 text-brand-dark/80 font-medium">
-                            <i data-lucide="x-circle" class="w-6 h-6 text-brand-rose shrink-0"></i>
+                            <i data-lucide="x-circle" class="w-6 h-6 text-brand-rose shrink-0 mt-0.5"></i>
                             <span class="leading-relaxed font-bold">Neck and shoulder tension from work stress.</span>
                         </li>
                         <li class="flex items-start gap-4 text-brand-dark/80 font-medium">
-                            <i data-lucide="x-circle" class="w-6 h-6 text-brand-rose shrink-0"></i>
+                            <i data-lucide="x-circle" class="w-6 h-6 text-brand-rose shrink-0 mt-0.5"></i>
                             <span class="leading-relaxed font-bold">Lower back stiffness in the morning.</span>
                         </li>
                         <li class="flex items-start gap-4 text-brand-dark/80 font-medium">
-                            <i data-lucide="x-circle" class="w-6 h-6 text-brand-rose shrink-0"></i>
+                            <i data-lucide="x-circle" class="w-6 h-6 text-brand-rose shrink-0 mt-0.5"></i>
                             <span class="leading-relaxed font-bold">Slow recovery and soreness after workouts.</span>
                         </li>
                     </ul>
+                    <a href="#book" class="inline-block mt-8 text-brand-purple text-xs font-bold uppercase tracking-widest underline underline-offset-4 hover:text-brand-purpleHover transition-colors">Get Relief Now &rarr;</a>
                 </div>
-                <!-- Education Card -->
-                <div class="bg-brand-roseLight p-10 rounded-3xl card-pop border-l-4 border-l-brand-purple flex flex-col justify-center text-left">
-                    <h4 class="text-3xl font-display font-black text-brand-dark mb-6">What Is Assisted Stretching?</h4>
+                <!-- Right: Image with accent -->
+                <div class="w-full md:w-1/2">
+                    <div class="relative">
+                        <div class="absolute -inset-3 bg-brand-rose/10 rounded-[2rem] -z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80" alt="Stretching therapy" class="w-full h-[420px] object-cover rounded-3xl shadow-pop">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT IS ASSISTED STRETCHING — Reversed layout -->
+    <section class="py-24 bg-white relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+                <!-- Left: Image -->
+                <div class="w-full md:w-1/2 order-2 md:order-1">
+                    <div class="relative">
+                        <div class="absolute -inset-3 bg-brand-purple/5 rounded-[2rem] -z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" alt="Assisted stretching session" class="w-full h-[420px] object-cover rounded-3xl shadow-pop">
+                    </div>
+                </div>
+                <!-- Right: Education -->
+                <div class="w-full md:w-1/2 order-1 md:order-2">
+                    <p class="text-brand-purple font-bold text-xs uppercase tracking-[0.2em] mb-3">The Difference</p>
+                    <h3 class="text-3xl md:text-5xl font-display font-black text-brand-dark tracking-tight mb-6 leading-tight">
+                        What Is Assisted Stretching?
+                    </h3>
                     <p class="text-lg text-brand-dark/80 leading-relaxed font-medium mb-6">
                         Assisted stretching is different from massage. A professional therapist moves your body through guided stretches while you relax.
                     </p>
-                    <p class="text-lg text-brand-dark/80 leading-relaxed font-medium">
+                    <p class="text-lg text-brand-dark/80 leading-relaxed font-medium mb-8">
                         This allows for deeper flexibility improvements and significantly faster tension release than you can achieve alone.
                     </p>
+                    <!-- Benefit pills -->
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-brand-roseLight text-brand-dark px-4 py-2 rounded-full text-sm font-bold border border-brand-rose/10">
+                            <i data-lucide="zap" class="w-4 h-4 inline text-brand-rose mr-1"></i> Pain Relief
+                        </span>
+                        <span class="bg-brand-roseLight text-brand-dark px-4 py-2 rounded-full text-sm font-bold border border-brand-rose/10">
+                            <i data-lucide="heart" class="w-4 h-4 inline text-brand-rose mr-1"></i> Stress Reduction
+                        </span>
+                        <span class="bg-brand-roseLight text-brand-dark px-4 py-2 rounded-full text-sm font-bold border border-brand-rose/10">
+                            <i data-lucide="activity" class="w-4 h-4 inline text-brand-rose mr-1"></i> Better Mobility
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -494,7 +528,7 @@
                             </div>
                         </label>
                     </div>
-                    <button class="w-full bg-white hover:bg-gray-100 text-brand-purple font-bold uppercase tracking-widest text-sm py-5 transition-transform hover:-translate-y-1 flex justify-center items-center gap-2 rounded-xl shadow-lg">
+                    <button class="w-full bg-brand-rose hover:bg-brand-roseHover text-white font-bold uppercase tracking-widest text-sm py-5 transition-all hover:-translate-y-1 flex justify-center items-center gap-2 rounded-xl shadow-lg">
                         Book Your Session <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </button>
                 </div>
