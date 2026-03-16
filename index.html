@@ -60,29 +60,14 @@
 </head>
 <body class="bg-white text-brand-dark antialiased overflow-x-hidden min-h-screen">
 
-    <!-- SPLIT NAVBAR -->
-    <header class="absolute top-0 w-full z-50 flex flex-col md:flex-row items-center h-auto md:h-24">
-        <!-- Left Side -->
-        <div class="w-full md:w-1/2 flex items-center justify-between md:justify-start px-6 md:px-12 py-4 md:py-0 bg-white h-full">
+    <!-- NAVBAR -->
+    <header class="absolute top-0 w-full z-50 flex items-center h-auto md:h-28">
+        <div class="w-full flex items-center justify-between px-6 md:px-12 py-4 md:py-0 bg-white h-full">
             <a href="#" class="flex items-center whitespace-nowrap">
-                <img src="images/logo.png" alt="Stretch Me Tuluv" class="h-14 md:h-16 w-auto">
+                <img src="images/logo.png" alt="Stretch Me Tuluv" class="h-16 md:h-20 w-auto">
             </a>
-            <nav class="hidden lg:flex gap-8 ml-12 text-[10px] font-bold uppercase tracking-widest text-brand-dark">
-                <a href="#services" class="hover:text-brand-purple transition-colors">Assisted Stretching</a>
-                <a href="#services" class="hover:text-brand-purple transition-colors">Recovery</a>
-            </nav>
-            <button class="md:hidden text-brand-dark">
-                <i data-lucide="menu" class="w-6 h-6"></i>
-            </button>
-        </div>
-        
-        <!-- Right Side -->
-        <div class="hidden md:flex w-1/2 items-center justify-end px-12 gap-8 text-white text-[11px] font-semibold">
-            <a href="#founder" class="hover:text-gray-300 drop-shadow-md transition-colors">Our Story</a>
-            <a href="#faq" class="hover:text-gray-300 drop-shadow-md transition-colors">FAQ</a>
-            <a href="#book" class="border border-brand-rose/60 bg-brand-rose/20 backdrop-blur-md px-5 py-2 rounded-full hover:bg-brand-rose hover:text-white transition-colors shadow-lg">Book an appointment</a>
-            <a href="#" class="w-9 h-9 rounded-full border border-white/50 bg-white/10 backdrop-blur-md flex items-center justify-center hover:bg-white hover:text-brand-dark transition-colors shadow-lg">
-                <i data-lucide="user" class="w-4 h-4"></i>
+            <a href="#book" class="bg-brand-purpleDeep text-white font-semibold text-sm px-6 py-2.5 rounded-full hover:bg-brand-purple transition-colors shadow-pop">
+                Book Now
             </a>
         </div>
     </header>
@@ -101,14 +86,14 @@
                 Relieve tight hips, stiff backs, and shoulder pain with guided stretch therapy.
             </p>
             <div>
-                <a href="#book" class="inline-block bg-brand-rose text-white font-semibold py-3.5 px-8 rounded-xl hover:bg-brand-roseDark hover:-translate-y-1 transition-all shadow-pop">
+                <a href="#book" class="inline-block bg-brand-purpleDeep text-white font-semibold py-3.5 px-8 rounded-xl hover:bg-brand-purple hover:-translate-y-1 transition-all shadow-pop">
                     Book an appointment
                 </a>
             </div>
         </div>
 
-        <div class="w-full md:w-1/2 relative min-h-[50vh] md:min-h-screen order-1 md:order-2 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1600&auto=format&fit=crop');">
-            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-transparent hidden md:block"></div>
+        <div class="w-full md:w-1/2 relative min-h-[50vh] md:min-h-screen order-1 md:order-2 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1616279969965-b5d8a5c5a5e1?q=80&w=1600&auto=format&fit=crop');">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-transparent hidden md:block"></div>
             
             <!-- Reference Box at Bottom Right -->
             <div class="absolute bottom-6 left-6 right-6 md:left-12 md:right-12 bg-white/95 backdrop-blur-xl rounded-2xl flex flex-col sm:flex-row justify-between items-center p-6 md:p-8 shadow-pop border border-white/50">
@@ -148,54 +133,66 @@
     <section class="pt-24 pb-16 bg-brand-purpleLight relative overflow-hidden z-10">
         <div class="bg-blob opacity-50"></div>
         <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <div class="text-center mb-16">
+            <div class="text-center mb-6">
+                <p class="text-xs font-bold uppercase tracking-[0.3em] text-brand-rose mb-4">Sound familiar?</p>
                 <h3 class="text-3xl md:text-5xl font-display font-black text-brand-dark tracking-tight mb-4">
                     If this sounds familiar, it's time to stretch.
                 </h3>
+                <div class="w-16 h-1 bg-brand-rose rounded-full mx-auto"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-16 mt-16">
                 <!-- The Problem -->
                 <div class="bg-white p-10 md:p-12 rounded-3xl shadow-pop border border-gray-100 relative overflow-hidden group hover:-translate-y-1 transition-all duration-300">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-brand-purple/5 rounded-full blur-3xl"></div>
-                    <div class="w-14 h-14 bg-brand-purple/10 text-brand-purple rounded-2xl flex items-center justify-center mb-8 mx-auto border border-brand-purple/20 transition-colors">
-                        <i data-lucide="frown" class="w-7 h-7"></i>
-                    </div>
-                    <ul class="space-y-6">
+                    <div class="absolute top-0 right-0 w-48 h-48 bg-brand-rose/5 rounded-full blur-3xl"></div>
+                    <p class="text-[10px] font-bold uppercase tracking-[0.3em] text-brand-rose mb-6">The pain you're living with</p>
+                    <ul class="space-y-5">
                         <li class="flex items-start gap-4 text-brand-dark/80 font-medium">
-                            <i data-lucide="x-circle" class="w-6 h-6 text-brand-purple shrink-0"></i>
-                            <span class="leading-relaxed">Tight hips from sitting at a desk all day.</span>
+                            <div class="w-8 h-8 rounded-full bg-brand-rose/10 flex items-center justify-center shrink-0 mt-0.5">
+                                <i data-lucide="x" class="w-4 h-4 text-brand-roseDark"></i>
+                            </div>
+                            <span class="leading-relaxed text-base">Tight hips from sitting at a desk all day.</span>
                         </li>
                         <li class="flex items-start gap-4 text-brand-dark/80 font-medium">
-                            <i data-lucide="x-circle" class="w-6 h-6 text-brand-purple shrink-0"></i>
-                            <span class="leading-relaxed">Neck and shoulder tension from work stress.</span>
+                            <div class="w-8 h-8 rounded-full bg-brand-rose/10 flex items-center justify-center shrink-0 mt-0.5">
+                                <i data-lucide="x" class="w-4 h-4 text-brand-roseDark"></i>
+                            </div>
+                            <span class="leading-relaxed text-base">Neck and shoulder tension from work stress.</span>
                         </li>
                         <li class="flex items-start gap-4 text-brand-dark/80 font-medium">
-                            <i data-lucide="x-circle" class="w-6 h-6 text-brand-purple shrink-0"></i>
-                            <span class="leading-relaxed">Lower back stiffness in the morning.</span>
+                            <div class="w-8 h-8 rounded-full bg-brand-rose/10 flex items-center justify-center shrink-0 mt-0.5">
+                                <i data-lucide="x" class="w-4 h-4 text-brand-roseDark"></i>
+                            </div>
+                            <span class="leading-relaxed text-base">Lower back stiffness in the morning.</span>
                         </li>
                         <li class="flex items-start gap-4 text-brand-dark/80 font-medium">
-                            <i data-lucide="x-circle" class="w-6 h-6 text-brand-purple shrink-0"></i>
-                            <span class="leading-relaxed">Slow recovery and soreness after workouts.</span>
+                            <div class="w-8 h-8 rounded-full bg-brand-rose/10 flex items-center justify-center shrink-0 mt-0.5">
+                                <i data-lucide="x" class="w-4 h-4 text-brand-roseDark"></i>
+                            </div>
+                            <span class="leading-relaxed text-base">Slow recovery and soreness after workouts.</span>
                         </li>
                         <li class="flex items-start gap-4 text-brand-dark/80 font-medium">
-                            <i data-lucide="x-circle" class="w-6 h-6 text-brand-purple shrink-0"></i>
-                            <span class="leading-relaxed">Limited flexibility holding you back from moving freely.</span>
+                            <div class="w-8 h-8 rounded-full bg-brand-rose/10 flex items-center justify-center shrink-0 mt-0.5">
+                                <i data-lucide="x" class="w-4 h-4 text-brand-roseDark"></i>
+                            </div>
+                            <span class="leading-relaxed text-base">Limited flexibility holding you back from moving freely.</span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- The Solution / Education -->
-                <div class="bg-brand-purple/10 p-10 md:p-12 rounded-3xl shadow-pop-hover border border-brand-purple/20 relative overflow-hidden group hover:-translate-y-1 transition-all duration-300 flex flex-col justify-center">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-white/40 rounded-full blur-3xl"></div>
-                    <h4 class="text-3xl font-display font-black text-brand-dark mb-6">What Is Assisted Stretching?</h4>
-                    <p class="text-lg text-brand-dark/80 leading-relaxed font-medium mb-6">
-                        Assisted stretching is fundamentally different from a traditional massage. 
+                <div class="bg-gradient-to-br from-brand-purpleDeep to-[#2a1e40] p-10 md:p-12 rounded-3xl shadow-pop-hover relative overflow-hidden group hover:-translate-y-1 transition-all duration-300 flex flex-col justify-center">
+                    <div class="absolute top-0 right-0 w-48 h-48 bg-brand-rose/10 rounded-full blur-3xl"></div>
+                    <p class="text-[10px] font-bold uppercase tracking-[0.3em] text-brand-rose mb-4">The solution</p>
+                    <h4 class="text-3xl font-display font-black text-white mb-6">What Is Assisted Stretching?</h4>
+                    <div class="w-12 h-0.5 bg-brand-rose/40 mb-6"></div>
+                    <p class="text-lg text-white/80 leading-relaxed font-medium mb-6">
+                        Assisted stretching is fundamentally different from a traditional massage.
                     </p>
-                    <p class="text-lg text-brand-dark/80 leading-relaxed font-medium mb-6">
+                    <p class="text-lg text-white/80 leading-relaxed font-medium mb-6">
                         A certified stretch therapist actively moves your body through guided, professional stretches while you completely relax.
                     </p>
-                    <p class="text-lg text-brand-dark/80 leading-relaxed font-medium">
+                    <p class="text-lg text-white/80 leading-relaxed font-medium">
                         This technique allows for significantly deeper flexibility improvements, faster tension release, and targeted mobility repair that you cannot achieve on your own.
                     </p>
                 </div>
@@ -204,21 +201,37 @@
     </section>
 
     <!-- PERFECT FOR STRIP -->
-    <section class="py-12 bg-white border-y border-gray-100">
+    <section class="py-16 bg-brand-dark">
         <div class="max-w-7xl mx-auto px-6">
-            <h4 class="text-center font-display font-black text-brand-dark text-xl mb-8 uppercase tracking-widest">Perfect For</h4>
-            <div class="flex flex-wrap justify-center gap-6 md:gap-12">
-                <div class="flex items-center gap-2 text-brand-dark/70 font-semibold bg-brand-roseLight/50 px-4 py-2 rounded-full border border-brand-rose/20">
-                    <i data-lucide="monitor" class="w-4 h-4 text-brand-rose"></i> Office Workers
+            <h4 class="text-center font-display font-black text-white text-sm mb-10 uppercase tracking-[0.3em]">Perfect For</h4>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+                <div class="flex flex-col items-center text-center group">
+                    <div class="w-16 h-16 rounded-2xl bg-brand-rose/15 border border-brand-rose/20 flex items-center justify-center mb-4 group-hover:bg-brand-rose/25 transition-colors">
+                        <i data-lucide="monitor" class="w-7 h-7 text-brand-rose"></i>
+                    </div>
+                    <p class="text-white font-bold text-sm uppercase tracking-wider">Office Workers</p>
+                    <p class="text-white/50 text-xs mt-1">Undo 8+ hours of sitting</p>
                 </div>
-                <div class="flex items-center gap-2 text-brand-dark/70 font-semibold bg-brand-roseLight/50 px-4 py-2 rounded-full border border-brand-rose/20">
-                    <i data-lucide="dumbbell" class="w-4 h-4 text-brand-rose"></i> Athletes & Gym Goers
+                <div class="flex flex-col items-center text-center group">
+                    <div class="w-16 h-16 rounded-2xl bg-brand-rose/15 border border-brand-rose/20 flex items-center justify-center mb-4 group-hover:bg-brand-rose/25 transition-colors">
+                        <i data-lucide="dumbbell" class="w-7 h-7 text-brand-rose"></i>
+                    </div>
+                    <p class="text-white font-bold text-sm uppercase tracking-wider">Athletes & Gym Goers</p>
+                    <p class="text-white/50 text-xs mt-1">Faster recovery, more range</p>
                 </div>
-                <div class="flex items-center gap-2 text-brand-dark/70 font-semibold bg-brand-roseLight/50 px-4 py-2 rounded-full border border-brand-rose/20">
-                    <i data-lucide="car" class="w-4 h-4 text-brand-rose"></i> Commuters & Drivers
+                <div class="flex flex-col items-center text-center group">
+                    <div class="w-16 h-16 rounded-2xl bg-brand-rose/15 border border-brand-rose/20 flex items-center justify-center mb-4 group-hover:bg-brand-rose/25 transition-colors">
+                        <i data-lucide="car" class="w-7 h-7 text-brand-rose"></i>
+                    </div>
+                    <p class="text-white font-bold text-sm uppercase tracking-wider">Commuters & Drivers</p>
+                    <p class="text-white/50 text-xs mt-1">Release hip & back tension</p>
                 </div>
-                <div class="flex items-center gap-2 text-brand-dark/70 font-semibold bg-brand-roseLight/50 px-4 py-2 rounded-full border border-brand-rose/20">
-                    <i data-lucide="armchair" class="w-4 h-4 text-brand-rose"></i> Anyone Sitting Too Much
+                <div class="flex flex-col items-center text-center group">
+                    <div class="w-16 h-16 rounded-2xl bg-brand-rose/15 border border-brand-rose/20 flex items-center justify-center mb-4 group-hover:bg-brand-rose/25 transition-colors">
+                        <i data-lucide="armchair" class="w-7 h-7 text-brand-rose"></i>
+                    </div>
+                    <p class="text-white font-bold text-sm uppercase tracking-wider">Anyone Sitting Too Much</p>
+                    <p class="text-white/50 text-xs mt-1">Move freely again</p>
                 </div>
             </div>
         </div>
@@ -426,22 +439,22 @@
     </section>
 
     <!-- STEP 5: CLOSE THE SALE (Booking) -->
-    <section id="book" class="relative py-24 bg-brand-purpleLight z-10">
+    <section id="book" class="relative py-24 bg-gradient-to-br from-brand-purpleDeep to-[#2a1e40] z-10">
         <div class="max-w-5xl mx-auto px-6">
             <div class="text-center mb-12">
-                <h3 class="text-3xl md:text-5xl font-display font-black text-brand-dark tracking-tight mb-4">Schedule Your Stretch Session</h3>
-                <p class="text-brand-dark/70 text-lg max-w-2xl mx-auto mb-10 font-medium">Take this step for yourself. Book in seconds. We bring the equipment, the expertise, and the serenity directly to you.</p>
+                <h3 class="text-3xl md:text-5xl font-display font-black text-white tracking-tight mb-4">Schedule Your Stretch Session</h3>
+                <p class="text-white/70 text-lg max-w-2xl mx-auto mb-10 font-medium">Take this step for yourself. Book in seconds. We bring the equipment, the expertise, and the serenity directly to you.</p>
                 
                 <!-- Timer Banner -->
-                <div class="inline-flex flex-col sm:flex-row items-center justify-center gap-4 bg-white border border-brand-purple/10 px-8 py-4 rounded-2xl shadow-pop mb-10">
-                    <div class="flex items-center gap-3 text-brand-dark font-bold text-sm">
+                <div class="inline-flex flex-col sm:flex-row items-center justify-center gap-4 bg-white/10 border border-white/15 backdrop-blur-md px-8 py-4 rounded-2xl shadow-pop mb-10">
+                    <div class="flex items-center gap-3 text-white font-bold text-sm">
                         <span class="relative flex h-2.5 w-2.5">
                           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-rose opacity-75"></span>
                           <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-roseDark"></span>
                         </span>
                         <span class="uppercase tracking-widest text-xs">First-Time Client $25 Credit Expires in:</span>
                     </div>
-                    <div class="flex items-center gap-2 bg-brand-purpleLight px-4 py-2 border border-brand-purple/10 text-brand-purple rounded-xl shadow-inner">
+                    <div class="flex items-center gap-2 bg-white/15 px-4 py-2 border border-white/10 text-brand-rose rounded-xl">
                         <i data-lucide="clock" class="w-4 h-4"></i>
                         <span id="countdown-timer" class="font-display text-xl font-black">59:59</span>
                     </div>
