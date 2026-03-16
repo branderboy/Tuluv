@@ -69,6 +69,46 @@
             transform: translateY(-4px);
         }
 
+        /* Scroll Guide */
+        .scroll-guide {
+            position: fixed;
+            left: 24px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 90;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+        }
+        .guide-dot {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: rgba(126, 110, 170, 0.25);
+            border: 2px solid rgba(126, 110, 170, 0.3);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .guide-dot.active {
+            background: #7e6eaa;
+            border-color: #7e6eaa;
+            box-shadow: 0 0 12px rgba(126, 110, 170, 0.5);
+            transform: scale(1.3);
+        }
+        .guide-dot:hover {
+            background: rgba(126, 110, 170, 0.5);
+            transform: scale(1.2);
+        }
+        .guide-line {
+            width: 2px;
+            height: 16px;
+            background: rgba(126, 110, 170, 0.15);
+        }
+        @media (max-width: 768px) {
+            .scroll-guide { display: none; }
+        }
+
     </style>
 </head>
 <body class="bg-white text-brand-dark antialiased overflow-x-hidden min-h-screen">
@@ -89,6 +129,18 @@
             <a href="#book" class="text-[10px] font-black uppercase underline decoration-brand-rose underline-offset-4 hover:text-brand-rose transition-colors">Claim Now</a>
         </div>
     </div>
+    <!-- SCROLL GUIDE -->
+    <nav class="scroll-guide" aria-label="Page sections">
+        <div class="guide-dot" data-section="problems" onclick="document.getElementById('problems').scrollIntoView({behavior:'smooth'})"></div>
+        <div class="guide-line"></div>
+        <div class="guide-dot" data-section="services" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})"></div>
+        <div class="guide-line"></div>
+        <div class="guide-dot" data-section="timeline" onclick="document.getElementById('timeline').scrollIntoView({behavior:'smooth'})"></div>
+        <div class="guide-line"></div>
+        <div class="guide-dot" data-section="proof" onclick="document.getElementById('proof').scrollIntoView({behavior:'smooth'})"></div>
+        <div class="guide-line"></div>
+        <div class="guide-dot" data-section="book" onclick="document.getElementById('book').scrollIntoView({behavior:'smooth'})"></div>
+    </nav>
     <!-- STEP 1: HERO -->
     <section id="hero" class="relative flex flex-col md:flex-row min-h-screen bg-gradient-to-b from-brand-roseLight/30 to-white">
         <div class="w-full md:w-1/2 flex flex-col justify-center items-center text-center px-8 md:px-16 lg:px-24 pt-20 pb-16 md:pt-20 md:pb-20 order-2 md:order-1 relative z-10">
@@ -473,6 +525,24 @@
             });
         }
         setInterval(updateTimers, 1000);
+
+        // Scroll Guide
+        const guideSections = ['problems', 'services', 'timeline', 'proof', 'book'];
+        const dots = document.querySelectorAll('.guide-dot');
+
+        function updateGuide() {
+            const scrollY = window.scrollY + window.innerHeight / 3;
+            let current = guideSections[0];
+            guideSections.forEach(id => {
+                const el = document.getElementById(id);
+                if (el && el.offsetTop <= scrollY) current = id;
+            });
+            dots.forEach(dot => {
+                dot.classList.toggle('active', dot.dataset.section === current);
+            });
+        }
+        window.addEventListener('scroll', updateGuide, { passive: true });
+        updateGuide();
 
     </script>
 </body>
