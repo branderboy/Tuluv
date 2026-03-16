@@ -16,13 +16,16 @@
                 extend: {
                     colors: {
                         brand: {
-                            purple: '#7e6eaa', 
+                            purple: '#7e6eaa',
                             purpleHover: '#6a5a94',
-                            purpleDeep: '#453366', 
-                            purpleLight: '#f4f8fa', 
-                            cream: '#f5f0e6',  
-                            dark: '#1f1a24',   
+                            purpleDeep: '#453366',
+                            purpleLight: '#f4f8fa',
+                            cream: '#f5f0e6',
+                            dark: '#1f1a24',
                             gray: '#f9f9f9',
+                            rose: '#DDA7A5',
+                            roseDark: '#c8908e',
+                            roseLight: '#f5e0df',
                         }
                     },
                     fontFamily: {
@@ -48,7 +51,7 @@
             left: -10%;
             width: 60%;
             height: 120%;
-            background: #e9f2f9; 
+            background: linear-gradient(135deg, #e9f2f9, #f5e0df);
             border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
             z-index: 0;
             filter: blur(40px);
@@ -61,8 +64,8 @@
     <header class="absolute top-0 w-full z-50 flex flex-col md:flex-row items-center h-auto md:h-24">
         <!-- Left Side -->
         <div class="w-full md:w-1/2 flex items-center justify-between md:justify-start px-6 md:px-12 py-4 md:py-0 bg-white h-full">
-            <a href="#" class="text-2xl md:text-3xl font-display font-black text-brand-dark tracking-tighter uppercase whitespace-nowrap">
-                Stretch Me Tuluv
+            <a href="#" class="flex items-center whitespace-nowrap">
+                <img src="images/logo.png" alt="Stretch Me Tuluv" class="h-14 md:h-16 w-auto">
             </a>
             <nav class="hidden lg:flex gap-8 ml-12 text-[10px] font-bold uppercase tracking-widest text-brand-dark">
                 <a href="#services" class="hover:text-brand-purple transition-colors">Assisted Stretching</a>
@@ -77,7 +80,7 @@
         <div class="hidden md:flex w-1/2 items-center justify-end px-12 gap-8 text-white text-[11px] font-semibold">
             <a href="#founder" class="hover:text-gray-300 drop-shadow-md transition-colors">Our Story</a>
             <a href="#faq" class="hover:text-gray-300 drop-shadow-md transition-colors">FAQ</a>
-            <a href="#book" class="border border-white/50 bg-white/10 backdrop-blur-md px-5 py-2 rounded-full hover:bg-white hover:text-brand-dark transition-colors shadow-lg">Book an appointment</a>
+            <a href="#book" class="border border-brand-rose/60 bg-brand-rose/20 backdrop-blur-md px-5 py-2 rounded-full hover:bg-brand-rose hover:text-white transition-colors shadow-lg">Book an appointment</a>
             <a href="#" class="w-9 h-9 rounded-full border border-white/50 bg-white/10 backdrop-blur-md flex items-center justify-center hover:bg-white hover:text-brand-dark transition-colors shadow-lg">
                 <i data-lucide="user" class="w-4 h-4"></i>
             </a>
@@ -87,9 +90,10 @@
     <!-- STEP 1: ADDRESS THE PROBLEM (Hero) -->
     <section class="relative flex flex-col md:flex-row min-h-screen">
         <div class="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-16 lg:px-24 pt-36 pb-16 md:pt-48 md:pb-20 order-2 md:order-1 bg-white relative z-10">
-            <h1 class="text-5xl lg:text-7xl font-display font-black text-brand-dark uppercase tracking-tighter leading-[1.05] mb-6">
+            <h1 class="text-5xl lg:text-7xl font-display font-black text-brand-dark uppercase tracking-tighter leading-[1.05] mb-4">
                 FEEL BETTER IN<br>ONE SESSION.
             </h1>
+            <div class="w-20 h-1 bg-brand-rose rounded-full mb-6"></div>
             <p class="text-xl lg:text-2xl text-brand-dark font-black mb-4 uppercase tracking-tight">
                 Professional Assisted Stretching Brought To Your Home.
             </p>
@@ -97,27 +101,27 @@
                 Relieve tight hips, stiff backs, and shoulder pain with guided stretch therapy.
             </p>
             <div>
-                <a href="#book" class="inline-block bg-brand-purple text-white font-semibold py-3.5 px-8 rounded-xl hover:bg-brand-purpleHover hover:-translate-y-1 transition-all shadow-pop">
+                <a href="#book" class="inline-block bg-brand-rose text-white font-semibold py-3.5 px-8 rounded-xl hover:bg-brand-roseDark hover:-translate-y-1 transition-all shadow-pop">
                     Book an appointment
                 </a>
             </div>
         </div>
 
-        <div class="w-full md:w-1/2 relative min-h-[50vh] md:min-h-screen order-1 md:order-2 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1600&auto=format&fit=crop');">
-            <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-transparent hidden md:block"></div>
+        <div class="w-full md:w-1/2 relative min-h-[50vh] md:min-h-screen order-1 md:order-2 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1600&auto=format&fit=crop');">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-transparent hidden md:block"></div>
             
             <!-- Reference Box at Bottom Right -->
             <div class="absolute bottom-6 left-6 right-6 md:left-12 md:right-12 bg-white/95 backdrop-blur-xl rounded-2xl flex flex-col sm:flex-row justify-between items-center p-6 md:p-8 shadow-pop border border-white/50">
                 <div class="flex items-center gap-5 mb-4 sm:mb-0">
-                    <div class="w-12 h-12 bg-brand-purple/10 rounded-full flex items-center justify-center shrink-0">
-                        <i data-lucide="gift" class="w-6 h-6 text-brand-purple"></i>
+                    <div class="w-12 h-12 bg-brand-rose/15 rounded-full flex items-center justify-center shrink-0">
+                        <i data-lucide="gift" class="w-6 h-6 text-brand-rose"></i>
                     </div>
                     <div>
                         <p class="font-bold text-brand-dark text-sm md:text-base">Claim your $25 First-Time Credit</p>
                         <p class="text-xs text-brand-dark/70 mt-1">Experience true relief with our introductory 60-minute mobile session</p>
                     </div>
                 </div>
-                <a href="#book" class="shrink-0 border-2 border-brand-dark text-brand-dark px-5 py-2.5 text-xs font-bold rounded-xl hover:bg-brand-dark hover:text-white transition-colors">
+                <a href="#book" class="shrink-0 bg-brand-rose text-white px-5 py-2.5 text-xs font-bold rounded-xl hover:bg-brand-roseDark transition-colors">
                     Learn more
                 </a>
             </div>
@@ -127,16 +131,16 @@
     <!-- SECTION BELOW HERO (Solidify the Need) -->
     <section class="py-16 px-6 text-center bg-gradient-to-br from-brand-purpleDeep to-[#2a1e40] border-y border-brand-purple/20 relative z-10 shadow-[0_0_40px_rgba(0,0,0,0.05)]">
         <div class="flex justify-center mb-6">
-            <div class="w-px h-10 bg-white/20"></div>
+            <div class="w-px h-10 bg-brand-rose/40"></div>
         </div>
         <h2 class="text-3xl md:text-5xl font-display font-black text-white tracking-tight mb-4 max-w-4xl mx-auto leading-tight">
             Keep your body working,<br />it'll thank you later.
         </h2>
-        <p class="text-xl text-white/70 italic font-medium">
+        <p class="text-xl text-brand-rose italic font-medium">
             Routine self-care keeps the mind & body happy
         </p>
         <div class="flex justify-center mt-6">
-            <div class="w-px h-10 bg-white/20"></div>
+            <div class="w-px h-10 bg-brand-rose/40"></div>
         </div>
     </section>
 
@@ -204,17 +208,17 @@
         <div class="max-w-7xl mx-auto px-6">
             <h4 class="text-center font-display font-black text-brand-dark text-xl mb-8 uppercase tracking-widest">Perfect For</h4>
             <div class="flex flex-wrap justify-center gap-6 md:gap-12">
-                <div class="flex items-center gap-2 text-brand-dark/70 font-semibold bg-gray-50 px-4 py-2 rounded-full border border-gray-100">
-                    <i data-lucide="monitor" class="w-4 h-4 text-brand-purple"></i> Office Workers
+                <div class="flex items-center gap-2 text-brand-dark/70 font-semibold bg-brand-roseLight/50 px-4 py-2 rounded-full border border-brand-rose/20">
+                    <i data-lucide="monitor" class="w-4 h-4 text-brand-rose"></i> Office Workers
                 </div>
-                <div class="flex items-center gap-2 text-brand-dark/70 font-semibold bg-gray-50 px-4 py-2 rounded-full border border-gray-100">
-                    <i data-lucide="dumbbell" class="w-4 h-4 text-brand-purple"></i> Athletes & Gym Goers
+                <div class="flex items-center gap-2 text-brand-dark/70 font-semibold bg-brand-roseLight/50 px-4 py-2 rounded-full border border-brand-rose/20">
+                    <i data-lucide="dumbbell" class="w-4 h-4 text-brand-rose"></i> Athletes & Gym Goers
                 </div>
-                <div class="flex items-center gap-2 text-brand-dark/70 font-semibold bg-gray-50 px-4 py-2 rounded-full border border-gray-100">
-                    <i data-lucide="car" class="w-4 h-4 text-brand-purple"></i> Commuters & Drivers
+                <div class="flex items-center gap-2 text-brand-dark/70 font-semibold bg-brand-roseLight/50 px-4 py-2 rounded-full border border-brand-rose/20">
+                    <i data-lucide="car" class="w-4 h-4 text-brand-rose"></i> Commuters & Drivers
                 </div>
-                <div class="flex items-center gap-2 text-brand-dark/70 font-semibold bg-gray-50 px-4 py-2 rounded-full border border-gray-100">
-                    <i data-lucide="armchair" class="w-4 h-4 text-brand-purple"></i> Anyone Sitting Too Much
+                <div class="flex items-center gap-2 text-brand-dark/70 font-semibold bg-brand-roseLight/50 px-4 py-2 rounded-full border border-brand-rose/20">
+                    <i data-lucide="armchair" class="w-4 h-4 text-brand-rose"></i> Anyone Sitting Too Much
                 </div>
             </div>
         </div>
@@ -240,7 +244,7 @@
                         <div class="w-14 h-14 bg-brand-purpleLight border border-brand-purple/10 flex items-center justify-center group-hover:bg-brand-purple transition-colors rounded-xl">
                             <i data-lucide="maximize" class="w-6 h-6 text-brand-purple group-hover:text-white transition-colors"></i>
                         </div>
-                        <span class="bg-brand-purple/10 text-brand-purple px-4 py-1.5 text-[10px] uppercase tracking-widest font-bold rounded-full">Most Popular</span>
+                        <span class="bg-brand-rose/15 text-brand-roseDark px-4 py-1.5 text-[10px] uppercase tracking-widest font-bold rounded-full">Most Popular</span>
                     </div>
                     <h3 class="text-2xl md:text-3xl font-display font-black text-brand-dark mb-4">Full Body Stretch Session</h3>
                     <p class="text-brand-dark/70 text-sm md:text-base leading-relaxed mb-8 flex-1">
@@ -320,11 +324,11 @@
                 <!-- Step 01 -->
                 <div class="flex-1 w-full bg-white border border-gray-100 text-center shadow-pop rounded-2xl overflow-hidden group hover:-translate-y-2 transition-all duration-500">
                     <div class="w-full h-48 overflow-hidden relative">
-                        <div class="absolute inset-0 bg-brand-purple/10 mix-blend-multiply z-10 group-hover:opacity-0 transition-opacity duration-500"></div>
+                        <div class="absolute inset-0 bg-brand-rose/10 mix-blend-multiply z-10 group-hover:opacity-0 transition-opacity duration-500"></div>
                         <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80" alt="We Identify Tight Areas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                     </div>
                     <div class="p-8">
-                        <div class="w-12 h-12 rounded-full bg-brand-purpleLight text-brand-purple font-display font-black flex items-center justify-center text-xl mx-auto mb-4 border border-brand-purple/10">1</div>
+                        <div class="w-12 h-12 rounded-full bg-brand-roseLight text-brand-roseDark font-display font-black flex items-center justify-center text-xl mx-auto mb-4 border border-brand-rose/20">1</div>
                         <h4 class="text-xl font-display font-bold mb-3 text-brand-dark">We Identify Tight Areas</h4>
                         <p class="text-sm text-brand-dark/70 leading-relaxed">Your stretch therapist will assess your mobility and pinpoint the exact source of your stiffness and pain.</p>
                     </div>
@@ -339,11 +343,11 @@
                 <!-- Step 02 -->
                 <div class="flex-1 w-full bg-white border border-gray-100 text-center shadow-pop rounded-2xl overflow-hidden group hover:-translate-y-2 transition-all duration-500">
                     <div class="w-full h-48 overflow-hidden relative">
-                        <div class="absolute inset-0 bg-brand-purple/10 mix-blend-multiply z-10 group-hover:opacity-0 transition-opacity duration-500"></div>
+                        <div class="absolute inset-0 bg-brand-rose/10 mix-blend-multiply z-10 group-hover:opacity-0 transition-opacity duration-500"></div>
                         <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" alt="Guided Assisted Stretching" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                     </div>
                     <div class="p-8">
-                        <div class="w-12 h-12 rounded-full bg-brand-purpleLight text-brand-purple font-display font-black flex items-center justify-center text-xl mx-auto mb-4 border border-brand-purple/10">2</div>
+                        <div class="w-12 h-12 rounded-full bg-brand-roseLight text-brand-roseDark font-display font-black flex items-center justify-center text-xl mx-auto mb-4 border border-brand-rose/20">2</div>
                         <h4 class="text-xl font-display font-bold mb-3 text-brand-dark">Guided Assisted Stretching</h4>
                         <p class="text-sm text-brand-dark/70 leading-relaxed">We physically move your body through targeted, professional stretches while you completely relax and breathe.</p>
                     </div>
@@ -358,11 +362,11 @@
                 <!-- Step 03 -->
                 <div class="flex-1 w-full bg-white border border-gray-100 text-center shadow-pop rounded-2xl overflow-hidden group hover:-translate-y-2 transition-all duration-500">
                     <div class="w-full h-48 overflow-hidden relative">
-                        <div class="absolute inset-0 bg-brand-purple/10 mix-blend-multiply z-10 group-hover:opacity-0 transition-opacity duration-500"></div>
+                        <div class="absolute inset-0 bg-brand-rose/10 mix-blend-multiply z-10 group-hover:opacity-0 transition-opacity duration-500"></div>
                         <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80" alt="You Leave Looser & Lighter" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                     </div>
                     <div class="p-8">
-                        <div class="w-12 h-12 rounded-full bg-brand-purpleLight text-brand-purple font-display font-black flex items-center justify-center text-xl mx-auto mb-4 border border-brand-purple/10">3</div>
+                        <div class="w-12 h-12 rounded-full bg-brand-roseLight text-brand-roseDark font-display font-black flex items-center justify-center text-xl mx-auto mb-4 border border-brand-rose/20">3</div>
                         <h4 class="text-xl font-display font-bold mb-3 text-brand-dark">You Leave Looser, Lighter</h4>
                         <p class="text-sm text-brand-dark/70 leading-relaxed">Experience immediate improvements in flexibility and posture, moving better than you have in years.</p>
                     </div>
@@ -384,36 +388,36 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Review 1 -->
                 <div class="bg-white p-10 border border-gray-100 shadow-[0_10px_30px_rgba(0,0,0,0.06)] rounded-3xl hover:-translate-y-1 transition-transform">
-                    <div class="flex gap-1 text-brand-purple mb-6">
+                    <div class="flex gap-1 text-brand-rose mb-6">
                         <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
                     </div>
                     <p class="text-brand-dark/80 font-medium leading-relaxed mb-6 text-sm">"After sitting at a desk 10 hours a day my lower back was wrecked. One 60-minute session loosened everything up and improved my posture immediately."</p>
                     <div>
-                        <p class="font-display font-bold text-sm text-brand-purple uppercase tracking-widest">Sarah M.</p>
+                        <p class="font-display font-bold text-sm text-brand-roseDark uppercase tracking-widest">Sarah M.</p>
                         <p class="text-xs text-brand-dark/50 mt-1 font-semibold uppercase">Marketing Director • Arlington, VA</p>
                     </div>
                 </div>
 
                 <!-- Review 2 -->
                 <div class="bg-white p-10 border border-gray-100 shadow-[0_10px_30px_rgba(0,0,0,0.06)] rounded-3xl hover:-translate-y-1 transition-transform">
-                    <div class="flex gap-1 text-brand-purple mb-6">
+                    <div class="flex gap-1 text-brand-rose mb-6">
                         <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
                     </div>
                     <p class="text-brand-dark/80 font-medium leading-relaxed mb-6 text-sm">"I lift heavy and my recovery was slowing down. Having a professional stretch therapist come to my house is a game changer. My hip mobility is back."</p>
                     <div>
-                        <p class="font-display font-bold text-sm text-brand-purple uppercase tracking-widest">Marcus T.</p>
+                        <p class="font-display font-bold text-sm text-brand-roseDark uppercase tracking-widest">Marcus T.</p>
                         <p class="text-xs text-brand-dark/50 mt-1 font-semibold uppercase">Software Engineer • Washington DC</p>
                     </div>
                 </div>
 
                 <!-- Review 3 -->
                 <div class="bg-white p-10 border border-gray-100 shadow-[0_10px_30px_rgba(0,0,0,0.06)] rounded-3xl hover:-translate-y-1 transition-transform">
-                    <div class="flex gap-1 text-brand-purple mb-6">
+                    <div class="flex gap-1 text-brand-rose mb-6">
                         <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
                     </div>
                     <p class="text-brand-dark/80 font-medium leading-relaxed mb-6 text-sm">"I've tried regular massage, but assisted stretching gave me actual results. My shoulder pain is gone and I feel 10 years younger."</p>
                     <div>
-                        <p class="font-display font-bold text-sm text-brand-purple uppercase tracking-widest">Elena R.</p>
+                        <p class="font-display font-bold text-sm text-brand-roseDark uppercase tracking-widest">Elena R.</p>
                         <p class="text-xs text-brand-dark/50 mt-1 font-semibold uppercase">Consultant • Bethesda, MD</p>
                     </div>
                 </div>
@@ -432,8 +436,8 @@
                 <div class="inline-flex flex-col sm:flex-row items-center justify-center gap-4 bg-white border border-brand-purple/10 px-8 py-4 rounded-2xl shadow-pop mb-10">
                     <div class="flex items-center gap-3 text-brand-dark font-bold text-sm">
                         <span class="relative flex h-2.5 w-2.5">
-                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-purple opacity-75"></span>
-                          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-purpleHover"></span>
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-rose opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-roseDark"></span>
                         </span>
                         <span class="uppercase tracking-widest text-xs">First-Time Client $25 Credit Expires in:</span>
                     </div>
@@ -539,7 +543,7 @@
                             
                             <label class="cursor-pointer block relative">
                                 <input type="radio" name="package" class="peer sr-only">
-                                <div class="absolute -top-3 right-5 bg-brand-purpleLight text-brand-purpleDeep text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 z-10 rounded-full shadow-md">Recommended</div>
+                                <div class="absolute -top-3 right-5 bg-brand-rose text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 z-10 rounded-full shadow-md">Recommended</div>
                                 <div class="border border-white/20 bg-white/5 text-white p-5 flex items-center justify-between peer-checked:bg-white peer-checked:text-brand-purpleDeep transition-colors rounded-xl shadow-sm hover:bg-white/10 peer-checked:hover:bg-white">
                                     <div>
                                         <p class="font-bold text-lg">The Nurture Plan <span class="font-normal text-sm opacity-70">(Three 60-Min Sessions)</span></p>
@@ -575,8 +579,8 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
                 <div class="lg:col-span-2">
-                    <a href="#" class="text-2xl font-display font-black uppercase tracking-tighter text-white mb-4 block">
-                        Stretch Me Tuluv
+                    <a href="#" class="block mb-4">
+                        <img src="images/logo.png" alt="Stretch Me Tuluv" class="h-14 w-auto brightness-0 invert">
                     </a>
                     <p class="text-gray-400 text-sm leading-relaxed mb-6 max-w-sm">
                         The elite mobile assisted stretching service engineering a pain-free, peaceful life. We bring the healing sanctuary directly to you.
@@ -584,7 +588,7 @@
                 </div>
                 
                 <div>
-                    <h4 class="font-bold uppercase tracking-widest mb-4 text-xs text-brand-purple">Stretch Sessions</h4>
+                    <h4 class="font-bold uppercase tracking-widest mb-4 text-xs text-brand-rose">Stretch Sessions</h4>
                     <ul class="space-y-3 text-sm text-gray-400">
                         <li><a href="#" class="hover:text-white transition-colors">Full Body Stretch</a></li>
                         <li><a href="#" class="hover:text-white transition-colors">Athletic Recovery</a></li>
@@ -594,7 +598,7 @@
                 </div>
 
                 <div>
-                    <h4 class="font-bold uppercase tracking-widest mb-4 text-xs text-brand-purple">Company</h4>
+                    <h4 class="font-bold uppercase tracking-widest mb-4 text-xs text-brand-rose">Company</h4>
                     <ul class="space-y-3 text-sm text-gray-400">
                         <li><a href="#founder" class="hover:text-white transition-colors">Our Story</a></li>
                         <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
@@ -604,7 +608,7 @@
             </div>
 
             <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-                <p>&copy; 2024 Stretch Me Tuluv. All rights reserved.</p>
+                <p>&copy; 2026 Stretch Me Tuluv. All rights reserved.</p>
                 <p>Professional assisted stretching, delivered.</p>
             </div>
         </div>
