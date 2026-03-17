@@ -249,24 +249,31 @@
         </div>
     </section>
     <!-- SERVICE AREA -->
-    <section id="service-area" class="py-20 bg-brand-lavender text-brand-plum text-center relative overflow-hidden">
-        <div class="aura-glow top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10"></div>
-        <div class="max-w-5xl mx-auto px-6 relative z-10 text-center">
-            <div class="flex flex-col items-center gap-2 mb-8">
-                <p class="text-xs font-black uppercase tracking-[0.8em] text-brand-purple mb-2">Check Availability</p>
-                <h3 class="text-4xl md:text-7xl font-display font-black tracking-tighter leading-[0.85]">Do we <span class="text-brand-purple italic">deliver</span> to you?</h3>
-                <i data-lucide="chevron-down" class="w-6 h-6 text-brand-pinkDeep animate-bounce mt-2"></i>
-            </div>
+    <section id="service-area" class="py-20 bg-white text-brand-plum text-center relative overflow-hidden">
+        <div class="max-w-3xl mx-auto px-6 relative z-10 text-center">
+            <div class="border-2 border-brand-plum/10 rounded-[3rem] sm:rounded-[4rem] p-10 sm:p-16 relative">
+                <!-- Decorative corner accents -->
+                <div class="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2 border-brand-pinkDeep rounded-tl-xl"></div>
+                <div class="absolute top-4 right-4 w-8 h-8 border-t-2 border-r-2 border-brand-pinkDeep rounded-tr-xl"></div>
+                <div class="absolute bottom-4 left-4 w-8 h-8 border-b-2 border-l-2 border-brand-pinkDeep rounded-bl-xl"></div>
+                <div class="absolute bottom-4 right-4 w-8 h-8 border-b-2 border-r-2 border-brand-pinkDeep rounded-br-xl"></div>
 
-            <div class="max-w-xl mx-auto mb-8">
-                <div class="flex p-2 bg-white backdrop-blur-xl rounded-full border-2 border-brand-lavender focus-within:border-brand-purple transition-all shadow-lg">
-                    <input type="text" id="zip-input" placeholder="Zip Code" class="bg-transparent w-full px-6 font-display text-3xl font-black text-brand-plum outline-none placeholder:text-brand-plum/20 uppercase tracking-tighter" maxlength="5">
-                    <button onclick="checkZip()" class="bg-brand-purple text-white px-10 py-5 rounded-full font-black uppercase tracking-[0.4em] text-xs hover:bg-brand-purpleDeep transition-all shadow-2xl active:scale-95 whitespace-nowrap">Check</button>
+                <div class="flex flex-col items-center gap-2 mb-8">
+                    <p class="text-xs font-black uppercase tracking-[0.8em] text-brand-purple mb-2">Check Availability</p>
+                    <h3 class="text-4xl md:text-6xl font-display font-black tracking-tighter leading-[0.85]">Do we <span class="text-brand-purple italic">deliver</span> to you?</h3>
+                    <i data-lucide="chevron-down" class="w-6 h-6 text-brand-pinkDeep animate-bounce mt-2"></i>
                 </div>
-                <div id="zip-result" class="mt-8 font-display font-black italic text-3xl h-8 transition-all opacity-0 text-brand-purple tracking-tighter"></div>
-            </div>
 
-            <p class="text-[9px] font-black uppercase tracking-[0.6em] text-brand-plum/30">Private Mobile Bodywork &bull; Private Concierge Service</p>
+                <div class="max-w-xl mx-auto mb-8">
+                    <div class="flex p-2 bg-brand-lavender/50 rounded-full border-2 border-brand-plum/10 focus-within:border-brand-purple transition-all">
+                        <input type="text" id="zip-input" placeholder="Zip Code" class="bg-transparent w-full px-6 font-display text-3xl font-black text-brand-plum outline-none placeholder:text-brand-plum/20 uppercase tracking-tighter" maxlength="5">
+                        <button onclick="checkZip()" class="bg-brand-plum text-white px-10 py-5 rounded-full font-black uppercase tracking-[0.4em] text-xs hover:bg-brand-purple transition-all shadow-lg active:scale-95 whitespace-nowrap">Check</button>
+                    </div>
+                    <div id="zip-result" class="mt-8 font-display font-black italic text-3xl h-8 transition-all opacity-0 text-brand-purple tracking-tighter"></div>
+                </div>
+
+                <p class="text-[9px] font-black uppercase tracking-[0.6em] text-brand-plum/30">Private Mobile Bodywork &bull; Private Concierge Service</p>
+            </div>
         </div>
     </section>
     <!-- STEP 7: PAYMENT -->
