@@ -87,7 +87,7 @@
     <!-- Intentional Top Bar -->
     <div class="bg-brand-plum text-white py-2 sm:py-3 px-4 relative z-[110]">
         <div class="max-w-7xl mx-auto flex justify-center sm:justify-between items-center px-4 md:px-12 text-center text-[9px] sm:text-[10px]">
-            <p class="font-black uppercase tracking-[0.4em] text-brand-pinkDeep hidden sm:block">Live with Intention</p>
+            <p class="font-black uppercase tracking-[0.4em] text-brand-pinkDeep hidden sm:block">The Alternative to Massage Envy, Elements & Hand and Stone</p>
             <a href="tel:+12025550100" class="flex items-center gap-2 sm:gap-3 text-white hover:text-brand-pinkDeep transition-colors">
                 <i data-lucide="phone" class="w-3 h-3 sm:w-4 sm:h-4"></i>
                 <p class="font-bold uppercase tracking-[0.2em] sm:tracking-[0.3em]">(202) 555-0100</p>
@@ -252,14 +252,14 @@
     <section id="service-area" class="py-20 bg-brand-lavender text-brand-plum text-center relative overflow-hidden">
         <div class="max-w-3xl mx-auto px-6 relative z-10 text-center">
             <div class="flex flex-col items-center gap-2 mb-8">
-                <p class="text-xs font-black uppercase tracking-[0.8em] text-brand-purple mb-2">Check Availability</p>
-                <h3 class="text-4xl md:text-6xl font-display font-black tracking-tighter leading-[0.85]">Do we <span class="text-brand-pinkDeep italic">service</span> your area?</h3>
+                <p class="text-xs font-black uppercase tracking-[0.8em] text-brand-purple mb-2">Operations</p>
+                <h3 class="text-4xl md:text-6xl font-display font-black tracking-tighter leading-[0.85]">We operate within a <span class="text-brand-pinkDeep italic">30-mile radius</span> in DC</h3>
                 <i data-lucide="chevron-down" class="w-6 h-6 text-brand-pinkDeep animate-bounce mt-2"></i>
             </div>
 
             <div class="max-w-xl mx-auto mb-8">
                 <div class="flex p-2 bg-white/60 rounded-full focus-within:bg-white transition-all">
-                    <input type="text" id="zip-input" placeholder="Zip Code" class="bg-transparent w-full px-6 font-display text-3xl font-black text-brand-plum outline-none placeholder:text-brand-plum/20 uppercase tracking-tighter" maxlength="5">
+                    <input type="text" id="zip-input" placeholder="Zipcode" class="bg-transparent w-full px-6 font-display text-3xl font-black text-brand-plum outline-none placeholder:text-brand-plum/20 uppercase tracking-tighter" maxlength="5">
                     <button onclick="checkZip()" class="bg-brand-plum text-white px-10 py-5 rounded-full font-black uppercase tracking-[0.4em] text-xs hover:bg-brand-purple transition-all shadow-lg active:scale-95 whitespace-nowrap">Check</button>
                 </div>
                 <div id="zip-result" class="mt-8 font-display font-black italic text-3xl h-8 transition-all opacity-0 text-brand-plum tracking-tighter"></div>
@@ -287,6 +287,7 @@
                     </div>
                     <div class="mt-12">
                         <p class="text-white font-display text-6xl font-black tracking-tighter">$80 Deal <span class="text-white text-lg font-sans font-bold uppercase tracking-[0.4em] block mt-1">Your First Session</span></p>
+                        <div class="mt-4 text-brand-pinkDeep font-black uppercase tracking-[0.3em] text-[10px]">Offer expires in <span class="countdown-display">00:00:00</span></div>
                     </div>
                 </div>
                 <!-- Right panel -->
@@ -312,7 +313,7 @@
                             </label>
                         </div>
                     </div>
-                    <button class="w-full shimmer-rich bg-brand-plum text-white font-black uppercase tracking-[0.3em] sm:tracking-[0.6em] text-[11px] py-6 sm:py-8 rounded-full shadow-[0_30px_60px_rgba(45,27,51,0.3)] hover:scale-[1.02] transition-all text-center">
+                    <button class="w-full shimmer-rich bg-brand-lavender text-white font-black uppercase tracking-[0.3em] sm:tracking-[0.6em] text-[11px] py-6 sm:py-8 rounded-full shadow-[0_30px_60px_rgba(126,110,170,0.3)] hover:scale-[1.02] transition-all text-center">
                         Request Private Visit
                     </button>
 
@@ -373,13 +374,14 @@
     <script>
         lucide.createIcons();
 
-        let timeLeft = 3600;
+        let timeLeft = 21600;
         const timerEls = document.querySelectorAll('.countdown-display');
         function updateTimers() {
             if(timeLeft > 0) timeLeft--;
-            const m = Math.floor(timeLeft / 60);
+            const h = Math.floor(timeLeft / 3600);
+            const m = Math.floor((timeLeft % 3600) / 60);
             const s = timeLeft % 60;
-            const str = `${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
+            const str = `${h.toString().padStart(2,'0')}:${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
             timerEls.forEach(el => el.innerText = str);
         }
         setInterval(updateTimers, 1000);
