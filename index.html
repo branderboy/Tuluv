@@ -87,17 +87,17 @@
         </div>
     </div>
     <!-- Authoritative Header with Logo -->
-    <header class="absolute top-14 w-full z-50 flex justify-start px-8 md:px-16">
+    <header class="absolute top-12 w-full z-50 flex justify-start px-8 md:px-16">
         <a href="#" class="group flex items-center gap-4">
-            <img src="images/logo.svg" alt="Stretch Me Tuluv" class="h-14 md:h-16 w-auto">
+            <img src="images/logo.svg" alt="Stretch Me Tuluv" class="h-20 md:h-24 w-auto">
         </a>
     </header>
     <!-- STEP 1: HERO -->
-    <section id="hero" class="relative min-h-[90vh] flex items-center pt-24 pb-8 overflow-hidden bg-white text-left">
+    <section id="hero" class="relative min-h-[90vh] flex items-center pt-16 pb-8 overflow-hidden bg-white text-left">
         <div class="aura-glow -top-40 -right-40"></div>
         <div class="aura-glow bottom-0 -left-40 opacity-40"></div>
         <div class="relative z-10 max-w-7xl mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-center text-left">
-            <div class="lg:col-span-6 flex flex-col items-start text-left pt-16 pb-8 md:pt-64 md:pb-32">
+            <div class="lg:col-span-6 flex flex-col items-start text-left pt-16 pb-8 md:pt-32 md:pb-16">
                 <p class="text-xs font-black uppercase tracking-[0.6em] text-brand-purple mb-4">A Private Sanctuary Service</p>
                 <h1 class="text-6xl md:text-8xl lg:text-[9.5rem] font-display font-black text-brand-plum leading-[0.85] mb-6 tracking-tighter">
                     Release Tension.<br><span class="italic text-brand-purple text-7xl md:text-9xl lg:text-[9rem]">Move</span> Better.
@@ -119,7 +119,7 @@
                     <div class="absolute -inset-10 bg-brand-purple/10 rounded-full blur-3xl group-hover:bg-brand-pinkDeep/20 transition-all duration-1000"></div>
                     <img src="images/hero.png"
                          alt="Stretch therapy session"
-                         class="rounded-[5rem] w-full aspect-video lg:aspect-[4/3] object-cover editorial-shadow relative z-10 border-[16px] border-brand-lavender">
+                         class="rounded-[5rem] w-full aspect-[3/4] object-cover object-top editorial-shadow relative z-10 border-[16px] border-brand-lavender">
 
                     <div class="absolute -bottom-8 -left-8 glass-editorial p-8 rounded-[3rem] editorial-shadow z-20 border border-brand-lavender text-center">
                         <p class="font-display font-black italic text-4xl text-brand-plum tracking-tighter leading-none mb-1">Elite</p>
@@ -157,10 +157,8 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto text-left">
                 <!-- Path 1 -->
                 <div class="group bg-brand-lavender/30 rounded-[4rem] p-10 editorial-shadow hover:-translate-y-2 transition-all duration-700 cursor-pointer overflow-hidden border border-brand-lavender flex flex-col h-full" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
-                    <div class="h-64 rounded-[3rem] overflow-hidden mb-8">
-                        <img src="https://images.unsplash.com/photo-1518611012118-296072bb580a?q=80&w=800&auto=format&fit=crop"
-                             alt="Full body stretching"
-                             class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="h-64 rounded-[3rem] overflow-hidden mb-8 bg-gradient-to-br from-brand-purple/20 via-brand-lavender to-brand-pinkDeep/20 flex items-center justify-center transition-all duration-1000 group-hover:from-brand-purple/30 group-hover:to-brand-pinkDeep/30">
+                        <i data-lucide="move" class="w-16 h-16 text-brand-purple/40"></i>
                     </div>
                     <div class="flex flex-col gap-1 mb-4">
                         <p class="text-[10px] font-black uppercase tracking-[0.2em] text-brand-purple">Full Body Stretching</p>
@@ -176,10 +174,8 @@
                 </div>
                 <!-- Path 2 -->
                 <div class="group bg-brand-lavender/30 rounded-[4rem] p-10 editorial-shadow hover:-translate-y-2 transition-all duration-700 cursor-pointer overflow-hidden border border-brand-lavender md:mt-16 flex flex-col h-full" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
-                    <div class="h-64 rounded-[3rem] overflow-hidden mb-8">
-                        <img src="https://images.unsplash.com/photo-1541167760496-162955ed8a9f?q=80&w=800&auto=format&fit=crop"
-                             alt="Desk worker stretching"
-                             class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="h-64 rounded-[3rem] overflow-hidden mb-8 bg-gradient-to-br from-brand-pinkDeep/20 via-brand-lavender to-brand-purple/20 flex items-center justify-center transition-all duration-1000 group-hover:from-brand-pinkDeep/30 group-hover:to-brand-purple/30">
+                        <i data-lucide="monitor" class="w-16 h-16 text-brand-purple/40"></i>
                     </div>
                     <div class="flex flex-col gap-1 mb-4">
                         <p class="text-[10px] font-black uppercase tracking-[0.2em] text-brand-purple">Desk Worker Reset</p>
@@ -195,10 +191,8 @@
                 </div>
                 <!-- Path 3 -->
                 <div class="group bg-brand-lavender/30 rounded-[4rem] p-10 editorial-shadow hover:-translate-y-2 transition-all duration-700 cursor-pointer overflow-hidden border border-brand-lavender flex flex-col h-full" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
-                    <div class="h-64 rounded-[3rem] overflow-hidden mb-8">
-                        <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2158?q=80&w=800&auto=format&fit=crop"
-                             alt="Athletic recovery"
-                             class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="h-64 rounded-[3rem] overflow-hidden mb-8 bg-gradient-to-br from-brand-purple/15 via-brand-pink to-brand-pinkDeep/20 flex items-center justify-center transition-all duration-1000 group-hover:from-brand-purple/25 group-hover:to-brand-pinkDeep/30">
+                        <i data-lucide="zap" class="w-16 h-16 text-brand-purple/40"></i>
                     </div>
                     <div class="flex flex-col gap-1 mb-4">
                         <p class="text-[10px] font-black uppercase tracking-[0.2em] text-brand-purple">Athletic Recovery</p>
@@ -214,10 +208,8 @@
                 </div>
                 <!-- Path 4 -->
                 <div class="group bg-brand-purpleDeep rounded-[4rem] p-10 shadow-2xl hover:-translate-y-2 transition-all duration-700 cursor-pointer overflow-hidden md:mt-16 flex flex-col h-full" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
-                    <div class="h-64 rounded-[3rem] overflow-hidden mb-8">
-                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=800&auto=format&fit=crop"
-                             alt="Pain relief therapy"
-                             class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale brightness-90">
+                    <div class="h-64 rounded-[3rem] overflow-hidden mb-8 bg-gradient-to-br from-brand-plum via-brand-purpleDeep to-brand-plum flex items-center justify-center transition-all duration-1000 group-hover:from-brand-plum/80 group-hover:to-brand-purpleDeep/80">
+                        <i data-lucide="heart-pulse" class="w-16 h-16 text-brand-pinkDeep/50"></i>
                     </div>
                     <div class="flex flex-col gap-1 mb-4">
                         <p class="text-[10px] font-black uppercase tracking-[0.2em] text-brand-pinkDeep">Injury & Pain</p>
