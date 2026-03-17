@@ -77,7 +77,7 @@
         </div>
     </div>
     <!-- LOGO ONLY HEADER (NAVIGATION REMOVED) -->
-    <header class="absolute top-10 w-full z-50 flex justify-center pointer-events-none">
+    <header class="absolute top-[60px] w-full z-50 flex justify-center pointer-events-none">
         <div class="inline-flex items-center px-8 py-3 bg-white/80 backdrop-blur-lg rounded-full border border-gray-100 shadow-sm pointer-events-auto">
             <a href="#">
                 <img src="images/logo.svg" alt="Stretch Me Tuluv" class="h-16 md:h-20 w-auto">
@@ -88,7 +88,7 @@
     <section id="hero" class="relative flex flex-col md:flex-row min-h-screen bg-gradient-to-b from-brand-roseLight/30 to-white">
         <div class="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-16 lg:px-24 pt-48 pb-16 md:pt-48 md:pb-20 order-2 md:order-1 relative z-10">
             <h1 class="text-5xl lg:text-7xl font-display font-black text-brand-dark uppercase tracking-tighter leading-[1.05] mb-6">
-                FEEL BETTER IN<br>ONE SESSION.
+                <span class="whitespace-nowrap">FEEL BETTER</span><br><span class="whitespace-nowrap">IN ONE SESSION.</span>
             </h1>
             <p class="text-xl lg:text-2xl text-brand-dark font-black mb-4 uppercase tracking-tight">
                 Professional Assisted Stretching At Home.
@@ -190,66 +190,86 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-left">
                 <!-- Card 1: Full Body -->
-                <div class="group bg-white border border-gray-100 p-6 rounded-2xl shadow-pop hover:shadow-pop-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col h-full" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
-                    <div class="flex justify-between items-start mb-4">
-                        <div class="w-10 h-10 bg-brand-roseLight border border-brand-rose/10 flex items-center justify-center group-hover:bg-brand-rose transition-colors rounded-lg">
-                            <i data-lucide="maximize" class="w-5 h-5 text-brand-rose group-hover:text-white transition-colors"></i>
-                        </div>
-                        <span class="bg-brand-rose/10 text-brand-rose px-3 py-1 text-[10px] uppercase tracking-widest font-bold rounded-full">Most Popular</span>
+                <div class="group bg-white border border-gray-100 rounded-2xl shadow-pop hover:shadow-pop-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col h-full overflow-hidden" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
+                    <div class="w-full h-44 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80" alt="Full body stretch" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <h3 class="text-xl md:text-2xl font-display font-black text-brand-dark mb-2 uppercase">Full Body Stretch</h3>
-                    <p class="text-brand-dark/70 text-sm leading-relaxed mb-5 flex-1">
-                        Great for general mobility and total body tension relief. Includes a complete diagnostic of your movement patterns.
-                    </p>
-                    <a href="#book" class="inline-block text-center border-2 border-brand-dark text-brand-dark py-3 font-bold text-xs uppercase tracking-widest hover:bg-brand-dark hover:text-white transition-colors rounded-xl">
-                        Select Session
-                    </a>
+                    <div class="p-6 flex flex-col flex-1">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-10 h-10 bg-brand-roseLight border border-brand-rose/10 flex items-center justify-center group-hover:bg-brand-rose transition-colors rounded-lg">
+                                <i data-lucide="maximize" class="w-5 h-5 text-brand-rose group-hover:text-white transition-colors"></i>
+                            </div>
+                            <span class="bg-brand-rose/10 text-brand-rose px-3 py-1 text-[10px] uppercase tracking-widest font-bold rounded-full">Most Popular</span>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-display font-black text-brand-dark mb-2 uppercase">Full Body Stretch</h3>
+                        <p class="text-brand-dark/70 text-sm leading-relaxed mb-5 flex-1">
+                            Great for general mobility and total body tension relief. Includes a complete diagnostic of your movement patterns.
+                        </p>
+                        <a href="#book" class="inline-block text-center border-2 border-brand-dark text-brand-dark py-3 font-bold text-xs uppercase tracking-widest hover:bg-brand-dark hover:text-white transition-colors rounded-xl">
+                            Select Session
+                        </a>
+                    </div>
                 </div>
                 <!-- Card 2: Desk Worker -->
-                <div class="group bg-white border border-gray-100 p-6 rounded-2xl shadow-pop hover:shadow-pop-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col h-full" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
-                    <div class="flex justify-between items-start mb-4">
-                        <div class="w-10 h-10 bg-brand-roseLight border border-brand-rose/10 flex items-center justify-center group-hover:bg-brand-rose transition-colors rounded-lg">
-                            <i data-lucide="monitor" class="w-5 h-5 text-brand-rose group-hover:text-white transition-colors"></i>
-                        </div>
+                <div class="group bg-white border border-gray-100 rounded-2xl shadow-pop hover:shadow-pop-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col h-full overflow-hidden" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
+                    <div class="w-full h-44 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=800&q=80" alt="Desk worker stretching" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <h3 class="text-xl md:text-2xl font-display font-black text-brand-dark mb-2 uppercase">Desk Worker Reset</h3>
-                    <p class="text-brand-dark/70 text-sm leading-relaxed mb-5 flex-1">
-                        Targeted relief for neck, shoulders, and lower back. Undo the damage of sitting all day and correct your posture.
-                    </p>
-                    <a href="#book" class="inline-block text-center border-2 border-brand-dark text-brand-dark py-3 font-bold text-xs uppercase tracking-widest hover:bg-brand-dark hover:text-white transition-colors rounded-xl">
-                        Select Session
-                    </a>
+                    <div class="p-6 flex flex-col flex-1">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-10 h-10 bg-brand-roseLight border border-brand-rose/10 flex items-center justify-center group-hover:bg-brand-rose transition-colors rounded-lg">
+                                <i data-lucide="monitor" class="w-5 h-5 text-brand-rose group-hover:text-white transition-colors"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-display font-black text-brand-dark mb-2 uppercase">Desk Worker Reset</h3>
+                        <p class="text-brand-dark/70 text-sm leading-relaxed mb-5 flex-1">
+                            Targeted relief for neck, shoulders, and lower back. Undo the damage of sitting all day and correct your posture.
+                        </p>
+                        <a href="#book" class="inline-block text-center border-2 border-brand-dark text-brand-dark py-3 font-bold text-xs uppercase tracking-widest hover:bg-brand-dark hover:text-white transition-colors rounded-xl">
+                            Select Session
+                        </a>
+                    </div>
                 </div>
                 <!-- Card 3: Athletic Recovery -->
-                <div class="group bg-white border border-gray-100 p-6 rounded-2xl shadow-pop hover:shadow-pop-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col h-full" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
-                    <div class="flex justify-between items-start mb-4">
-                        <div class="w-10 h-10 bg-brand-roseLight border border-brand-rose/10 flex items-center justify-center group-hover:bg-brand-rose transition-colors rounded-lg">
-                            <i data-lucide="activity" class="w-5 h-5 text-brand-rose group-hover:text-white transition-colors"></i>
-                        </div>
+                <div class="group bg-white border border-gray-100 rounded-2xl shadow-pop hover:shadow-pop-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col h-full overflow-hidden" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
+                    <div class="w-full h-44 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" alt="Athletic recovery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <h3 class="text-xl md:text-2xl font-display font-black text-brand-dark mb-2 uppercase">Athletic Recovery</h3>
-                    <p class="text-brand-dark/70 text-sm leading-relaxed mb-5 flex-1">
-                        Post-workout recovery tailored for gym goers and athletes. Eliminate lactic acid build-up and improve performance range.
-                    </p>
-                    <a href="#book" class="inline-block text-center border-2 border-brand-dark text-brand-dark py-3 font-bold text-xs uppercase tracking-widest hover:bg-brand-dark hover:text-white transition-colors rounded-xl">
-                        Select Session
-                    </a>
+                    <div class="p-6 flex flex-col flex-1">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-10 h-10 bg-brand-roseLight border border-brand-rose/10 flex items-center justify-center group-hover:bg-brand-rose transition-colors rounded-lg">
+                                <i data-lucide="activity" class="w-5 h-5 text-brand-rose group-hover:text-white transition-colors"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-display font-black text-brand-dark mb-2 uppercase">Athletic Recovery</h3>
+                        <p class="text-brand-dark/70 text-sm leading-relaxed mb-5 flex-1">
+                            Post-workout recovery tailored for gym goers and athletes. Eliminate lactic acid build-up and improve performance range.
+                        </p>
+                        <a href="#book" class="inline-block text-center border-2 border-brand-dark text-brand-dark py-3 font-bold text-xs uppercase tracking-widest hover:bg-brand-dark hover:text-white transition-colors rounded-xl">
+                            Select Session
+                        </a>
+                    </div>
                 </div>
                 <!-- Card 4: Injury & Pain Relief -->
-                <div class="group bg-white border border-gray-100 p-6 rounded-2xl shadow-pop hover:shadow-pop-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col h-full" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
-                    <div class="flex justify-between items-start mb-4">
-                        <div class="w-10 h-10 bg-brand-roseLight border border-brand-rose/10 flex items-center justify-center group-hover:bg-brand-rose transition-colors rounded-lg">
-                            <i data-lucide="zap" class="w-5 h-5 text-brand-rose group-hover:text-white transition-colors"></i>
-                        </div>
-                        <span class="bg-brand-dark text-white px-3 py-1 text-[10px] uppercase tracking-widest font-bold rounded-full">Intensive</span>
+                <div class="group bg-white border border-gray-100 rounded-2xl shadow-pop hover:shadow-pop-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col h-full overflow-hidden" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
+                    <div class="w-full h-44 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?auto=format&fit=crop&w=800&q=80" alt="Pain relief therapy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <h3 class="text-xl md:text-2xl font-display font-black text-brand-dark mb-2 uppercase">Pain Relief Stretch</h3>
-                    <p class="text-brand-dark/70 text-sm leading-relaxed mb-5 flex-1">
-                        Focused mobility work to address chronic pain and injury. We break down tissue adhesions to restore functional movement.
-                    </p>
-                    <a href="#book" class="inline-block text-center border-2 border-brand-dark text-brand-dark py-3 font-bold text-xs uppercase tracking-widest hover:bg-brand-dark hover:text-white transition-colors rounded-xl">
-                        Select Session
-                    </a>
+                    <div class="p-6 flex flex-col flex-1">
+                        <div class="flex justify-between items-start mb-4">
+                            <div class="w-10 h-10 bg-brand-roseLight border border-brand-rose/10 flex items-center justify-center group-hover:bg-brand-rose transition-colors rounded-lg">
+                                <i data-lucide="zap" class="w-5 h-5 text-brand-rose group-hover:text-white transition-colors"></i>
+                            </div>
+                            <span class="bg-brand-dark text-white px-3 py-1 text-[10px] uppercase tracking-widest font-bold rounded-full">Intensive</span>
+                        </div>
+                        <h3 class="text-xl md:text-2xl font-display font-black text-brand-dark mb-2 uppercase">Pain Relief Stretch</h3>
+                        <p class="text-brand-dark/70 text-sm leading-relaxed mb-5 flex-1">
+                            Focused mobility work to address chronic pain and injury. We break down tissue adhesions to restore functional movement.
+                        </p>
+                        <a href="#book" class="inline-block text-center border-2 border-brand-dark text-brand-dark py-3 font-bold text-xs uppercase tracking-widest hover:bg-brand-dark hover:text-white transition-colors rounded-xl">
+                            Select Session
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
