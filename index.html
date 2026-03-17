@@ -77,10 +77,10 @@
         </div>
     </div>
     <!-- LOGO ONLY HEADER (NAVIGATION REMOVED) -->
-    <header class="absolute top-10 w-full z-50 flex justify-center h-24 pointer-events-none">
-        <div class="inline-flex items-center px-12 py-4 bg-white/80 backdrop-blur-lg rounded-full border border-gray-100 shadow-sm pointer-events-auto">
-            <a href="#" class="text-2xl md:text-3xl font-display font-black text-brand-dark tracking-tighter uppercase whitespace-nowrap">
-                Stretch Me Tuluv
+    <header class="absolute top-10 w-full z-50 flex justify-center pointer-events-none">
+        <div class="inline-flex items-center px-8 py-3 bg-white/80 backdrop-blur-lg rounded-full border border-gray-100 shadow-sm pointer-events-auto">
+            <a href="#">
+                <img src="images/logo.svg" alt="Stretch Me Tuluv" class="h-16 md:h-20 w-auto">
             </a>
         </div>
     </header>
@@ -102,7 +102,8 @@
                 </a>
             </div>
         </div>
-        <div class="w-full md:w-1/2 relative min-h-[50vh] md:min-h-screen order-1 md:order-2 bg-cover bg-center" style="background-image: url('images/hero.png');">
+        <div class="w-full md:w-1/2 relative min-h-[50vh] md:min-h-screen order-1 md:order-2">
+            <img src="images/hero.png" alt="Stretch therapy" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-transparent hidden md:block"></div>
 
             <div class="absolute bottom-6 left-6 right-6 md:left-12 md:right-12 bg-white/95 backdrop-blur-xl rounded-2xl flex flex-col sm:flex-row justify-between items-center p-6 md:p-8 shadow-pop border border-white/50">
@@ -122,7 +123,7 @@
         </div>
     </section>
     <!-- BANNER -->
-    <section class="py-16 px-6 text-center bg-gradient-to-br from-brand-purpleDeep to-[#1a1226] border-y border-white/10 relative z-10 shadow-2xl">
+    <section class="py-10 px-6 text-center bg-gradient-to-br from-brand-purpleDeep to-[#1a1226] border-y border-white/10 relative z-10 shadow-2xl">
         <div class="flex justify-center mb-6">
             <div class="w-px h-10 bg-brand-rose/40"></div>
         </div>
@@ -137,14 +138,14 @@
         </div>
     </section>
     <!-- STEP 2: PROBLEMS -->
-    <section id="problems" class="py-24 bg-gradient-to-br from-white via-brand-roseLight/20 to-white relative overflow-hidden z-10">
+    <section id="problems" class="py-14 bg-gradient-to-br from-white via-brand-roseLight/20 to-white relative overflow-hidden z-10">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <div class="mb-16">
+            <div class="mb-10">
                 <h3 class="text-3xl md:text-5xl font-display font-black text-brand-dark tracking-tight mb-4 uppercase">
                     If this sounds familiar, it's time to stretch.
                 </h3>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-16 max-w-5xl mx-auto text-left">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-10 max-w-5xl mx-auto text-left">
                 <div class="bg-white p-10 rounded-3xl shadow-pop border border-gray-100 relative overflow-hidden group">
                     <div class="w-14 h-14 bg-red-50 text-red-400 rounded-2xl flex items-center justify-center mb-8 mx-auto border border-red-100">
                         <i data-lucide="frown" class="w-7 h-7"></i>
@@ -177,9 +178,9 @@
         </div>
     </section>
     <!-- STEP 3: SERVICES -->
-    <section id="services" class="py-24 px-6 relative bg-gradient-to-b from-[#f8f6fc] to-[#f0eafc] border-y border-brand-purple/10 z-10 text-center">
+    <section id="services" class="py-14 px-6 relative bg-gradient-to-b from-[#f8f6fc] to-[#f0eafc] border-y border-brand-purple/10 z-10 text-center">
         <div class="max-w-7xl mx-auto">
-            <div class="mb-16">
+            <div class="mb-10">
                 <h3 class="text-3xl md:text-5xl font-display font-black text-brand-dark tracking-tight mb-4 uppercase">
                     Choose Your Healing Path
                 </h3>
@@ -187,66 +188,66 @@
                     Professional, result-driven sessions delivered directly to your door.
                 </p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-left">
                 <!-- Card 1: Full Body -->
-                <div class="group bg-white border border-gray-100 p-10 rounded-3xl shadow-pop hover:shadow-pop-hover hover:-translate-y-2 transition-all duration-300 cursor-pointer flex flex-col h-full" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="w-14 h-14 bg-brand-roseLight border border-brand-rose/10 flex items-center justify-center group-hover:bg-brand-rose transition-colors rounded-xl">
-                            <i data-lucide="maximize" class="w-6 h-6 text-brand-rose group-hover:text-white transition-colors"></i>
+                <div class="group bg-white border border-gray-100 p-6 rounded-2xl shadow-pop hover:shadow-pop-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col h-full" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-10 h-10 bg-brand-roseLight border border-brand-rose/10 flex items-center justify-center group-hover:bg-brand-rose transition-colors rounded-lg">
+                            <i data-lucide="maximize" class="w-5 h-5 text-brand-rose group-hover:text-white transition-colors"></i>
                         </div>
-                        <span class="bg-brand-rose/10 text-brand-rose px-4 py-1.5 text-[10px] uppercase tracking-widest font-bold rounded-full">Most Popular</span>
+                        <span class="bg-brand-rose/10 text-brand-rose px-3 py-1 text-[10px] uppercase tracking-widest font-bold rounded-full">Most Popular</span>
                     </div>
-                    <h3 class="text-2xl md:text-3xl font-display font-black text-brand-dark mb-4 uppercase">Full Body Stretch</h3>
-                    <p class="text-brand-dark/70 text-sm md:text-base leading-relaxed mb-8 flex-1">
+                    <h3 class="text-xl md:text-2xl font-display font-black text-brand-dark mb-2 uppercase">Full Body Stretch</h3>
+                    <p class="text-brand-dark/70 text-sm leading-relaxed mb-5 flex-1">
                         Great for general mobility and total body tension relief. Includes a complete diagnostic of your movement patterns.
                     </p>
-                    <a href="#book" class="inline-block text-center border-2 border-brand-dark text-brand-dark py-4 font-bold text-xs uppercase tracking-widest hover:bg-brand-dark hover:text-white transition-colors rounded-xl">
+                    <a href="#book" class="inline-block text-center border-2 border-brand-dark text-brand-dark py-3 font-bold text-xs uppercase tracking-widest hover:bg-brand-dark hover:text-white transition-colors rounded-xl">
                         Select Session
                     </a>
                 </div>
                 <!-- Card 2: Desk Worker -->
-                <div class="group bg-white border border-gray-100 p-10 rounded-3xl shadow-pop hover:shadow-pop-hover hover:-translate-y-2 transition-all duration-300 cursor-pointer flex flex-col h-full" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="w-14 h-14 bg-brand-roseLight border border-brand-rose/10 flex items-center justify-center group-hover:bg-brand-rose transition-colors rounded-xl">
-                            <i data-lucide="monitor" class="w-6 h-6 text-brand-rose group-hover:text-white transition-colors"></i>
+                <div class="group bg-white border border-gray-100 p-6 rounded-2xl shadow-pop hover:shadow-pop-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col h-full" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-10 h-10 bg-brand-roseLight border border-brand-rose/10 flex items-center justify-center group-hover:bg-brand-rose transition-colors rounded-lg">
+                            <i data-lucide="monitor" class="w-5 h-5 text-brand-rose group-hover:text-white transition-colors"></i>
                         </div>
                     </div>
-                    <h3 class="text-2xl md:text-3xl font-display font-black text-brand-dark mb-4 uppercase">Desk Worker Reset</h3>
-                    <p class="text-brand-dark/70 text-sm md:text-base leading-relaxed mb-8 flex-1">
+                    <h3 class="text-xl md:text-2xl font-display font-black text-brand-dark mb-2 uppercase">Desk Worker Reset</h3>
+                    <p class="text-brand-dark/70 text-sm leading-relaxed mb-5 flex-1">
                         Targeted relief for neck, shoulders, and lower back. Undo the damage of sitting all day and correct your posture.
                     </p>
-                    <a href="#book" class="inline-block text-center border-2 border-brand-dark text-brand-dark py-4 font-bold text-xs uppercase tracking-widest hover:bg-brand-dark hover:text-white transition-colors rounded-xl">
+                    <a href="#book" class="inline-block text-center border-2 border-brand-dark text-brand-dark py-3 font-bold text-xs uppercase tracking-widest hover:bg-brand-dark hover:text-white transition-colors rounded-xl">
                         Select Session
                     </a>
                 </div>
                 <!-- Card 3: Athletic Recovery -->
-                <div class="group bg-white border border-gray-100 p-10 rounded-3xl shadow-pop hover:shadow-pop-hover hover:-translate-y-2 transition-all duration-300 cursor-pointer flex flex-col h-full" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="w-14 h-14 bg-brand-roseLight border border-brand-rose/10 flex items-center justify-center group-hover:bg-brand-rose transition-colors rounded-xl">
-                            <i data-lucide="activity" class="w-6 h-6 text-brand-rose group-hover:text-white transition-colors"></i>
+                <div class="group bg-white border border-gray-100 p-6 rounded-2xl shadow-pop hover:shadow-pop-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col h-full" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-10 h-10 bg-brand-roseLight border border-brand-rose/10 flex items-center justify-center group-hover:bg-brand-rose transition-colors rounded-lg">
+                            <i data-lucide="activity" class="w-5 h-5 text-brand-rose group-hover:text-white transition-colors"></i>
                         </div>
                     </div>
-                    <h3 class="text-2xl md:text-3xl font-display font-black text-brand-dark mb-4 uppercase">Athletic Recovery</h3>
-                    <p class="text-brand-dark/70 text-sm md:text-base leading-relaxed mb-8 flex-1">
+                    <h3 class="text-xl md:text-2xl font-display font-black text-brand-dark mb-2 uppercase">Athletic Recovery</h3>
+                    <p class="text-brand-dark/70 text-sm leading-relaxed mb-5 flex-1">
                         Post-workout recovery tailored for gym goers and athletes. Eliminate lactic acid build-up and improve performance range.
                     </p>
-                    <a href="#book" class="inline-block text-center border-2 border-brand-dark text-brand-dark py-4 font-bold text-xs uppercase tracking-widest hover:bg-brand-dark hover:text-white transition-colors rounded-xl">
+                    <a href="#book" class="inline-block text-center border-2 border-brand-dark text-brand-dark py-3 font-bold text-xs uppercase tracking-widest hover:bg-brand-dark hover:text-white transition-colors rounded-xl">
                         Select Session
                     </a>
                 </div>
                 <!-- Card 4: Injury & Pain Relief -->
-                <div class="group bg-white border border-gray-100 p-10 rounded-3xl shadow-pop hover:shadow-pop-hover hover:-translate-y-2 transition-all duration-300 cursor-pointer flex flex-col h-full" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="w-14 h-14 bg-brand-roseLight border border-brand-rose/10 flex items-center justify-center group-hover:bg-brand-rose transition-colors rounded-xl">
-                            <i data-lucide="zap" class="w-6 h-6 text-brand-rose group-hover:text-white transition-colors"></i>
+                <div class="group bg-white border border-gray-100 p-6 rounded-2xl shadow-pop hover:shadow-pop-hover hover:-translate-y-1 transition-all duration-300 cursor-pointer flex flex-col h-full" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="w-10 h-10 bg-brand-roseLight border border-brand-rose/10 flex items-center justify-center group-hover:bg-brand-rose transition-colors rounded-lg">
+                            <i data-lucide="zap" class="w-5 h-5 text-brand-rose group-hover:text-white transition-colors"></i>
                         </div>
-                        <span class="bg-brand-dark text-white px-4 py-1.5 text-[10px] uppercase tracking-widest font-bold rounded-full">Intensive</span>
+                        <span class="bg-brand-dark text-white px-3 py-1 text-[10px] uppercase tracking-widest font-bold rounded-full">Intensive</span>
                     </div>
-                    <h3 class="text-2xl md:text-3xl font-display font-black text-brand-dark mb-4 uppercase">Pain Relief Stretch</h3>
-                    <p class="text-brand-dark/70 text-sm md:text-base leading-relaxed mb-8 flex-1">
+                    <h3 class="text-xl md:text-2xl font-display font-black text-brand-dark mb-2 uppercase">Pain Relief Stretch</h3>
+                    <p class="text-brand-dark/70 text-sm leading-relaxed mb-5 flex-1">
                         Focused mobility work to address chronic pain and injury. We break down tissue adhesions to restore functional movement.
                     </p>
-                    <a href="#book" class="inline-block text-center border-2 border-brand-dark text-brand-dark py-4 font-bold text-xs uppercase tracking-widest hover:bg-brand-dark hover:text-white transition-colors rounded-xl">
+                    <a href="#book" class="inline-block text-center border-2 border-brand-dark text-brand-dark py-3 font-bold text-xs uppercase tracking-widest hover:bg-brand-dark hover:text-white transition-colors rounded-xl">
                         Select Session
                     </a>
                 </div>
@@ -254,9 +255,9 @@
         </div>
     </section>
     <!-- STEP 4: TIMELINE -->
-    <section id="timeline" class="py-24 bg-white text-center">
+    <section id="timeline" class="py-14 bg-white text-center">
         <div class="max-w-5xl mx-auto px-6">
-            <div class="mb-16">
+            <div class="mb-10">
                 <h3 class="text-3xl md:text-5xl font-display font-black tracking-tight text-brand-dark mb-4 uppercase">
                     How It Works.
                 </h3>
@@ -303,9 +304,9 @@
         </div>
     </section>
     <!-- STEP 5: PROOF -->
-    <section id="proof" class="py-24 bg-gradient-to-b from-[#f8f6fc] to-[#f0eafc] text-center border-y border-brand-purple/10">
+    <section id="proof" class="py-14 bg-gradient-to-b from-[#f8f6fc] to-[#f0eafc] text-center border-y border-brand-purple/10">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <h3 class="text-3xl md:text-5xl font-display font-black text-brand-dark tracking-tight mb-16 uppercase">Real Results</h3>
+            <h3 class="text-3xl md:text-5xl font-display font-black text-brand-dark tracking-tight mb-10 uppercase">Real Results</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
                 <div class="bg-white p-10 rounded-3xl shadow-pop">
                     <div class="flex gap-1 text-brand-rose mb-6">
@@ -332,7 +333,7 @@
         </div>
     </section>
     <!-- STEP 6: SERVICE AREA -->
-    <section id="service-area" class="py-24 bg-white text-center">
+    <section id="service-area" class="py-14 bg-white text-center">
         <div class="max-w-4xl mx-auto px-6">
             <div class="w-16 h-16 bg-brand-roseLight border border-brand-rose/20 rounded-full flex items-center justify-center mx-auto mb-8">
                 <i data-lucide="map-pin" class="w-8 h-8 text-brand-rose"></i>
@@ -372,7 +373,7 @@
         </div>
     </section>
     <!-- STEP 7: UNIFIED BOOKING SECTION (PURPLE STRETCHED, CONTENT CENTERED) -->
-    <section id="book" class="bg-brand-purple w-full py-24 overflow-hidden">
+    <section id="book" class="bg-brand-purpleDeep w-full py-14 overflow-hidden">
         <!-- Content Container (Fixed Width & Centered) -->
         <div class="max-w-5xl mx-auto px-6">
 
