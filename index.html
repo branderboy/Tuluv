@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stretch Me Tuluv | The Art of Living Well</title>
     <!-- PWA -->
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="./manifest.json">
     <meta name="theme-color" content="#432C51">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Tuluv">
-    <link rel="apple-touch-icon" href="/images/icons/icon-192.png">
+    <link rel="apple-touch-icon" href="./images/icons/icon-192.png">
     <meta name="description" content="Elite guided stretch and bodywork delivered to your door.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -88,10 +88,10 @@
     <div class="bg-brand-plum text-white py-2 sm:py-3 px-4 relative z-[110]">
         <div class="max-w-7xl mx-auto flex justify-center sm:justify-between items-center px-4 md:px-12 text-center text-[9px] sm:text-[10px]">
             <p class="font-black uppercase tracking-[0.4em] text-brand-pinkDeep hidden sm:block">Live with Intention</p>
-            <div class="flex items-center gap-4 sm:gap-6">
-                <p class="font-bold uppercase tracking-[0.2em] sm:tracking-[0.3em] text-white">$25 Credit Applied</p>
-                <div class="font-mono tracking-tighter countdown-display opacity-60 tabular-nums">59:59</div>
-            </div>
+            <a href="tel:+12025550100" class="flex items-center gap-2 sm:gap-3 text-white hover:text-brand-pinkDeep transition-colors">
+                <i data-lucide="phone" class="w-3 h-3 sm:w-4 sm:h-4"></i>
+                <p class="font-bold uppercase tracking-[0.2em] sm:tracking-[0.3em]">(202) 555-0100</p>
+            </a>
         </div>
     </div>
     <!-- Authoritative Header with Logo -->
@@ -395,7 +395,7 @@
 
         // Register service worker
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js');
+            navigator.serviceWorker.register('./sw.js');
         }
     </script>
 </body>

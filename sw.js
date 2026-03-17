@@ -1,23 +1,27 @@
 const CACHE_NAME = 'tuluv-v1';
-const ASSETS = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/images/main_logo.png',
-  '/images/footer_logo.png',
-  '/images/hero.png',
-  '/images/path-stress.jpg',
-  '/images/path-emotional.jpg',
-  '/images/path-recovery.jpg',
-  '/images/path-pain.jpg',
-  '/images/icons/icon-192.png',
-  '/images/icons/icon-512.png'
+
+// Build base path from service worker location
+const BASE = self.registration.scope;
+
+const ASSET_PATHS = [
+  '',
+  'index.html',
+  'manifest.json',
+  'images/main_logo.png',
+  'images/footer_logo.png',
+  'images/hero.png',
+  'images/path-stress.jpg',
+  'images/path-emotional.jpg',
+  'images/path-recovery.jpg',
+  'images/path-pain.jpg',
+  'images/icons/icon-192.png',
+  'images/icons/icon-512.png'
 ];
 
 // Install — cache core assets
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS))
+    caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSET_PATHS.map((p) => BASE + p)))
   );
   self.skipWaiting();
 });
