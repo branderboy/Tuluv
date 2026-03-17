@@ -39,7 +39,7 @@
         }
     </script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
         h1, h2, h3, h4, .font-display { font-family: 'Montserrat', sans-serif; }
 
         .bg-blob {
@@ -163,7 +163,7 @@
                 </a>
             </div>
         </div>
-        <div class="w-full md:w-1/2 relative min-h-[50vh] md:min-h-screen order-1 md:order-2 bg-cover bg-center" style="background-image: url('images/hero.png'); background-color: #d4c5b9;">
+        <div class="w-full md:w-1/2 relative min-h-[50vh] md:min-h-screen order-1 md:order-2 bg-cover bg-center" style="background-image: url('images/hero.png'), url('https://images.pexels.com/photos/7298867/pexels-photo-7298867.jpeg?auto=compress&cs=tinysrgb&w=1600'); background-color: #d4c5b9;">
             <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-transparent hidden md:block"></div>
 
             <div class="absolute bottom-6 left-6 right-6 md:left-12 md:right-12 bg-white/95 backdrop-blur-xl rounded-2xl flex flex-col sm:flex-row justify-between items-center p-6 md:p-8 shadow-pop border border-white/50">
@@ -239,9 +239,7 @@
     </section>
 
     <!-- Separator -->
-    <div class="flex justify-center bg-white py-6">
-        <div class="w-32 h-1.5 bg-brand-rose rounded-full opacity-40 shadow-sm"></div>
-    </div>
+    <div class="w-full h-px bg-gradient-to-r from-transparent via-brand-rose/40 to-transparent"></div>
     <!-- WHAT IS ASSISTED STRETCHING — Reversed layout -->
     <section class="py-24 bg-white relative z-10">
         <div class="max-w-7xl mx-auto px-6">
@@ -370,10 +368,8 @@
             </div>
         </div>
     </section>
-    <!-- Visual Separator -->
-    <div class="flex justify-center bg-gradient-to-b from-[#f4f1fa] to-[#f8f6fc] py-6">
-        <div class="w-32 h-1.5 bg-brand-rose rounded-full opacity-40 shadow-sm"></div>
-    </div>
+    <!-- Separator -->
+    <div class="w-full h-px bg-gradient-to-r from-transparent via-brand-purple/30 to-transparent"></div>
     <!-- STEP 5: PROOF -->
     <section id="proof" class="pt-12 pb-24 bg-gradient-to-b from-[#f8f6fc] to-[#f0eafc] text-center border-y border-brand-purple/10">
         <div class="max-w-7xl mx-auto px-6">
