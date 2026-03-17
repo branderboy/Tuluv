@@ -249,23 +249,31 @@
         </div>
     </section>
     <!-- SERVICE AREA -->
-    <section id="service-area" class="py-20 bg-brand-plum text-white text-center relative overflow-hidden">
-        <div class="aura-glow top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-10"></div>
-        <div class="max-w-5xl mx-auto px-6 relative z-10 text-center">
-            <div class="flex flex-col items-center gap-2 mb-8">
-                <h3 class="text-4xl md:text-7xl font-display font-black tracking-tighter leading-[0.85] uppercase">See if we <span class="text-brand-pinkDeep italic">service</span> your area</h3>
-                <i data-lucide="chevron-down" class="w-6 h-6 text-brand-pinkDeep animate-bounce mt-2"></i>
-            </div>
+    <section id="service-area" class="py-20 bg-white text-brand-plum text-center relative overflow-hidden">
+        <div class="max-w-3xl mx-auto px-6 relative z-10 text-center">
+            <div class="border-2 border-brand-plum/10 rounded-[3rem] sm:rounded-[4rem] p-10 sm:p-16 relative">
+                <!-- Decorative corner accents -->
+                <div class="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2 border-brand-pinkDeep rounded-tl-xl"></div>
+                <div class="absolute top-4 right-4 w-8 h-8 border-t-2 border-r-2 border-brand-pinkDeep rounded-tr-xl"></div>
+                <div class="absolute bottom-4 left-4 w-8 h-8 border-b-2 border-l-2 border-brand-pinkDeep rounded-bl-xl"></div>
+                <div class="absolute bottom-4 right-4 w-8 h-8 border-b-2 border-r-2 border-brand-pinkDeep rounded-br-xl"></div>
 
-            <div class="max-w-xl mx-auto mb-8">
-                <div class="flex p-2 bg-white/5 backdrop-blur-xl rounded-full border-2 border-white/10 focus-within:border-brand-pinkDeep transition-all">
-                    <input type="text" id="zip-input" placeholder="Zip Code" class="bg-transparent w-full px-6 font-display text-3xl font-black text-white outline-none placeholder:text-white/10 uppercase tracking-tighter" maxlength="5">
-                    <button onclick="checkZip()" class="bg-brand-pinkDeep text-brand-plum px-10 py-5 rounded-full font-black uppercase tracking-[0.4em] text-xs hover:bg-white transition-all shadow-2xl active:scale-95 whitespace-nowrap">Check</button>
+                <div class="flex flex-col items-center gap-2 mb-8">
+                    <p class="text-xs font-black uppercase tracking-[0.8em] text-brand-purple mb-2">Check Availability</p>
+                    <h3 class="text-4xl md:text-6xl font-display font-black tracking-tighter leading-[0.85]">Do we <span class="text-brand-purple italic">deliver</span> to you?</h3>
+                    <i data-lucide="chevron-down" class="w-6 h-6 text-brand-pinkDeep animate-bounce mt-2"></i>
                 </div>
-                <div id="zip-result" class="mt-8 font-display font-black italic text-3xl h-8 transition-all opacity-0 text-brand-pinkDeep tracking-tighter"></div>
-            </div>
 
-            <p class="text-[9px] font-black uppercase tracking-[0.6em] opacity-40">Private Mobile Bodywork &bull; Private Concierge Service</p>
+                <div class="max-w-xl mx-auto mb-8">
+                    <div class="flex p-2 bg-brand-lavender/50 rounded-full border-2 border-brand-plum/10 focus-within:border-brand-purple transition-all">
+                        <input type="text" id="zip-input" placeholder="Zip Code" class="bg-transparent w-full px-6 font-display text-3xl font-black text-brand-plum outline-none placeholder:text-brand-plum/20 uppercase tracking-tighter" maxlength="5">
+                        <button onclick="checkZip()" class="bg-brand-plum text-white px-10 py-5 rounded-full font-black uppercase tracking-[0.4em] text-xs hover:bg-brand-purple transition-all shadow-lg active:scale-95 whitespace-nowrap">Check</button>
+                    </div>
+                    <div id="zip-result" class="mt-8 font-display font-black italic text-3xl h-8 transition-all opacity-0 text-brand-purple tracking-tighter"></div>
+                </div>
+
+                <p class="text-[9px] font-black uppercase tracking-[0.6em] text-brand-plum/30">Private Mobile Bodywork &bull; Private Concierge Service</p>
+            </div>
         </div>
     </section>
     <!-- STEP 7: PAYMENT -->
@@ -286,7 +294,7 @@
                         </div>
                     </div>
                     <div class="mt-12">
-                        <p class="text-white font-display text-6xl font-black tracking-tighter">$80 <span class="text-white text-lg font-sans font-bold uppercase tracking-[0.4em] block mt-1">Honorarium</span></p>
+                        <p class="text-white font-display text-6xl font-black tracking-tighter">$80 <span class="text-white text-lg font-sans font-bold uppercase tracking-[0.4em] block mt-1">Per Session</span></p>
                     </div>
                 </div>
                 <!-- Right panel -->
@@ -326,17 +334,17 @@
         </div>
     </section>
     <!-- FOOTER -->
-    <footer class="bg-[#1E0F2B] text-white pt-20 pb-12 text-center">
+    <footer class="bg-brand-plum text-white pt-20 pb-12 text-center">
         <div class="max-w-7xl mx-auto px-8">
-            <div class="flex flex-col lg:flex-row justify-between items-start gap-12 mb-16 border-b border-white/5 pb-16 text-left">
+            <div class="flex flex-col lg:flex-row justify-between items-start gap-12 mb-16 border-b border-white/10 pb-16 text-left">
                 <div class="w-full lg:w-1/2 text-left">
                     <img src="./images/footer_logo.png" alt="Stretch Me Tuluv" class="h-20 md:h-24 w-auto mb-8">
-                    <p class="text-xl font-display italic text-white/80 max-w-md">Living well is an act of defiance. We are here to help you rise.</p>
+                    <p class="text-xl font-display italic text-white/60 max-w-md">Living well is an act of defiance. We are here to help you rise.</p>
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-12 text-left">
                     <div>
                         <p class="text-[10px] font-black uppercase tracking-[0.6em] text-brand-pinkDeep mb-8">Local Areas</p>
-                        <ul class="space-y-4 text-xs font-bold tracking-widest text-white/80 uppercase">
+                        <ul class="space-y-4 text-xs font-bold tracking-widest text-white/60 uppercase">
                             <li><a href="#service-area" class="hover:text-white transition-colors">Washington DC</a></li>
                             <li><a href="#service-area" class="hover:text-white transition-colors">Arlington, VA</a></li>
                             <li><a href="#service-area" class="hover:text-white transition-colors">Alexandria, VA</a></li>
@@ -346,14 +354,14 @@
                     </div>
                     <div>
                         <p class="text-[10px] font-black uppercase tracking-[0.6em] text-brand-pinkDeep mb-8">Studio</p>
-                        <ul class="space-y-4 text-xs font-bold tracking-widest text-white/80 uppercase">
+                        <ul class="space-y-4 text-xs font-bold tracking-widest text-white/60 uppercase">
                             <li><a href="#service-area" class="hover:text-white transition-colors">Locations</a></li>
                             <li><a href="mailto:contact@stretchmetuluv.com" class="hover:text-white transition-colors">Contact</a></li>
                         </ul>
                     </div>
                     <div>
                         <p class="text-[10px] font-black uppercase tracking-[0.6em] text-brand-pinkDeep mb-8">Legal</p>
-                        <ul class="space-y-4 text-xs font-bold tracking-widest text-white/80 uppercase">
+                        <ul class="space-y-4 text-xs font-bold tracking-widest text-white/60 uppercase">
                             <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
                             <li><a href="#" class="hover:text-white transition-colors">Cookie Policy</a></li>
                             <li><a href="#" class="hover:text-white transition-colors">Terms & Conditions</a></li>
@@ -387,9 +395,9 @@
             const input = document.getElementById('zip-input').value.trim();
             const resultEl = document.getElementById('zip-result');
             const served = ['20001','20002','22201','22301','20814','20910','20003','20004','20005','20006','20007','20008','20009','20010','20011','20012','20015','20016','20017','20018','20019','20020','20024','20032','20036','20037','20052','20057','20064','22202','22203','22204','22205','22206','22207','22209','22211','22213','22302','22303','22304','22305','22314','20815','20816','20817','20901','20902','20903','20904','20905','20906','20912'];
-            if (!input) { resultEl.innerText = "SHARE YOUR ZIP CODE"; resultEl.style.color = "#DDA7A5"; }
-            else if (served.includes(input)) { resultEl.innerText = "THE RADIUS IS OPEN. WE SERVE YOU."; resultEl.style.color = "#DDA7A5"; }
-            else { resultEl.innerText = "EXPANDING OUR REACH SOON."; resultEl.style.color = "#7E6EAA"; }
+            if (!input) { resultEl.innerText = "ENTER YOUR ZIP CODE"; resultEl.style.color = "#7E6EAA"; }
+            else if (served.includes(input)) { resultEl.innerText = "GREAT NEWS — WE COME TO YOU!"; resultEl.style.color = "#432C51"; }
+            else { resultEl.innerText = "EXPANDING OUR REACH SOON."; resultEl.style.color = "#DDA7A5"; }
             resultEl.style.opacity = "1";
         }
 
