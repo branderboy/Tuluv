@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#432C51"/>
+      <stop offset="50%" style="stop-color:#5B4270"/>
+      <stop offset="100%" style="stop-color:#432C51"/>
+    </linearGradient>
+    <radialGradient id="heat" cx="50%" cy="45%" r="40%">
+      <stop offset="0%" style="stop-color:#DDA7A5;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#DDA7A5;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <ellipse cx="400" cy="270" rx="250" ry="200" fill="url(#heat)"/>
+  <!-- Breaking adhesion lines -->
+  <path d="M250 300 L350 280 L360 310 L400 270 L440 300 L450 275 L550 290" stroke="#DDA7A5" stroke-width="2" fill="none" opacity="0.3" stroke-linecap="round"/>
+  <path d="M280 350 L360 330 L380 355 L420 320 L460 345 L520 325" stroke="#DDA7A5" stroke-width="1.5" fill="none" opacity="0.2" stroke-linecap="round"/>
+  <!-- Release burst -->
+  <circle cx="400" cy="280" r="40" fill="#DDA7A5" opacity="0.08"/>
+  <circle cx="400" cy="280" r="25" fill="#DDA7A5" opacity="0.12"/>
+  <circle cx="400" cy="280" r="10" fill="#DDA7A5" opacity="0.2"/>
+  <!-- Radiating release lines -->
+  <line x1="400" y1="240" x2="400" y2="200" stroke="#DDA7A5" stroke-width="1.5" opacity="0.2" stroke-linecap="round"/>
+  <line x1="430" y1="255" x2="460" y2="225" stroke="#DDA7A5" stroke-width="1.5" opacity="0.15" stroke-linecap="round"/>
+  <line x1="440" y1="280" x2="480" y2="280" stroke="#DDA7A5" stroke-width="1.5" opacity="0.15" stroke-linecap="round"/>
+  <line x1="370" y1="255" x2="340" y2="225" stroke="#DDA7A5" stroke-width="1.5" opacity="0.15" stroke-linecap="round"/>
+  <line x1="360" y1="280" x2="320" y2="280" stroke="#DDA7A5" stroke-width="1.5" opacity="0.15" stroke-linecap="round"/>
+  <!-- Scattered particles -->
+  <circle cx="320" cy="210" r="3" fill="#DDA7A5" opacity="0.25"/>
+  <circle cx="480" cy="220" r="4" fill="#DDA7A5" opacity="0.2"/>
+  <circle cx="350" cy="380" r="3" fill="#7E6EAA" opacity="0.3"/>
+  <circle cx="460" cy="370" r="3" fill="#DDA7A5" opacity="0.2"/>
+  <circle cx="300" cy="320" r="4" fill="#7E6EAA" opacity="0.2"/>
+</svg>
