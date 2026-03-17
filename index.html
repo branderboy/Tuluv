@@ -99,18 +99,18 @@
         </div>
     </div>
 
-    <!-- LOGO ONLY HEADER -->
-    <header class="absolute top-10 w-full z-50 flex justify-center pointer-events-none">
-        <div class="inline-flex items-center px-8 py-3 bg-white/80 backdrop-blur-lg rounded-full border border-gray-100 shadow-sm pointer-events-auto">
+    <!-- LOGO HEADER (ALIGNED TO LEFT) -->
+    <header class="absolute top-6 w-full z-50 flex justify-start px-6 md:px-12 pointer-events-none">
+        <div class="inline-flex items-center px-6 py-2 bg-white/80 backdrop-blur-lg rounded-full border border-gray-100 shadow-sm pointer-events-auto">
             <a href="#">
-                <img src="images/logo.svg" alt="Stretch Me Tuluv" class="h-16 md:h-20 w-auto">
+                <img src="images/logo.svg" alt="Stretch Me Tuluv" class="h-12 md:h-16 w-auto">
             </a>
         </div>
     </header>
 
     <!-- STEP 1: HERO -->
     <section id="hero" class="relative flex flex-col md:flex-row min-h-screen bg-gradient-to-b from-brand-roseLight/30 to-white">
-        <div class="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-16 lg:px-24 pt-48 pb-24 md:pt-48 md:pb-24 order-2 md:order-1 relative z-10">
+        <div class="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-16 lg:px-24 pt-48 pb-24 md:pt-64 md:pb-32 order-2 md:order-1 relative z-10">
             <h1 class="text-5xl lg:text-7xl font-display font-black text-brand-dark uppercase tracking-tighter leading-[1.05] mb-6 text-left">
                 FEEL BETTER IN<br>ONE SESSION.
             </h1>
@@ -148,55 +148,49 @@
     </section>
 
     <!-- BANNER -->
-    <section class="py-10 px-6 text-center bg-gradient-to-br from-brand-purpleDeep to-[#1a1226] border-y border-white/10 relative z-10 shadow-2xl">
-        <div class="flex justify-center mb-6 text-center text-center text-center">
-            <div class="w-px h-10 bg-brand-rose/40 text-center text-center text-center"></div>
-        </div>
-        <h2 class="text-3xl md:text-5xl font-display font-black text-white tracking-tight mb-4 max-w-4xl mx-auto leading-tight uppercase text-balance text-center text-center text-center text-center">
+    <section class="py-8 px-6 text-center bg-brand-purpleDeep border-y border-white/10 relative z-10 shadow-2xl">
+        <h2 class="text-2xl md:text-4xl font-display font-black text-white tracking-tight mb-2 max-w-4xl mx-auto leading-tight uppercase text-balance text-center">
             Keep your body working, it'll thank you later.
         </h2>
-        <p class="text-xl text-brand-rose italic font-medium opacity-80 text-center text-center text-center">
+        <p class="text-lg text-brand-rose italic font-medium opacity-80 text-center">
             Routine self-care keeps the mind & body happy
         </p>
-        <div class="flex justify-center mt-6 text-center text-center text-center">
-            <div class="w-px h-10 bg-brand-rose/40 text-center text-center text-center"></div>
-        </div>
     </section>
 
     <!-- STEP 2: PROBLEMS -->
-    <section id="problems" class="py-14 bg-gradient-to-br from-white via-brand-roseLight/20 to-white relative overflow-hidden z-10 text-center">
+    <section id="problems" class="py-12 bg-gradient-to-br from-white via-brand-roseLight/20 to-white relative overflow-hidden z-10 text-center">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="mb-10 text-center text-center">
-                <h3 class="text-3xl md:text-5xl font-display font-black text-brand-dark tracking-tight mb-4 uppercase text-center text-center">
+            <div class="mb-8 text-center">
+                <h3 class="text-3xl md:text-5xl font-display font-black text-brand-dark tracking-tight uppercase">
                     If this sounds familiar, it's time to stretch.
                 </h3>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-10 max-w-5xl mx-auto text-left text-left text-left text-left">
-                <div class="bg-white p-10 rounded-3xl shadow-pop border border-gray-100 relative overflow-hidden group text-left text-left">
-                    <div class="w-14 h-14 bg-red-50 text-red-400 rounded-2xl flex items-center justify-center mb-8 mx-auto border border-red-100">
-                        <i data-lucide="frown" class="w-7 h-7"></i>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 max-w-5xl mx-auto text-left">
+                <div class="bg-white p-8 rounded-3xl shadow-pop border border-gray-100 relative overflow-hidden group">
+                    <div class="w-12 h-12 bg-red-50 text-red-400 rounded-2xl flex items-center justify-center mb-6 mx-auto border border-red-100">
+                        <i data-lucide="frown" class="w-6 h-7"></i>
                     </div>
-                    <ul class="space-y-6 text-left text-left">
+                    <ul class="space-y-4">
                         <li class="flex items-start gap-4 text-brand-dark/80 font-medium">
-                            <i data-lucide="x-circle" class="w-6 h-6 text-brand-rose shrink-0"></i>
+                            <i data-lucide="x-circle" class="w-5 h-5 text-brand-rose shrink-0"></i>
                             <span class="leading-relaxed font-bold">Tight hips from sitting at a desk all day.</span>
                         </li>
                         <li class="flex items-start gap-4 text-brand-dark/80 font-medium">
-                            <i data-lucide="x-circle" class="w-6 h-6 text-brand-rose shrink-0"></i>
+                            <i data-lucide="x-circle" class="w-5 h-5 text-brand-rose shrink-0"></i>
                             <span class="leading-relaxed font-bold">Neck and shoulder tension from work stress.</span>
                         </li>
                         <li class="flex items-start gap-4 text-brand-dark/80 font-bold">
-                            <i data-lucide="x-circle" class="w-6 h-6 text-brand-rose shrink-0"></i>
+                            <i data-lucide="x-circle" class="w-5 h-5 text-brand-rose shrink-0"></i>
                             <span class="leading-relaxed">Lower back stiffness in the morning.</span>
                         </li>
                     </ul>
                 </div>
-                <div class="bg-brand-roseLight/40 p-10 rounded-3xl shadow-pop border border-brand-rose/20 flex flex-col justify-center backdrop-blur-sm text-left text-left text-left text-left">
-                    <h4 class="text-3xl font-display font-black text-brand-dark mb-6 uppercase text-left text-left text-left">What Is Assisted Stretching?</h4>
-                    <p class="text-lg text-brand-dark/80 leading-relaxed font-medium mb-6 text-left text-left">
+                <div class="bg-brand-roseLight/40 p-8 rounded-3xl shadow-pop border border-brand-rose/20 flex flex-col justify-center backdrop-blur-sm">
+                    <h4 class="text-2xl font-display font-black text-brand-dark mb-4 uppercase">What Is Assisted Stretching?</h4>
+                    <p class="text-brand-dark/80 leading-relaxed font-medium mb-4">
                         Assisted stretching is different from massage. A professional therapist moves your body through guided stretches while you relax.
                     </p>
-                    <p class="text-lg text-brand-dark/80 leading-relaxed font-medium text-left text-left">
+                    <p class="text-brand-dark/80 leading-relaxed font-medium">
                         This allows for deeper flexibility improvements and significantly faster tension release than you can achieve alone.
                     </p>
                 </div>
@@ -205,55 +199,51 @@
     </section>
 
     <!-- STEP 3: SERVICES -->
-    <section id="services" class="py-24 px-6 relative bg-brand-gray border-y border-brand-purple/10 z-10 text-center">
-        <div class="max-w-7xl mx-auto text-center">
-            <div class="mb-16 text-center">
-                <p class="text-brand-purple font-black uppercase tracking-[0.4em] text-[10px] mb-4 text-center">The Selection</p>
-                <h2 class="text-4xl md:text-6xl font-display font-black text-brand-dark tracking-tight uppercase leading-none text-center text-center">
-                    Choose Your <span class="text-brand-purple text-brand-purple">Healing Path</span>
+    <section id="services" class="py-16 px-6 relative bg-brand-gray border-y border-brand-purple/10 z-10 text-center">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-12">
+                <p class="text-brand-purple font-black uppercase tracking-[0.4em] text-[10px] mb-3">The Selection</p>
+                <h2 class="text-4xl md:text-6xl font-display font-black text-brand-dark tracking-tight uppercase leading-none">
+                    Choose Your <span class="text-brand-purple">Healing Path</span>
                 </h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto text-left text-left text-left text-left text-left">
-                <!-- Card 1 -->
-                <div class="group bg-white rounded-[2.5rem] shadow-glass hover:shadow-pop-hover hover:-translate-y-2 transition-all duration-500 cursor-pointer flex flex-col overflow-hidden" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto text-left">
+                <div class="group bg-white rounded-[2.5rem] shadow-glass hover:shadow-pop-hover hover:-translate-y-1 transition-all duration-500 cursor-pointer flex flex-col overflow-hidden" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
                     <div class="h-48 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1518611012118-296072bb580a?q=80&w=800&auto=format&fit=crop" alt="Full Body Stretching" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     </div>
                     <div class="p-8 flex flex-col flex-1">
-                        <h3 class="text-2xl font-display font-black text-brand-dark mb-4 uppercase tracking-tighter">Full Body<br>Freedom</h3>
+                        <h3 class="text-xl font-display font-black text-brand-dark mb-4 uppercase tracking-tighter">Full Body<br>Freedom</h3>
                         <p class="text-brand-dark/50 text-sm leading-relaxed mb-6 flex-1">Total body maintenance diagnostic and systemic guided release for overall wellbeing.</p>
                         <div class="text-[10px] font-black uppercase text-brand-purple tracking-widest flex items-center gap-2 pt-4 border-t border-gray-50">Select Path <i data-lucide="chevron-right" class="w-3 h-3"></i></div>
                     </div>
                 </div>
-                <!-- Card 2 -->
-                <div class="group bg-white rounded-[2.5rem] shadow-glass hover:shadow-pop-hover hover:-translate-y-2 transition-all duration-500 cursor-pointer flex flex-col overflow-hidden" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
+                <div class="group bg-white rounded-[2.5rem] shadow-glass hover:shadow-pop-hover hover:-translate-y-1 transition-all duration-500 cursor-pointer flex flex-col overflow-hidden" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
                     <div class="h-48 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1541167760496-162955ed8a9f?q=80&w=800&auto=format&fit=crop" alt="Desk Worker Stretching" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     </div>
                     <div class="p-8 flex flex-col flex-1">
-                        <h3 class="text-2xl font-display font-black text-brand-dark mb-4 uppercase tracking-tighter text-balance">Desk Worker Reset</h3>
+                        <h3 class="text-xl font-display font-black text-brand-dark mb-4 uppercase tracking-tighter text-balance">Desk Worker Reset</h3>
                         <p class="text-brand-dark/50 text-sm leading-relaxed mb-6 flex-1">Undo the damage of 8-hour sitting. Targets hips, chest, and neck tension.</p>
                         <div class="text-[10px] font-black uppercase text-brand-purple tracking-widest flex items-center gap-2 pt-4 border-t border-gray-50">Select Path <i data-lucide="chevron-right" class="w-3 h-3"></i></div>
                     </div>
                 </div>
-                <!-- Card 3 -->
-                <div class="group bg-white rounded-[2.5rem] shadow-glass hover:shadow-pop-hover hover:-translate-y-2 transition-all duration-500 cursor-pointer flex flex-col overflow-hidden" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
+                <div class="group bg-white rounded-[2.5rem] shadow-glass hover:shadow-pop-hover hover:-translate-y-1 transition-all duration-500 cursor-pointer flex flex-col overflow-hidden" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
                     <div class="h-48 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2158?q=80&w=800&auto=format&fit=crop" alt="Athletic Recovery" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     </div>
                     <div class="p-8 flex flex-col flex-1">
-                        <h3 class="text-2xl font-display font-black text-brand-dark mb-4 uppercase tracking-tighter">Athletic Recovery</h3>
+                        <h3 class="text-xl font-display font-black text-brand-dark mb-4 uppercase tracking-tighter">Athletic Recovery</h3>
                         <p class="text-brand-dark/50 text-sm leading-relaxed mb-6 flex-1">Flush lactic acid and expand performance range for high-output individuals.</p>
                         <div class="text-[10px] font-black uppercase text-brand-purple tracking-widest flex items-center gap-2 pt-4 border-t border-gray-50">Select Path <i data-lucide="chevron-right" class="w-3 h-3"></i></div>
                     </div>
                 </div>
-                <!-- Card 4 -->
-                <div class="group bg-white rounded-[2.5rem] shadow-glass hover:shadow-pop-hover hover:-translate-y-2 transition-all duration-500 cursor-pointer flex flex-col overflow-hidden" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
+                <div class="group bg-white rounded-[2.5rem] shadow-glass hover:shadow-pop-hover hover:-translate-y-1 transition-all duration-500 cursor-pointer flex flex-col overflow-hidden" onclick="document.getElementById('book').scrollIntoView({behavior: 'smooth'})">
                     <div class="h-48 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=800&auto=format&fit=crop" alt="Injury and Pain Relief" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     </div>
                     <div class="p-8 flex flex-col flex-1">
-                        <h3 class="text-2xl font-display font-black text-brand-dark mb-4 uppercase tracking-tighter text-balance">Injury & Pain</h3>
+                        <h3 class="text-xl font-display font-black text-brand-dark mb-4 uppercase tracking-tighter text-balance">Injury & Pain</h3>
                         <p class="text-brand-dark/50 text-sm leading-relaxed mb-6 flex-1">Break muscle adhesions and restore functional movement range to wince-free levels.</p>
                         <div class="text-[10px] font-black uppercase text-brand-purple tracking-widest flex items-center gap-2 pt-4 border-t border-gray-50">Select Path <i data-lucide="chevron-right" class="w-3 h-3"></i></div>
                     </div>
@@ -263,44 +253,44 @@
     </section>
 
     <!-- STEP 4: HOW IT WORKS -->
-    <section id="timeline" class="py-24 bg-white relative overflow-hidden text-center text-center">
-        <div class="max-w-7xl mx-auto px-8 relative z-10 text-center text-center text-center">
-            <div class="mb-20 text-center text-center text-center text-center">
-                <p class="text-brand-purple font-black uppercase tracking-[0.4em] text-[10px] mb-4 text-center text-center">The Process</p>
-                <h3 class="text-4xl md:text-6xl font-display font-black tracking-tighter text-brand-dark uppercase leading-tight text-center text-center text-center text-center">
-                    How it <span class="text-brand-purple text-brand-purple text-brand-purple text-brand-purple">actually</span> works.
+    <section id="timeline" class="py-16 bg-white relative overflow-hidden text-center">
+        <div class="max-w-7xl mx-auto px-8 relative z-10">
+            <div class="mb-12">
+                <p class="text-brand-purple font-black uppercase tracking-[0.4em] text-[10px] mb-3">The Process</p>
+                <h3 class="text-4xl md:text-6xl font-display font-black tracking-tighter text-brand-dark uppercase leading-tight text-center">
+                    How it <span class="text-brand-purple">actually</span> works.
                 </h3>
             </div>
 
-            <div class="flex flex-col md:flex-row items-center md:items-stretch justify-center gap-12 lg:gap-16 text-center text-center text-center text-center">
+            <div class="flex flex-col md:flex-row items-center md:items-stretch justify-center gap-12 lg:gap-16">
                 <!-- Step 01 -->
-                <div class="flex-1 w-full max-w-sm group text-center text-center text-center text-center">
-                    <div class="step-card bg-white p-12 rounded-[2.5rem] shadow-glass h-full border border-white flex flex-col items-center text-center text-center text-center text-center">
-                        <div class="w-20 h-20 bg-brand-purple text-white font-display font-black rounded-full flex items-center justify-center text-4xl mb-8 shadow-2xl group-hover:scale-110 transition-transform duration-500 text-center text-center">1</div>
-                        <h4 class="text-xl font-display font-black text-brand-dark uppercase tracking-tight mb-6 text-center text-center text-center text-center">Identify</h4>
-                        <p class="text-base text-brand-dark/50 font-medium leading-relaxed text-center text-center text-center text-center text-center text-center">
+                <div class="flex-1 w-full max-w-sm group">
+                    <div class="step-card bg-white p-12 rounded-[2.5rem] shadow-glass h-full border border-white flex flex-col items-center">
+                        <div class="w-20 h-20 bg-brand-purple text-white font-display font-black rounded-full flex items-center justify-center text-4xl mb-8 shadow-2xl group-hover:scale-110 transition-transform duration-500">1</div>
+                        <h4 class="text-xl font-display font-black text-brand-dark uppercase tracking-tight mb-4">Identify</h4>
+                        <p class="text-base text-brand-dark/50 font-medium leading-relaxed">
                             We assess your functional mobility and identify the exact source of restriction before touching a single muscle.
                         </p>
                     </div>
                 </div>
 
                 <!-- Step 02 -->
-                <div class="flex-1 w-full max-w-sm group text-center text-center text-center text-center text-center">
-                    <div class="step-card bg-white p-12 rounded-[2.5rem] shadow-glass h-full border border-white flex flex-col items-center text-center text-center text-center text-center text-center">
-                        <div class="w-20 h-20 bg-brand-purple text-white font-display font-black rounded-full flex items-center justify-center text-4xl mb-8 shadow-2xl group-hover:scale-110 transition-transform duration-500 text-center text-center text-center">2</div>
-                        <h4 class="text-xl font-display font-black text-brand-dark uppercase tracking-tight mb-6 text-center text-center text-center text-center text-center">Stretching</h4>
-                        <p class="text-base text-brand-dark/50 font-medium leading-relaxed text-balance text-center text-center text-center text-center text-center text-center">
+                <div class="flex-1 w-full max-w-sm group">
+                    <div class="step-card bg-white p-12 rounded-[2.5rem] shadow-glass h-full border border-white flex flex-col items-center">
+                        <div class="w-20 h-20 bg-brand-purple text-white font-display font-black rounded-full flex items-center justify-center text-4xl mb-8 shadow-2xl group-hover:scale-110 transition-transform duration-500">2</div>
+                        <h4 class="text-xl font-display font-black text-brand-dark uppercase tracking-tight mb-4 text-balance">Stretching</h4>
+                        <p class="text-base text-brand-dark/50 font-medium leading-relaxed">
                             Practitioner-led deep stretching. We use physical leverage to hit restriction points that you simply can't reach alone.
                         </p>
                     </div>
                 </div>
 
                 <!-- Step 03 -->
-                <div class="flex-1 w-full max-w-sm group text-center text-center text-center text-center text-center text-center">
-                    <div class="step-card bg-white p-12 rounded-[2.5rem] shadow-glass h-full border border-white flex flex-col items-center text-center text-center text-center text-center text-center text-center">
-                        <div class="w-20 h-20 bg-brand-purple text-white font-display font-black rounded-full flex items-center justify-center text-4xl mb-8 shadow-2xl group-hover:scale-110 transition-transform duration-500 text-center text-center text-center text-center">3</div>
-                        <h4 class="text-xl font-display font-black text-brand-dark uppercase tracking-tight mb-6 text-center text-center text-center text-center text-center text-center">Move</h4>
-                        <p class="text-base text-brand-dark/50 font-medium leading-relaxed text-center text-center text-center text-center text-center text-center text-center text-center">
+                <div class="flex-1 w-full max-w-sm group">
+                    <div class="step-card bg-white p-12 rounded-[2.5rem] shadow-glass h-full border border-white flex flex-col items-center">
+                        <div class="w-20 h-20 bg-brand-purple text-white font-display font-black rounded-full flex items-center justify-center text-4xl mb-8 shadow-2xl group-hover:scale-110 transition-transform duration-500">3</div>
+                        <h4 class="text-xl font-display font-black text-brand-dark uppercase tracking-tight mb-4 text-center">Move</h4>
+                        <p class="text-base text-brand-dark/50 font-medium leading-relaxed">
                             Walk away feeling significantly looser and lighter instantly. Your nervous system resets and functional range is restored.
                         </p>
                     </div>
@@ -310,168 +300,156 @@
     </section>
 
     <!-- STEP 5: PROOF -->
-    <section id="proof" class="py-14 bg-gradient-to-b from-[#f8f6fc] to-[#f0eafc] text-center border-y border-brand-purple/10">
-        <div class="max-w-7xl mx-auto px-6 text-center text-center text-center text-center text-center text-center text-center text-center">
-            <h3 class="text-3xl md:text-5xl font-display font-black text-brand-dark tracking-tight mb-10 uppercase text-center text-center text-center text-center text-center text-center text-center text-center text-center">Real Results</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left text-left text-left text-left">
-                <div class="bg-white p-10 rounded-3xl shadow-pop text-left text-left text-left text-left">
-                    <div class="flex gap-1 text-brand-rose mb-6 text-left text-left text-left text-left text-left">
-                        <i data-lucide="star" class="w-5 h-5 fill-current text-left text-left text-left"></i><i data-lucide="star" class="w-5 h-5 fill-current text-left text-left text-left"></i><i data-lucide="star" class="w-5 h-5 fill-current text-left text-left text-left"></i><i data-lucide="star" class="w-5 h-5 fill-current text-left text-left text-left"></i><i data-lucide="star" class="w-5 h-5 fill-current text-left text-left text-left"></i>
+    <section id="proof" class="py-12 bg-gradient-to-b from-[#f8f6fc] to-[#f0eafc] text-center border-y border-brand-purple/10">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h3 class="text-3xl md:text-5xl font-display font-black text-brand-dark tracking-tight mb-10 uppercase">Real Results</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <div class="bg-white p-10 rounded-3xl shadow-pop text-left">
+                    <div class="flex gap-1 text-brand-rose mb-6">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
                     </div>
-                    <p class="text-brand-dark/80 font-medium leading-relaxed mb-6 text-left text-left text-left">"Sitting at a desk 10 hours a day wrecked my back. One 60-minute session loosened everything up immediately."</p>
-                    <p class="font-display font-bold text-sm text-brand-rose uppercase text-left text-left text-left text-left text-left">Sarah M. • Marketing Director</p>
+                    <p class="text-brand-dark/80 font-medium leading-relaxed mb-6">"Sitting at a desk 10 hours a day wrecked my back. One 60-minute session loosened everything up immediately."</p>
+                    <p class="font-display font-bold text-sm text-brand-rose uppercase">Sarah M. • Marketing Director</p>
                 </div>
-                <div class="bg-white p-10 rounded-3xl shadow-pop text-left text-left text-left text-left text-left">
-                    <div class="flex gap-1 text-brand-rose mb-6 text-left text-left text-left text-left text-left text-left">
-                        <i data-lucide="star" class="w-5 h-5 fill-current text-left text-left text-left text-left"></i><i data-lucide="star" class="w-5 h-5 fill-current text-left text-left text-left text-left text-left"></i><i data-lucide="star" class="w-5 h-5 fill-current text-left text-left text-left text-left text-left"></i><i data-lucide="star" class="w-5 h-5 fill-current text-left text-left text-left text-left text-left"></i><i data-lucide="star" class="w-5 h-5 fill-current text-left text-left text-left text-left text-left"></i>
+                <div class="bg-white p-10 rounded-3xl shadow-pop text-left">
+                    <div class="flex gap-1 text-brand-rose mb-6">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
                     </div>
-                    <p class="text-brand-dark/80 font-medium leading-relaxed mb-6 text-left text-left text-left text-left text-left">"My workout recovery is 2x faster. Having them come to my home is the ultimate luxury."</p>
-                    <p class="font-display font-bold text-sm text-brand-rose uppercase text-left text-left text-left text-left text-left text-left text-left">Marcus T. • Software Engineer</p>
+                    <p class="text-brand-dark/80 font-medium leading-relaxed mb-6">"My workout recovery is 2x faster. Having them come to my home is the ultimate luxury."</p>
+                    <p class="font-display font-bold text-sm text-brand-rose uppercase">Marcus T. • Software Engineer</p>
                 </div>
-                <div class="bg-white p-10 rounded-3xl shadow-pop text-left text-left text-left text-left text-left text-left">
-                    <div class="flex gap-1 text-brand-rose mb-6 text-left text-left text-left text-left text-left text-left text-left text-left">
-                        <i data-lucide="star" class="w-5 h-5 fill-current text-left text-left text-left text-left text-left"></i><i data-lucide="star" class="w-5 h-5 fill-current text-left text-left text-left text-left text-left text-left"></i><i data-lucide="star" class="w-5 h-5 fill-current text-left text-left text-left text-left text-left text-left"></i><i data-lucide="star" class="w-5 h-5 fill-current text-left text-left text-left text-left text-left text-left"></i><i data-lucide="star" class="w-5 h-5 fill-current text-left text-left text-left text-left text-left text-left"></i>
+                <div class="bg-white p-10 rounded-3xl shadow-pop text-left">
+                    <div class="flex gap-1 text-brand-rose mb-6 text-left">
+                        <i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i><i data-lucide="star" class="w-5 h-5 fill-current"></i>
                     </div>
-                    <p class="text-brand-dark/80 font-medium leading-relaxed mb-6 text-left text-left text-left text-left text-left text-left text-left">"Assisted stretching gives results that massage can't touch. My shoulder pain is gone."</p>
-                    <p class="font-display font-bold text-sm text-brand-rose uppercase text-left text-left text-left text-left text-left text-left text-left text-left text-left">Elena R. • Consultant</p>
+                    <p class="text-brand-dark/80 font-medium leading-relaxed mb-6 text-left">"Assisted stretching gives results that massage can't touch. My shoulder pain is gone."</p>
+                    <p class="font-display font-bold text-sm text-brand-rose uppercase text-left">Elena R. • Consultant</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- STEP 6: SERVICE AREA -->
-    <section id="service-area" class="py-24 bg-brand-roseLight/20 text-center text-center text-center text-center">
-        <div class="max-w-4xl mx-auto px-6 text-center text-center text-center text-center text-center text-center text-center">
-            <div class="flex flex-col items-center gap-4 mb-8 text-center">
-                <h3 class="text-4xl md:text-5xl font-display font-black text-brand-dark tracking-tight uppercase text-center text-center">See if we service your area</h3>
+    <section id="service-area" class="py-16 bg-brand-roseLight/20 text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="flex flex-col items-center gap-4 mb-6">
+                <h3 class="text-4xl md:text-5xl font-display font-black text-brand-dark tracking-tight uppercase">See if we service your area</h3>
                 <i data-lucide="arrow-down" class="w-8 h-8 text-brand-purple animate-bounce"></i>
             </div>
             
-            <p class="text-brand-dark/60 text-lg font-medium leading-relaxed mb-10 text-center text-center text-center">
+            <p class="text-brand-dark/60 text-lg font-medium leading-relaxed mb-10">
                 Professional assisted stretching directly to your home, office, or gym across DC.
             </p>
             
             <!-- Bigger Zip Checker -->
-            <div class="max-w-xl mx-auto mb-6 text-center">
-                <div class="flex p-3 bg-white rounded-3xl border-2 border-gray-100 shadow-xl focus-within:border-brand-purple transition-all text-center">
+            <div class="max-w-xl mx-auto mb-4">
+                <div class="flex p-3 bg-white rounded-3xl border-2 border-gray-100 shadow-xl focus-within:border-brand-purple transition-all">
                     <input type="text" id="zip-input" placeholder="Enter Zip Code" class="bg-transparent w-full px-6 font-black text-2xl text-brand-dark outline-none placeholder:text-brand-dark/20 text-left">
                     <button onclick="checkZip()" class="bg-brand-purple text-white px-10 py-5 rounded-2xl font-black uppercase tracking-[0.2em] text-sm hover:bg-brand-purpleHover transition-all shadow-lg active:scale-95 whitespace-nowrap">Check</button>
                 </div>
-                <div id="zip-result" class="mt-6 font-black text-lg h-8 transition-all opacity-0 uppercase tracking-widest text-center text-center text-center text-center"></div>
+                <div id="zip-result" class="mt-6 font-black text-lg h-8 transition-all opacity-0 uppercase tracking-widest text-center"></div>
             </div>
         </div>
     </section>
 
     <!-- STEP 7: UNIFIED BOOKING SECTION -->
-    <section id="book" class="bg-brand-purple w-full py-14 overflow-hidden relative text-center text-center text-center text-center text-center">
-        <div class="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white to-transparent opacity-5 text-center text-center"></div>
-        <!-- Content Container (Fixed Width & Centered) -->
-        <div class="max-w-5xl mx-auto px-6 relative z-10 text-center text-center text-center text-center text-center text-center text-center">
-
-            <!-- Header Text -->
-            <div class="text-center text-white mb-12 text-center text-center text-center text-center text-center text-center text-center text-center">
-                <h2 class="text-4xl md:text-7xl font-display font-black tracking-tight mb-4 uppercase leading-tight text-white text-center text-center text-center text-center text-center">
+    <section id="book" class="bg-brand-purple w-full py-12 overflow-hidden relative text-center">
+        <div class="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white to-transparent opacity-5"></div>
+        <div class="max-w-5xl mx-auto px-6 relative z-10">
+            <div class="text-center text-white mb-10">
+                <h2 class="text-4xl md:text-7xl font-display font-black tracking-tight mb-4 uppercase leading-tight text-white">
                     Schedule Your Stretch
                 </h2>
-                <p class="text-white/80 text-lg max-w-2xl mx-auto mb-10 font-medium leading-relaxed text-center text-center text-center text-center text-center text-center text-center text-center">
+                <p class="text-white/80 text-lg max-w-2xl mx-auto mb-8 font-medium leading-relaxed">
                     Take this step for yourself. Book in seconds. We bring the equipment, the expertise, and the serenity directly to you.
                 </p>
-                <!-- Deal Alert Timer -->
-                <div class="inline-flex flex-col sm:flex-row items-center justify-center gap-4 bg-black/20 backdrop-blur-md border border-white/10 px-8 py-5 rounded-[2.5rem] shadow-2xl mb-12 text-center text-center text-center text-center text-center text-center">
-                    <div class="flex items-center gap-3 text-white font-bold text-xs uppercase tracking-widest text-center text-center text-center text-center text-center">
-                        <span class="relative flex h-3 w-3 text-center text-center text-center">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-rose opacity-75 text-center text-center text-center"></span>
-                            <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-rose text-center text-center text-center"></span>
+                <div class="inline-flex flex-col sm:flex-row items-center justify-center gap-4 bg-black/20 backdrop-blur-md border border-white/10 px-8 py-5 rounded-[2.5rem] shadow-2xl mb-12 text-center">
+                    <div class="flex items-center gap-3 text-white font-bold text-xs uppercase tracking-widest">
+                        <span class="relative flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-rose opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-rose"></span>
                         </span>
-                        <span class="text-center text-center text-center text-center">Deal Alert: $25 Credit Expires in:</span>
+                        <span>Deal Alert: $25 Credit Expires in:</span>
                     </div>
-                    <div class="bg-black/40 px-5 py-2 rounded-2xl border border-white/10 text-brand-rose font-display text-4xl font-black shadow-inner countdown-display tabular-nums text-center text-center text-center text-center">
+                    <div class="bg-black/40 px-5 py-2 rounded-2xl border border-white/10 text-brand-rose font-display text-4xl font-black shadow-inner countdown-display tabular-nums">
                         59:59
                     </div>
                 </div>
             </div>
-            <!-- Two-Column Selection UI -->
-            <div class="bg-white shadow-2xl rounded-[4rem] overflow-hidden border border-white/10 flex flex-col lg:flex-row text-left text-left text-left text-left text-left text-left text-left text-left">
-                <!-- Left: Service Details -->
-                <div class="w-full lg:w-2/5 p-12 bg-brand-gray border-b lg:border-b-0 lg:border-r border-gray-100 flex flex-col text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left">
-                    <div class="flex items-center gap-2 mb-6 text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left">
-                        <i data-lucide="map-pin" class="text-brand-rose w-4 h-4 text-left text-left text-left text-left text-left text-left text-left text-left"></i>
-                        <span class="text-[10px] font-black uppercase tracking-[0.2em] text-brand-dark/40 text-left text-left text-left text-left text-left text-left text-left text-left text-left">Mobile Area</span>
+            <div class="bg-white shadow-2xl rounded-[4rem] overflow-hidden border border-white/10 flex flex-col lg:flex-row text-left">
+                <div class="w-full lg:w-2/5 p-12 bg-brand-gray border-b lg:border-b-0 lg:border-r border-gray-100 flex flex-col text-left">
+                    <div class="flex items-center gap-2 mb-6">
+                        <i data-lucide="map-pin" class="text-brand-rose w-4 h-4"></i>
+                        <span class="text-[10px] font-black uppercase tracking-[0.2em] text-brand-dark/40">Mobile Area</span>
                     </div>
-                    <h3 class="text-3xl font-display font-black mb-4 uppercase text-brand-dark tracking-tighter leading-none text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left">Stretch Me Tuluv</h3>
-                    <p class="text-brand-rose font-display text-5xl mb-12 font-black flex items-baseline gap-2 text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left">
-                        $80 <span class="text-brand-dark/20 text-xl line-through font-normal font-sans text-left text-left text-left text-left">$105</span>
+                    <h3 class="text-3xl font-display font-black mb-4 uppercase text-brand-dark tracking-tighter leading-none">Stretch Me Tuluv</h3>
+                    <p class="text-brand-rose font-display text-5xl mb-12 font-black flex items-baseline gap-2">
+                        $80 <span class="text-brand-dark/20 text-xl line-through font-normal font-sans">$105</span>
                     </p>
-
-                    <div class="space-y-8 flex-1 text-left text-left text-left text-left text-left text-left text-left text-left text-left">
-                        <div class="flex gap-5 items-start text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left">
-                            <div class="w-10 h-10 rounded-2xl bg-brand-purple text-white flex items-center justify-center shrink-0 font-black text-sm shadow-md text-left text-left text-left">1</div>
-                            <div class="text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left">
-                                <p class="font-black text-[11px] uppercase text-brand-dark/40 tracking-widest mb-1 text-left text-left text-left text-left text-left text-left">Select Priority</p>
-                                <p class="text-brand-dark font-bold text-sm text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left">Target your specific restriction point.</p>
+                    <div class="space-y-8 flex-1">
+                        <div class="flex gap-5 items-start">
+                            <div class="w-10 h-10 rounded-2xl bg-brand-purple text-white flex items-center justify-center shrink-0 font-black text-sm shadow-md">1</div>
+                            <div>
+                                <p class="font-black text-[11px] uppercase text-brand-dark/40 tracking-widest mb-1 text-left">Select Priority</p>
+                                <p class="text-brand-dark font-bold text-sm">Target your specific restriction point.</p>
                             </div>
                         </div>
-                        <div class="flex gap-5 items-start text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left">
-                            <div class="w-10 h-10 rounded-2xl bg-brand-purple text-white flex items-center justify-center shrink-0 font-black text-sm shadow-md text-left text-left text-left text-left text-left">2</div>
-                            <div class="text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left">
-                                <p class="font-black text-[11px] uppercase text-brand-dark/40 tracking-widest mb-1 text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left">Confirm Session</p>
-                                <p class="text-brand-dark font-bold text-sm text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left">60-minute specialized home visit.</p>
+                        <div class="flex gap-5 items-start">
+                            <div class="w-10 h-10 rounded-2xl bg-brand-purple text-white flex items-center justify-center shrink-0 font-black text-sm shadow-md">2</div>
+                            <div>
+                                <p class="font-black text-[11px] uppercase text-brand-dark/40 tracking-widest mb-1">Confirm Session</p>
+                                <p class="text-brand-dark font-bold text-sm">60-minute specialized home visit.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="mt-12 pt-8 border-t border-gray-200 text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left">
-                        <p class="text-brand-dark/70 text-[10px] font-bold uppercase tracking-widest text-left text-left text-left text-left text-left text-left text-left text-left">Serving DC Metro &bull; Professional At-Home Care</p>
+                    <div class="mt-12 pt-8 border-t border-gray-200">
+                        <p class="text-brand-dark/70 text-[10px] font-bold uppercase tracking-widest">Serving DC Metro &bull; Professional At-Home Care</p>
                     </div>
                 </div>
-
-                <!-- Right: Booking Form -->
-                <div class="w-full lg:w-3/5 p-12 bg-white text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left">
-                    <div class="mb-10 text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left">
-                        <label class="block text-[11px] font-black uppercase tracking-[0.2em] text-brand-dark/30 mb-8 leading-none text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left">1. What brings you here?</label>
-                        <div class="grid grid-cols-2 gap-4 text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center">
-                            <label class="cursor-pointer group text-center text-center text-center text-center text-center text-center text-center text-center">
+                <div class="w-full lg:w-3/5 p-12 bg-white text-left">
+                    <div class="mb-10">
+                        <label class="block text-[11px] font-black uppercase tracking-[0.2em] text-brand-dark/30 mb-8 leading-none">1. What brings you here?</label>
+                        <div class="grid grid-cols-2 gap-4 text-center">
+                            <label class="cursor-pointer group">
                                 <input type="radio" name="order_final_feel" class="peer sr-only" checked>
-                                <div class="border-2 border-brand-gray bg-brand-gray p-5 text-center peer-checked:bg-brand-purple peer-checked:text-white transition-all font-black text-xs rounded-[1.5rem] group-hover:border-brand-purple/20 uppercase tracking-widest shadow-sm text-center text-center text-center">Stressed</div>
+                                <div class="border-2 border-brand-gray bg-brand-gray p-5 text-center peer-checked:bg-brand-purple peer-checked:text-white transition-all font-black text-xs rounded-[1.5rem] group-hover:border-brand-purple/20 uppercase tracking-widest shadow-sm">Stressed</div>
                             </label>
-                            <label class="cursor-pointer group text-center text-center text-center text-center text-center text-center text-center text-center text-center">
+                            <label class="cursor-pointer group">
                                 <input type="radio" name="order_final_feel" class="peer sr-only">
-                                <div class="border-2 border-brand-gray bg-brand-gray p-5 text-center peer-checked:bg-brand-purple peer-checked:text-white transition-all font-black text-xs rounded-[1.5rem] group-hover:border-brand-purple/20 uppercase tracking-widest shadow-sm text-center text-center text-center text-center">In Pain</div>
+                                <div class="border-2 border-brand-gray bg-brand-gray p-5 text-center peer-checked:bg-brand-purple peer-checked:text-white transition-all font-black text-xs rounded-[1.5rem] group-hover:border-brand-purple/20 uppercase tracking-widest shadow-sm">In Pain</div>
                             </label>
-                            <label class="cursor-pointer group text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center">
+                            <label class="cursor-pointer group">
                                 <input type="radio" name="order_final_feel" class="peer sr-only">
-                                <div class="border-2 border-brand-gray bg-brand-gray p-5 text-center peer-checked:bg-brand-purple peer-checked:text-white transition-all font-black text-xs rounded-[1.5rem] group-hover:border-brand-purple/20 uppercase tracking-widest shadow-sm text-center text-center text-center text-center text-center">Stiff</div>
+                                <div class="border-2 border-brand-gray bg-brand-gray p-5 text-center peer-checked:bg-brand-purple peer-checked:text-white transition-all font-black text-xs rounded-[1.5rem] group-hover:border-brand-purple/20 uppercase tracking-widest shadow-sm">Stiff</div>
                             </label>
-                            <label class="cursor-pointer group text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center">
+                            <label class="cursor-pointer group">
                                 <input type="radio" name="order_final_feel" class="peer sr-only">
-                                <div class="border-2 border-brand-gray bg-brand-gray p-5 text-center peer-checked:bg-brand-purple peer-checked:text-white transition-all font-black text-xs rounded-[1.5rem] group-hover:border-brand-purple/20 uppercase tracking-widest shadow-sm text-center text-center text-center text-center text-center text-center">Inactive</div>
+                                <div class="border-2 border-brand-gray bg-brand-gray p-5 text-center peer-checked:bg-brand-purple peer-checked:text-white transition-all font-black text-xs rounded-[1.5rem] group-hover:border-brand-purple/20 uppercase tracking-widest shadow-sm">Inactive</div>
                             </label>
                         </div>
                     </div>
-
-                    <div class="mb-12 text-left text-left text-left text-left text-left">
-                        <label class="block text-[11px] font-black uppercase tracking-[0.2em] text-brand-dark/30 mb-6 leading-none text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left">2. Choose Your Path</label>
-                        <label class="cursor-pointer block relative group text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left">
+                    <div class="mb-12">
+                        <label class="block text-[11px] font-black uppercase tracking-[0.2em] text-brand-dark/30 mb-6 leading-none">2. Choose Your Path</label>
+                        <label class="cursor-pointer block relative group">
                             <input type="radio" name="order_final_path" class="peer sr-only" checked>
-                            <div class="border-2 border-white/10 bg-brand-gray p-8 flex items-center justify-between peer-checked:bg-brand-purple peer-checked:text-white transition-all rounded-[2rem] group-hover:border-brand-purple/30 shadow-sm text-left text-left text-left text-left text-left text-left">
-                                <div class="text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left">
-                                    <p class="font-black text-xl uppercase tracking-tight text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left">60-Minute Session</p>
-                                    <p class="text-[10px] uppercase font-bold opacity-60 mt-1 text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-left text-inherit text-left">Professional Home Service</p>
+                            <div class="border-2 border-white/10 bg-brand-gray p-8 flex items-center justify-between peer-checked:bg-brand-purple peer-checked:text-white transition-all rounded-[2rem] group-hover:border-brand-purple/30 shadow-sm">
+                                <div>
+                                    <p class="font-black text-xl uppercase tracking-tight">60-Minute Session</p>
+                                    <p class="text-[10px] uppercase font-bold opacity-60 mt-1 text-inherit">Professional Home Service</p>
                                 </div>
-                                <div class="text-right text-right text-right text-right text-right text-right text-right text-right text-right text-right text-right text-right">
-                                    <p class="font-black text-4xl tracking-tighter text-right text-right text-right text-right text-right text-right text-right text-right text-right text-right">$80</p>
+                                <div class="text-right">
+                                    <p class="font-black text-4xl tracking-tighter">$80</p>
                                 </div>
                             </div>
                         </label>
                     </div>
-                    
-                    <button class="w-full bg-brand-purple hover:bg-brand-purpleHover text-white font-black uppercase tracking-[0.3em] text-sm py-7 transition-all hover:-translate-y-1 rounded-[1.5rem] shadow-2xl active:scale-95 text-center text-center text-center text-center text-center">
-                        Confirm Session Now <i data-lucide="arrow-right" class="w-5 h-5 ml-3 inline text-center text-center text-center"></i>
+                    <button class="w-full bg-brand-purple hover:bg-brand-purpleHover text-white font-black uppercase tracking-[0.3em] text-sm py-7 transition-all hover:-translate-y-1 rounded-[1.5rem] shadow-2xl active:scale-95 text-center">
+                        Confirm Session Now <i data-lucide="arrow-right" class="w-5 h-5 ml-3 inline"></i>
                     </button>
-
-                    <div class="text-center mt-8 text-[10px] font-black text-brand-dark/20 uppercase tracking-[0.2em] flex items-center justify-center gap-4 text-center text-center text-center text-center text-center text-center text-center">
-                        <span class="flex items-center gap-1 text-center text-center text-center text-center text-center text-center"><i data-lucide="shield-check" class="w-4 h-4 text-center text-center text-center text-center text-center"></i> Secure Checkout</span>
-                        <span class="opacity-30 text-center text-center text-center text-center text-center text-center">|</span>
-                        <span class="text-center text-center text-center text-center text-center">Certified Therapists</span>
+                    <div class="text-center mt-8 text-[10px] font-black text-brand-dark/20 uppercase tracking-[0.2em] flex items-center justify-center gap-4">
+                        <span class="flex items-center gap-1"><i data-lucide="shield-check" class="w-4 h-4"></i> Secure Checkout</span>
+                        <span class="opacity-30">|</span>
+                        <span>Certified Therapists</span>
                     </div>
                 </div>
             </div>
@@ -479,10 +457,10 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-brand-dark text-white py-16 border-t border-white/5 text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center">
-        <div class="max-w-7xl mx-auto px-6 text-center text-center text-center text-center text-center text-center text-center text-center text-center">
-            <p class="font-display font-black text-3xl uppercase tracking-tighter mb-4 text-center text-center text-center text-center text-center text-center text-center">Stretch Me Tuluv</p>
-            <p class="text-[10px] text-white/30 uppercase tracking-[0.4em] font-bold text-center text-center text-center text-center text-center text-center text-center text-center text-center text-center">
+    <footer class="bg-brand-dark text-white py-10 border-t border-white/5 text-center">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="font-display font-black text-3xl uppercase tracking-tighter mb-4 text-center">Stretch Me Tuluv</p>
+            <p class="text-[10px] text-white/30 uppercase tracking-[0.4em] font-bold text-center">
                 &copy; 2026 Professional Assisted Stretching At Home &bull; Mobility Recovery Wellness
             </p>
         </div>
@@ -490,7 +468,6 @@
 
     <script>
         lucide.createIcons();
-        // Sync Timers
         let timeLeft = 3600;
         const timerEls = document.querySelectorAll('.countdown-display');
 
@@ -499,30 +476,17 @@
             const minutes = Math.floor(timeLeft / 60);
             const seconds = timeLeft % 60;
             const timeString = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-
-            timerEls.forEach(el => {
-                el.innerText = timeString;
-            });
-            const topTimer = document.getElementById('top-timer');
-            if (topTimer) topTimer.innerText = timeString;
+            timerEls.forEach(el => { el.innerText = timeString; });
         }
         setInterval(updateTimers, 1000);
 
-        // Zip Checker Logic
         function checkZip() {
             const input = document.getElementById('zip-input').value.trim();
             const resultEl = document.getElementById('zip-result');
             const servedZips = ['20001','20002','20003','20004','20005','20006','20007','20008','20009','20010','20011','20012','20015','20016','20017','20018','20019','20020','20024','20032','20036','20037','20052','20057','20064','22201','22202','22203','22204','22205','22206','22207','22209','22211','22213','22301','22302','22303','22304','22305','22314','20814','20815','20816','20817','20901','20902','20903','20904','20905','20906','20910','20912'];
-            if (input === "") {
-                resultEl.innerText = "Please enter a zip code.";
-                resultEl.style.color = "#7e6eaa";
-            } else if (servedZips.includes(input)) {
-                resultEl.innerText = "GREAT NEWS! WE SERVE YOUR AREA.";
-                resultEl.style.color = "#22c55e";
-            } else {
-                resultEl.innerText = "WE'RE EXPANDING SOON!";
-                resultEl.style.color = "#DDA7A5";
-            }
+            if (input === "") { resultEl.innerText = "Please enter a zip code."; resultEl.style.color = "#7e6eaa"; }
+            else if (servedZips.includes(input)) { resultEl.innerText = "GREAT NEWS! WE SERVE YOUR AREA."; resultEl.style.color = "#22c55e"; }
+            else { resultEl.innerText = "WE'RE EXPANDING SOON!"; resultEl.style.color = "#DDA7A5"; }
             resultEl.style.opacity = "1";
         }
     </script>
