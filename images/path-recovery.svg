@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7E6EAA;stop-opacity:0.1"/>
+      <stop offset="50%" style="stop-color:#F3E5E9;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#DDA7A5;stop-opacity:0.2"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- Body silhouette rebuilding -->
+  <ellipse cx="400" cy="300" rx="200" ry="250" fill="#7E6EAA" opacity="0.04"/>
+  <!-- Repair lines / structural grid -->
+  <line x1="300" y1="150" x2="300" y2="450" stroke="#7E6EAA" stroke-width="1" opacity="0.08"/>
+  <line x1="400" y1="120" x2="400" y2="480" stroke="#7E6EAA" stroke-width="1" opacity="0.1"/>
+  <line x1="500" y1="150" x2="500" y2="450" stroke="#7E6EAA" stroke-width="1" opacity="0.08"/>
+  <line x1="250" y1="250" x2="550" y2="250" stroke="#DDA7A5" stroke-width="1" opacity="0.1"/>
+  <line x1="250" y1="350" x2="550" y2="350" stroke="#DDA7A5" stroke-width="1" opacity="0.1"/>
+  <!-- Recovery arcs -->
+  <path d="M300 400 Q350 300 400 280 Q450 260 500 200" stroke="#7E6EAA" stroke-width="3" fill="none" opacity="0.15" stroke-linecap="round"/>
+  <path d="M320 420 Q370 330 410 310 Q450 290 490 230" stroke="#DDA7A5" stroke-width="2" fill="none" opacity="0.2" stroke-linecap="round"/>
+  <!-- Energy nodes at joints -->
+  <circle cx="400" cy="280" r="12" fill="#DDA7A5" opacity="0.2"/>
+  <circle cx="400" cy="280" r="6" fill="#7E6EAA" opacity="0.25"/>
+  <circle cx="340" cy="220" r="8" fill="#DDA7A5" opacity="0.15"/>
+  <circle cx="460" cy="220" r="8" fill="#DDA7A5" opacity="0.15"/>
+  <circle cx="350" cy="370" r="8" fill="#7E6EAA" opacity="0.12"/>
+  <circle cx="450" cy="370" r="8" fill="#7E6EAA" opacity="0.12"/>
+  <!-- Upward arrow suggestion -->
+  <path d="M400 380 L400 180" stroke="#7E6EAA" stroke-width="2" opacity="0.12" stroke-linecap="round"/>
+  <path d="M380 210 L400 180 L420 210" stroke="#7E6EAA" stroke-width="2" fill="none" opacity="0.12" stroke-linecap="round"/>
+</svg>
