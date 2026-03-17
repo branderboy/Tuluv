@@ -88,10 +88,10 @@
     <div class="bg-brand-plum text-white py-2 sm:py-3 px-4 relative z-[110]">
         <div class="max-w-7xl mx-auto flex justify-center sm:justify-between items-center px-4 md:px-12 text-center text-[9px] sm:text-[10px]">
             <p class="font-black uppercase tracking-[0.4em] text-brand-pinkDeep hidden sm:block">Live with Intention</p>
-            <div class="flex items-center gap-4 sm:gap-6">
-                <p class="font-bold uppercase tracking-[0.2em] sm:tracking-[0.3em] text-white">$80 Deal — First Session</p>
-                <div class="font-mono tracking-tighter countdown-display opacity-60 tabular-nums">59:59</div>
-            </div>
+            <a href="tel:+12025550100" class="flex items-center gap-2 sm:gap-3 text-white hover:text-brand-pinkDeep transition-colors">
+                <i data-lucide="phone" class="w-3 h-3 sm:w-4 sm:h-4"></i>
+                <p class="font-bold uppercase tracking-[0.2em] sm:tracking-[0.3em]">(202) 555-0100</p>
+            </a>
         </div>
     </div>
     <!-- Authoritative Header with Logo -->
@@ -374,13 +374,14 @@
     <script>
         lucide.createIcons();
 
-        let timeLeft = 3600;
+        let timeLeft = 21600;
         const timerEls = document.querySelectorAll('.countdown-display');
         function updateTimers() {
             if(timeLeft > 0) timeLeft--;
-            const m = Math.floor(timeLeft / 60);
+            const h = Math.floor(timeLeft / 3600);
+            const m = Math.floor((timeLeft % 3600) / 60);
             const s = timeLeft % 60;
-            const str = `${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
+            const str = `${h.toString().padStart(2,'0')}:${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
             timerEls.forEach(el => el.innerText = str);
         }
         setInterval(updateTimers, 1000);
