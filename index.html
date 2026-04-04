@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Opportunity | Earn the Stage</title>
+    <title>Become the Opening Act | Earn the Stage</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -16,7 +16,7 @@
         h1, h2, h3, h4, .font-anton {
             font-family: 'Anton', sans-serif;
             text-transform: uppercase;
-            letter-spacing: 0.02em;
+            letter-spacing: 0.01em;
         }
         .progress-bar-stripes {
             background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 75%, transparent 75%, transparent);
@@ -81,9 +81,9 @@
 <body class="antialiased selection:bg-violet-600 selection:text-white pb-24 md:pb-0">
 
     <!-- Sticky Mobile CTA -->
-    <div class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 z-50 md:hidden flex gap-2 shadow-[0_-10px_20px_rgba(0,0,0,0.05)]">
+    <div class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4 z-50 md:hidden flex gap-2 shadow-[0_-10px_20px_rgba(0,0,0,0.05)] text-center">
         <a href="#join-form" class="w-full flex items-center justify-center bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-bold py-3 rounded text-sm uppercase transition-colors">
-            Free Entry: Submit Your Talent
+            Free Entry: Become the Opening Act
         </a>
     </div>
 
@@ -97,25 +97,24 @@
     <div class="relative overflow-hidden bg-slate-950 border-b border-violet-900/30">
         <div class="absolute inset-0 z-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=2000')] bg-cover bg-center mix-blend-luminosity"></div>
         <div class="absolute inset-0 z-0 bg-gradient-to-b from-slate-950/90 via-slate-950/40 to-slate-950/90"></div>
-        <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden">
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden text-center">
             <span class="text-stroke font-anton text-[20vw] select-none opacity-40 transform -rotate-12 translate-y-10 uppercase">
                 New Voice
             </span>
         </div>
 
-        <div class="absolute top-0 left-1/4 w-[600px] h-[600px] bg-violet-600/20 rounded-full blur-[140px] -z-10 animate-pulse"></div>
+        <div class="absolute top-0 left-1/4 w-[600px] h-[600px] bg-violet-600/20 rounded-full blur-[140px] -z-10 animate-pulse text-center"></div>
         
         <header class="relative z-10 px-4 py-16 md:py-24 max-w-5xl mx-auto flex flex-col items-center justify-center text-center gap-10">
             <div class="flex flex-col items-center w-full">
-                <div class="inline-block bg-violet-500/20 border border-violet-400/30 text-violet-300 text-xs md:text-sm font-bold px-5 py-2 rounded-full mb-6 uppercase tracking-widest shadow-2xl backdrop-blur-md">
-                    <i data-lucide="handshake" class="w-4 h-4 inline-block mr-2 mb-0.5"></i> Zero Fees. Real Opportunity.
+                <div class="inline-block bg-violet-500/20 border border-violet-400/30 text-violet-300 text-xs md:text-sm font-bold px-5 py-2 rounded-full mb-6 uppercase tracking-widest shadow-2xl backdrop-blur-md text-center">
+                    <i data-lucide="handshake" class="w-4 h-4 inline-block mr-2 mb-0.5 text-center"></i> Zero Fees. Real Opportunity.
                 </div>
-                <h1 class="text-6xl md:text-8xl leading-none text-white relative w-full mb-4 font-anton drop-shadow-[0_5px_15px_rgba(0,0,0,0.5)]">
-                    VOTE FOR THE <br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-white to-indigo-500 uppercase">Open Act</span>
+                <h1 class="text-6xl md:text-[120px] leading-[0.85] text-white relative w-full mb-4 font-anton drop-shadow-[0_5px_15px_rgba(0,0,0,0.5)] text-center">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-white to-indigo-500 uppercase">Become the <br> Opening Act</span>
                 </h1>
-                <p class="text-lg md:text-xl text-slate-100 font-medium leading-relaxed max-w-2xl mx-auto drop-shadow-lg">
-                    We aren't like those promoters who charge you to perform. We believe in talent and the power of people. <strong>Prove your gift, get selected, and let the crowd vote you onto the stage.</strong>
+                <p class="text-xl md:text-3xl text-slate-100 font-medium leading-relaxed max-w-2xl mx-auto drop-shadow-lg text-center">
+                    We aren't like promoters who charge you to perform. We believe in the gift. <strong>Prove your talent, get selected, and let the crowd vote you onto the stage.</strong>
                 </p>
             </div>
             
@@ -136,11 +135,11 @@
                         </div>
                     </div>
 
-                    <div id="signup-step" class="w-full bg-white p-8 rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.6)] border border-white/10 relative z-10">
-                        <h3 class="text-3xl font-anton text-slate-900 mb-2 uppercase">Apply to Perform</h3>
-                        <p class="text-slate-500 text-sm mb-6 font-medium text-left">Free to enter. We review talent first. Finalists move to the community vote.</p>
+                    <div id="signup-step" class="w-full bg-white p-8 rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.6)] border border-white/10 relative z-10 text-center text-slate-900">
+                        <h3 class="text-3xl font-anton mb-2 uppercase text-center">Apply to Perform</h3>
+                        <p class="text-slate-500 text-base mb-6 font-medium text-center">Free to enter. Talent verified first. Finalists move to the community vote.</p>
                         
-                        <form class="flex flex-col gap-4" id="network-form">
+                        <form class="flex flex-col gap-4 text-left" id="network-form">
                             <div class="relative">
                                 <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"><i data-lucide="music" class="w-5 h-5"></i></span>
                                 <input type="text" placeholder="Artist Name" required class="w-full bg-gray-50 border border-gray-200 text-slate-800 pl-12 pr-5 py-4 rounded-xl font-semibold outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-100 transition-all">
@@ -148,7 +147,7 @@
                             <input type="email" placeholder="Email Address" required class="bg-gray-50 border border-gray-200 text-slate-800 px-5 py-4 rounded-xl font-semibold outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-100 transition-all">
                             <input type="text" placeholder="Link to your best work (IG, YT, SoundCloud)" required class="bg-gray-50 border border-gray-200 text-slate-800 px-5 py-4 rounded-xl font-semibold outline-none focus:border-violet-500 focus:ring-2 focus:ring-violet-100 transition-all">
                             
-                            <button type="submit" class="w-full bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 text-white text-xl font-bold py-5 rounded-xl uppercase transition-all shadow-[0_8px_20px_rgba(124,58,237,0.3)] hover:-translate-y-1 mt-2">
+                            <button type="submit" class="w-full bg-black hover:bg-violet-700 text-white text-xl font-anton py-5 rounded-xl uppercase transition-all shadow-xl mt-2 text-center">
                                 Submit My Talent (Free)
                             </button>
                         </form>
@@ -158,93 +157,141 @@
                         <div class="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-6 border border-emerald-500/30 text-emerald-400">
                             <i data-lucide="check-circle" class="w-8 h-8"></i>
                         </div>
-                        <h3 class="text-2xl font-anton text-white mb-2 uppercase">Submission Received</h3>
-                        <p class="text-slate-400 text-sm mb-8 font-medium italic text-center">Our selection committee is reviewing your work. If selected as a finalist, your voting link will go live.</p>
+                        <h3 class="text-2xl font-anton text-white mb-2 uppercase text-center">Submission Received</h3>
+                        <p class="text-slate-400 text-sm mb-8 font-medium italic text-center text-center text-center">Our selection committee is reviewing your work. If selected as a finalist, your voting link will go live.</p>
                     </div>
                 </div>
             </div>
         </header>
     </div>
 
-    <!-- PHILOSOPHY SECTION -->
-    <section class="py-20 md:py-32 bg-white border-b border-slate-100 text-center text-slate-900">
+    <!-- HOW YOU GET IN SECTION (REDUCED PADDING) -->
+    <section class="py-16 bg-white text-slate-900 border-b border-slate-100">
         <div class="max-w-5xl mx-auto px-4">
-            <h2 class="text-4xl md:text-6xl font-anton mb-2 uppercase leading-tight">
-                Impressions are cheap.
-            </h2>
-            <h2 class="text-4xl md:text-6xl font-anton text-violet-600 mb-8 uppercase leading-tight">
-                Attention is rare.
-            </h2>
+            <h2 class="text-5xl md:text-8xl font-anton mb-12 text-center uppercase tracking-tighter text-slate-950">How You Get In</h2>
             
-            <div class="grid md:grid-cols-3 gap-12 mt-16 text-center">
-                <div class="flex flex-col items-center">
-                    <div class="bg-violet-50 w-20 h-20 rounded-full flex items-center justify-center mb-6 shadow-sm">
-                        <i data-lucide="shield-check" class="text-violet-600 w-10 h-10"></i>
+            <div class="grid md:grid-cols-2 gap-x-12 gap-y-12 text-left">
+                <div class="flex gap-6">
+                    <div class="font-anton text-6xl text-violet-600 leading-none shrink-0">01</div>
+                    <div>
+                        <h3 class="text-3xl font-anton mb-2 uppercase tracking-tight text-slate-950">Join & Activate</h3>
+                        <p class="text-lg text-slate-600 leading-relaxed text-left">Complete the simple signup and add the pass to your phone. This pass is your direct connection to the stage.</p>
                     </div>
-                    <h4 class="font-anton text-xl mb-3">No Pay-to-Play</h4>
-                    <p class="text-slate-500 text-sm leading-relaxed max-w-xs">The stage should belong to the talented, not the highest bidder. We've eliminated entry fees entirely.</p>
                 </div>
-                <div class="flex flex-col items-center">
-                    <div class="bg-violet-50 w-20 h-20 rounded-full flex items-center justify-center mb-6 shadow-sm">
-                        <i data-lucide="users" class="text-violet-600 w-10 h-10"></i>
+
+                <div class="flex gap-6">
+                    <div class="font-anton text-6xl text-violet-600 leading-none shrink-0">02</div>
+                    <div>
+                        <h3 class="text-3xl font-anton mb-2 uppercase tracking-tight text-slate-950">Get Seen</h3>
+                        <p class="text-lg text-slate-600 leading-relaxed text-left">Your profile goes live. This is where selectors and the community review your talent and your sound.</p>
                     </div>
-                    <h4 class="font-anton text-xl mb-3">Empower the People</h4>
-                    <p class="text-slate-500 text-sm leading-relaxed max-w-xs">A performance is a conversation. We let the audience decide who they want to hear.</p>
                 </div>
-                <div class="flex flex-col items-center">
-                    <div class="bg-violet-50 w-20 h-20 rounded-full flex items-center justify-center mb-6 shadow-sm">
-                        <i data-lucide="sparkle" class="text-violet-600 w-10 h-10"></i>
+
+                <div class="flex gap-6">
+                    <div class="font-anton text-6xl text-violet-600 leading-none shrink-0">03</div>
+                    <div>
+                        <h3 class="text-3xl font-anton mb-2 uppercase tracking-tight text-slate-950 text-left">Voting</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3 text-base font-bold uppercase text-slate-700">
+                                <div class="w-2 h-2 rounded-full bg-violet-600"></div> IG Live vote stream
+                            </div>
+                            <div class="flex items-center gap-3 text-base font-bold uppercase text-slate-700">
+                                <div class="w-2 h-2 rounded-full bg-violet-600"></div> ManyChat DM voting
+                            </div>
+                        </div>
                     </div>
-                    <h4 class="font-anton text-xl mb-3">Real Possibilities</h4>
-                    <p class="text-slate-500 text-sm leading-relaxed max-w-xs">The bridge from digital talent to real-world impact. Thousands of eyes and a professional stage.</p>
+                </div>
+
+                <div class="flex gap-6">
+                    <div class="font-anton text-6xl text-violet-600 leading-none shrink-0">04</div>
+                    <div>
+                        <h3 class="text-3xl font-anton mb-2 uppercase tracking-tight text-slate-950">The Drop</h3>
+                        <p class="text-lg text-slate-600 leading-relaxed text-left">Notifications decide access. When the pass updates, that determines who hits the stage.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- THE TWO-STAGE PROCESS -->
-    <section class="py-20 md:py-32 bg-slate-50 border-y border-slate-200 overflow-hidden text-slate-900">
+    <!-- PHILOSOPHY SECTION (GREY BG, BIGGER FONTS, NO GAP) -->
+    <section class="py-16 bg-slate-100 border-b border-slate-200 text-center text-slate-900">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center gap-16">
-                <div class="w-full md:w-1/2">
-                    <h2 class="text-5xl md:text-7xl font-anton mb-6 uppercase leading-tight">Prove Talent, <span class="text-violet-600">Earn Support.</span></h2>
-                    <p class="text-lg text-slate-600 font-medium leading-relaxed mb-8 text-left">We don't just hand out links to anyone. Our process ensures the stage is reserved for artists who have put in the work. Once our team verifies your talent, you become a finalist and the voting window opens.</p>
+            <h2 class="text-5xl md:text-7xl font-anton mb-1 uppercase leading-tight text-center">
+                Impressions are cheap.
+            </h2>
+            <h2 class="text-5xl md:text-7xl font-anton text-violet-600 mb-12 uppercase leading-tight text-center">
+                Attention is rare.
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-10 mt-8 text-center">
+                <div class="flex flex-col items-center">
+                    <div class="bg-white w-20 h-20 rounded-full flex items-center justify-center mb-6 shadow-sm">
+                        <i data-lucide="shield-check" class="text-violet-600 w-10 h-10"></i>
+                    </div>
+                    <h4 class="font-anton text-3xl mb-4 text-center">No Pay-to-Play</h4>
+                    <p class="text-lg text-slate-500 leading-relaxed max-w-xs text-center mx-auto">The stage belongs to the talented, not the highest bidder. We've eliminated entry fees entirely.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-white w-20 h-20 rounded-full flex items-center justify-center mb-6 shadow-sm">
+                        <i data-lucide="users" class="text-violet-600 w-10 h-10 text-center"></i>
+                    </div>
+                    <h4 class="font-anton text-3xl mb-4 text-center">Earn the Crowd</h4>
+                    <p class="text-lg text-slate-500 leading-relaxed max-w-xs text-center mx-auto">The stage belongs to the people. We turn your fans into your voters—giving the audience the final word.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-white w-20 h-20 rounded-full flex items-center justify-center mb-6 shadow-sm">
+                        <i data-lucide="sparkle" class="text-violet-600 w-10 h-10 text-center"></i>
+                    </div>
+                    <h4 class="font-anton text-3xl mb-4 text-center">Real Impact</h4>
+                    <p class="text-lg text-slate-500 leading-relaxed max-w-xs text-center mx-auto">The bridge from digital talent to real-world energy. Thousands of eyes and a professional stage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE TWO-STAGE PROCESS (WHITE BG, REDUCED GAP) -->
+    <section class="py-16 bg-white border-y border-slate-200 overflow-hidden text-slate-900">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2 text-left">
+                    <h2 class="text-5xl md:text-8xl font-anton mb-6 uppercase leading-tight">Prove Talent, <br><span class="text-violet-600">Earn Support.</span></h2>
+                    <p class="text-xl text-slate-600 font-medium leading-relaxed mb-8">We don't hand out links to anyone. Our process ensures the stage is reserved for artists who have put in the work. Once talent is verified, the voting window opens.</p>
                     
-                    <ul class="space-y-4 text-left">
-                        <li class="flex items-center gap-3">
-                            <div class="bg-violet-600 rounded-full p-1 text-white"><i data-lucide="check" class="w-4 h-4"></i></div>
-                            <span class="font-bold uppercase tracking-tight text-slate-700">Talent Verification (Stage 1)</span>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-4">
+                            <div class="bg-violet-600 rounded-full p-1.5 text-white shrink-0"><i data-lucide="check" class="w-5 h-5"></i></div>
+                            <span class="text-lg font-bold uppercase tracking-tight text-slate-700">Talent Verification (Stage 1)</span>
                         </li>
-                        <li class="flex items-center gap-3">
-                            <div class="bg-violet-600 rounded-full p-1 text-white"><i data-lucide="megaphone" class="w-4 h-4"></i></div>
-                            <span class="font-bold uppercase tracking-tight text-slate-700">Community Voting (Stage 2)</span>
+                        <li class="flex items-center gap-4">
+                            <div class="bg-violet-600 rounded-full p-1.5 text-white shrink-0"><i data-lucide="megaphone" class="w-5 h-5"></i></div>
+                            <span class="text-lg font-bold uppercase tracking-tight text-slate-700">Community Voting (Stage 2)</span>
                         </li>
-                        <li class="flex items-center gap-3">
-                            <div class="bg-violet-600 rounded-full p-1 text-white"><i data-lucide="star" class="w-4 h-4"></i></div>
-                            <span class="font-bold uppercase tracking-tight text-slate-700">Winner Takes the Opening Slot</span>
+                        <li class="flex items-center gap-4">
+                            <div class="bg-violet-600 rounded-full p-1.5 text-white shrink-0"><i data-lucide="star" class="w-5 h-5"></i></div>
+                            <span class="text-lg font-bold uppercase tracking-tight text-slate-700">Winner Takes the Stage</span>
                         </li>
                     </ul>
                 </div>
                 <div class="w-full md:w-1/2 relative">
                     <div class="absolute inset-0 bg-violet-600/10 blur-3xl rounded-full"></div>
-                    <div class="bg-slate-900 border-2 border-violet-500/20 p-8 rounded-3xl shadow-2xl relative overflow-hidden group text-left">
+                    <div class="bg-slate-900 border-2 border-violet-500/20 p-10 rounded-[3rem] shadow-2xl relative overflow-hidden group">
                         <div class="flex items-center gap-4 mb-8">
-                             <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-lg text-violet-600">
-                                <i data-lucide="trending-up" class="animate-pulse"></i>
+                             <div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-lg text-violet-600">
+                                <i data-lucide="trending-up" class="animate-pulse w-8 h-8"></i>
                              </div>
                              <div>
-                                <p class="text-[10px] font-black uppercase text-slate-400 tracking-widest">Finalist Dashboard</p>
-                                <p class="font-anton text-xl text-white uppercase">Community Vote Leaders</p>
+                                <p class="text-xs font-black uppercase text-slate-400 tracking-widest">Finalist Dashboard</p>
+                                <p class="font-anton text-2xl text-white uppercase">Community Vote Leaders</p>
                              </div>
                         </div>
                         <div class="space-y-4">
-                            <div class="flex justify-between items-center bg-white/5 p-4 rounded-xl border border-white/10">
-                                <span class="font-bold text-white uppercase">Finalist_01</span>
-                                <span class="bg-violet-600 text-white px-3 py-1 rounded text-[10px] font-black uppercase tracking-tighter">18,293 Supporters</span>
+                            <div class="flex justify-between items-center bg-white/5 p-5 rounded-2xl border border-white/10">
+                                <span class="text-xl font-bold text-white uppercase tracking-tight">Artist_01</span>
+                                <span class="bg-violet-600 text-white px-4 py-1.5 rounded-lg text-xs font-black uppercase tracking-tighter">18,293 Votes</span>
                             </div>
-                            <div class="flex justify-between items-center opacity-40 p-4 rounded-xl border border-white/10">
-                                <span class="font-bold text-white uppercase">Finalist_02</span>
-                                <span class="text-white text-[10px] font-black uppercase tracking-tighter">14,801 Supporters</span>
+                            <div class="flex justify-between items-center opacity-40 p-5 rounded-2xl border border-white/10">
+                                <span class="text-xl font-bold text-white uppercase tracking-tight">Artist_02</span>
+                                <span class="text-white text-xs font-black uppercase tracking-tighter">14,801 Votes</span>
                             </div>
                         </div>
                     </div>
@@ -253,117 +300,25 @@
         </div>
     </section>
 
-    <!-- THE PLAYBOOK -->
-    <section class="py-20 md:py-32 bg-white relative border-b border-slate-100 text-center text-slate-900">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-5xl md:text-7xl font-anton mb-4 tracking-tighter uppercase">The Journey to the Stage</h2>
-            <p class="text-xl text-slate-500 font-medium italic mb-20">No shortcuts. No fees. Just your art and your community.</p>
-
-            <div class="relative">
-                <div class="hidden md:block absolute top-[45px] left-[10%] right-[10%] h-1 bg-gray-100 -z-10 rounded-full overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-r from-violet-500 via-indigo-500 to-violet-500 animate-path"></div>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-12 md:gap-8">
-                    <div class="flex flex-col items-center">
-                        <div class="w-20 h-20 rounded-full bg-slate-900 border-4 border-white flex items-center justify-center text-3xl font-anton text-white shadow-xl mb-8 relative z-10"><i data-lucide="edit-3"></i></div>
-                        <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-lg w-full min-h-[200px] flex flex-col justify-center">
-                            <h3 class="text-xl font-anton text-slate-900 mb-3 uppercase">1. Submit</h3>
-                            <p class="text-slate-500 text-sm leading-relaxed text-center">Enter your details and a link to your best work. This is where you prove your talent.</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div class="w-20 h-20 rounded-full bg-slate-900 border-4 border-white flex items-center justify-center text-3xl font-anton text-white shadow-xl mb-8 relative z-10"><i data-lucide="check-circle-2"></i></div>
-                        <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-lg w-full min-h-[200px] flex flex-col justify-center">
-                            <h3 class="text-xl font-anton text-slate-900 mb-3 uppercase">2. Be Selected</h3>
-                            <p class="text-slate-500 text-sm leading-relaxed text-center">Our team reviews all entries. Finalists are chosen and receive their custom voting pages.</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div class="w-20 h-20 rounded-full bg-violet-600 border-4 border-white flex items-center justify-center text-3xl font-anton text-white shadow-xl mb-8 relative z-10"><i data-lucide="heart"></i></div>
-                        <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-lg w-full min-h-[200px] flex flex-col justify-center">
-                            <h3 class="text-xl font-anton text-slate-900 mb-3 uppercase">3. Rally</h3>
-                            <p class="text-slate-500 text-sm leading-relaxed text-center">Mobilize your base. The artist who inspires the most votes through their link wins the slot.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FINAL CTA -->
-    <section class="py-20 md:py-32 bg-violet-50 border-t border-violet-100 text-center text-slate-900" id="final-cta">
+    <!-- FINAL CTA (REDUCED GAP) -->
+    <section class="py-16 bg-violet-50 border-t border-violet-100 text-center" id="final-cta">
         <div class="max-w-3xl mx-auto px-4">
-            <h2 class="text-5xl md:text-7xl font-anton mb-6 uppercase leading-tight text-slate-900">This Stage was Built <br>for the People.</h2>
-            <div class="w-full bg-white border border-violet-200 h-6 rounded-full overflow-hidden mb-6 shadow-inner text-left">
+            <h2 class="text-5xl md:text-8xl font-anton mb-6 uppercase leading-none text-slate-900">This Stage was Built <br>for the People.</h2>
+            <div class="w-full bg-white border border-violet-200 h-6 rounded-full overflow-hidden mb-8 shadow-inner">
                 <div class="h-full bg-gradient-to-r from-violet-500 to-indigo-500 progress-bar-stripes w-[88%]"></div>
             </div>
             <p class="text-violet-600 font-black uppercase tracking-widest text-sm mb-10">
-                <i data-lucide="heart" class="w-4 h-4 inline-block mr-1"></i> A Shared Opportunity: Join the Finalists
+                <i data-lucide="heart" class="w-4 h-4 inline-block mr-1"></i> Selection Window: 88% through current period
             </p>
-            <p class="text-lg text-slate-600 mb-10 font-medium leading-relaxed text-center">Stop waiting for an invitation that requires a checkbook. We are handing the power back to the artists and their communities. Submit your talent for free and let your story lead the way.</p>
+            <p class="text-xl text-slate-600 mb-10 font-medium leading-relaxed">Stop waiting for an invitation that requires a checkbook. We are handing the power back to the artists. Submit your talent for free.</p>
             
-            <a href="#join-form" class="block w-full text-center bg-slate-900 hover:bg-black text-white text-xl md:text-2xl font-black py-7 px-6 rounded-2xl uppercase transition-all shadow-[0_10px_40px_rgba(124,58,237,0.2)] border-b-4 border-slate-700 active:translate-y-0 active:border-b-0">
+            <a href="#join-form" class="block w-full text-center bg-slate-900 hover:bg-black text-white text-2xl font-black py-8 px-6 rounded-3xl uppercase transition-all shadow-2xl active:scale-95">
                 Submit Your Talent Now
             </a>
         </div>
     </section>
 
-    <!-- SOCIAL PROOF / CROWD ATTENTION IMAGES AT THE BOTTOM -->
-    <section class="py-20 md:py-32 bg-slate-950 text-white overflow-hidden relative text-center">
-        <div class="max-w-7xl mx-auto px-4 relative z-10">
-            <div class="mb-16">
-                <h2 class="text-4xl md:text-7xl font-anton uppercase mb-4">The Power of Presence</h2>
-                <p class="text-violet-400 font-bold uppercase tracking-widest text-sm">Humanity Connected. Spirits Lifted. A New Standard.</p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8 mb-20">
-                <div class="p-10 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md">
-                    <div class="text-5xl font-anton text-violet-400 mb-2">150,000+</div>
-                    <p class="text-slate-400 font-bold uppercase tracking-widest text-[10px]">Moments of Support Shared</p>
-                </div>
-                <div class="p-10 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md">
-                    <div class="text-5xl font-anton text-indigo-400 mb-2">412</div>
-                    <p class="text-slate-400 font-bold uppercase tracking-widest text-[10px]">Artists Sharing Their Gift</p>
-                </div>
-                <div class="p-10 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md">
-                    <div class="text-5xl font-anton text-violet-400 mb-2">1 VOICE</div>
-                    <p class="text-slate-400 font-bold uppercase tracking-widest text-[10px]">Unified in One Night</p>
-                </div>
-            </div>
-
-            <div class="crowd-grid mb-20">
-                <div class="crowd-item col-span-2 row-span-2">
-                    <img src="https://images.unsplash.com/photo-1526218626217-dc65a29bb444?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200" alt="Artist Connection" loading="lazy">
-                </div>
-                <div class="crowd-item col-span-1">
-                    <!-- FIXED PHOTO: Working stage visual -->
-                    <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&q=80&w=800" alt="Concert Energy" loading="lazy">
-                </div>
-                <div class="crowd-item col-span-1 md:col-span-2">
-                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200" alt="The Beauty of Audience" loading="lazy">
-                </div>
-                <div class="crowd-item col-span-1">
-                    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=800" alt="Vibrant Connection" loading="lazy">
-                </div>
-                <div class="crowd-item col-span-1">
-                    <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=800" alt="Shared Movement" loading="lazy">
-                </div>
-                <div class="crowd-item col-span-2 md:col-span-3">
-                    <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-4.0.3&auto=format&fit=crop&q=80&w=1200" alt="Massive Unity" loading="lazy">
-                </div>
-            </div>
-
-            <div class="max-w-4xl mx-auto bg-violet-600 p-8 md:p-16 rounded-[3rem] shadow-2xl relative overflow-hidden">
-                <div class="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
-                <p class="font-anton text-2xl md:text-5xl leading-tight uppercase mb-6 text-white text-center">"Empower the people. Connect the world."</p>
-                <div class="h-1 w-20 bg-white/30 mx-auto mb-6"></div>
-                <p class="text-indigo-100 font-bold uppercase tracking-[0.3em] text-xs text-center">SOULSTICE '26 | THE OPPORTUNITY IS YOURS</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="text-center py-10 text-slate-400 text-sm font-bold uppercase tracking-widest bg-slate-950 border-t border-white/10">
+    <footer class="text-center py-12 text-slate-400 text-sm font-bold uppercase tracking-widest bg-slate-950 border-t border-white/10">
         © 2026 SOULSTICE EXPERIENCES. ALL RIGHTS RESERVED.
     </footer>
 
@@ -374,21 +329,25 @@
         const signupStep = document.getElementById('signup-step');
         const confirmationStep = document.getElementById('confirmation-step');
 
-        networkForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            signupStep.classList.add('hidden-step');
-            confirmationStep.classList.remove('hidden-step');
-        });
+        if (networkForm) {
+            networkForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                if (signupStep) signupStep.classList.add('hidden-step');
+                if (confirmationStep) confirmationStep.classList.remove('hidden-step');
+            });
+        }
 
         let timeInSeconds = 5 * 60; 
         const countdownElement = document.getElementById('countdown');
-        setInterval(() => {
-            if (timeInSeconds <= 0) { timeInSeconds = 5 * 60; }
-            timeInSeconds--;
-            const minutes = Math.floor(timeInSeconds / 60);
-            const seconds = timeInSeconds % 60;
-            countdownElement.innerText = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-        }, 1000);
+        if (countdownElement) {
+            setInterval(() => {
+                if (timeInSeconds <= 0) { timeInSeconds = 5 * 60; }
+                timeInSeconds--;
+                const minutes = Math.floor(timeInSeconds / 60);
+                const seconds = timeInSeconds % 60;
+                countdownElement.innerText = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }, 1000);
+        }
     </script>
 </body>
 </html>
